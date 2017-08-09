@@ -48,7 +48,8 @@ Connector](https://play.google.com/store/apps/details?id=com.appmindlab.connecto
 and Restore](#backup)も調べてみるとよいでしょう。
 
 **重要** v1.3.1より、**neutriNote**はAndroid Marshmallowデバイスの**実行時権限**をサポートしています。外部ストレージの**Local Repository**が正しく機能するために、**neutriNote**に外部ストレージへのアクセス権限を付与するのを忘れないでください。以前に拒否された権限を有効にするには、Androidの**アプリ情報**から権限を有効にしてからアプリを再起動してください。
-#### <a name="backup">Backup and Restore</a> すでに**Local
+#### <a name="backup">Backup and Restore</a>
+すでに**Local
 Repository**をアクティブにしていれば、ノートはリポジトリーにたいしてシームレスに同期されるでしょう。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティー製アプリでフォルダーを共有することにより、ノートをリモートに複製できます。**重要**
 同期できない可能性があるので、古いリポジトリーは使用しないでください。常に[Getting
 Started](#started)セクションの、上記の箇所からリポジトリーの初期化と割り当てで説明している方法を使用してください。
@@ -90,8 +91,10 @@ Search**を使う方法です。ブーリアン検索を指定することもで
 ### <a name="md">Markdown</a>
 **neutriNote**は[PHP Markdown Extra](
 http://michelf.ca/projects/php-markdown/extra/)と、Latexスタイルの数式表現をサポートします。数式表現を入力する一番簡単な方法は、数式を`$$`で囲むことです。インラインで数式を記述するには、次の例のように`\\(...\\)`を使用します:
-``` This expression \\(\sqrt{3x-1}+(1+x)^2\\) is an example of an inline
-equation.  ```
+```
+This expression \\(\sqrt{3x-1}+(1+x)^2\\) is an example of an inline
+equation.
+```
 
 インドキュメントのアンカーやフットノートを作成するには、以下の例のようにPHPマークダウンのリンク構文を使用します:
 
@@ -130,30 +133,32 @@ Table of Contents
 
 ノート間のリンクを作成するには、単に以下の構文の1つを使用します(`%20`はスペースを表します):
 
-``` [My File](file:///sdcard/neutriNote/my_file.txt)
+```
+[My File](file:///sdcard/neutriNote/my_file.txt)
 
 [My File](./my_file.txt)
 
 [My File](my_file.txt)
 
-[GTD](get%20things%20done.txt)  ```
+[GTD](get%20things%20done.txt)
+```
 
 ローカルリポジトリー配下のイメージにリンクするには、以下のようにします:
 
-``` ![My Image](my_image.jpg)  ```
+```
+![My Image](my_image.jpg)
+```
 
 単にノート名にプレフィクスを`http://neutriNote.io`をつけるだけで、ハイパーリンクをサポートする他のアプリからノートにリンクすることができます。たとえば:
 
-``` http://neutriNote.io/my_diary
+```
+http://neutriNote.io/my_diary
 
 http://neutriNote.io/my_diary?search=first%20headquarter%20visit
 
 ```
 
-* マークダウンのイタリックシンボルと、Latexの下付きシンボルは、表記が競合します。
-  There is a conflict between Markdown italic symbol and LaTeX subscript
-  symbol.
-  この問題を回避するには、下付きシンボルをエスケープするか、式をスクリプトブロックで囲みます。たとえば、
+* マークダウンのイタリックシンボルと、Latexの下付きシンボルは、表記が競合します。この問題を回避するには、下付きシンボルをエスケープするか、式をスクリプトブロックで囲みます。たとえば、
 
     `$$k_{n+1} = n^2 + k_n^2 - k_{n-1}$$`
 
@@ -163,14 +168,16 @@ http://neutriNote.io/my_diary?search=first%20headquarter%20visit
 
 のように記述するか、以下のように希望するタイプのスクリプトブロックを使用します:
     
-``` <script type="math/tex">k_{n+1} = n^2 + k_n^2 - k_{n-1}</script> ```
+```
+<script type="math/tex">k_{n+1} = n^2 + k_n^2 - k_{n-1}</script>
+```
 
 ポピュラーなインラインCSSで、マークダウンのスタイルを簡単にカスタマイズできます。より高度なスタイルが必要な場合は、`~neutrinote_styles.txt`にあなたのCSSを定義して、ビルトインのスタイルを、"swap
 out"
 することができます。あなたのスタイルが既存のマークダウンテーマにもとづいたものである場合、このプロセスはとても容易でしょう。たとえば、あなたのマークダウンを**solarize**するには、以下の2行をコピーして、`~neutrinote_styles.txt`に貼り付けてください。
 
-``` <link
-href="http://thomasf.github.io/solarized-css/solarized-light.min.css"
+```
+<link href="http://thomasf.github.io/solarized-css/solarized-light.min.css"
 rel="stylesheet"></link> <script
 src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 ```
@@ -190,16 +197,17 @@ b.create('functiongraph', [function(x){return Math.sin(x);},-Math.PI,2*Math.PI])
 ```
 以下はシンプルな四角形を描画するために、**neutriNote**のレンダリングコンポーネントをどのように使用するかの例です:
     
-``` <canvas id="example" width="200" height="200"> </canvas>
+```
+<canvas id="example" width="200" height="200"> </canvas>
 
 <head> <script> var example = document.getElementById('example'); var
 context = example.getContext('2d'); context.fillStyle = 'red';
-context.fillRect(30, 30, 50, 50); </script> </head> ``` Draw a simple
-diagram in plain text is easy using
-[yUML](http://yuml.me/diagram/scruffy/class/samples).  Try this (note the
-single ticks):
+context.fillRect(30, 30, 50, 50); </script> </head>
+```
+[yUML](http://yuml.me/diagram/scruffy/class/samples)を使えば、プレーンテキストでシンプルなダイアグラムを描画するのは簡単です。以下を試してみてください(バッククォートで括られていることに注意してください):
     
-``` <img src="http://yuml.me/diagram/scruffy/usecase/[Cms Admin]^[User],
+```
+<img src="http://yuml.me/diagram/scruffy/usecase/[Cms Admin]^[User],
 [Customer]^[User], [Agent]^[User]" >
 
 <img src="http://yuml.me/diagram/nofunky/class/`[Customer]->[Billing
@@ -227,24 +235,26 @@ File [ File:neutriNote/clipboard_events.txt Text:## %DATE %TIME %NEWLINE
 Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ]
 ```
 
-### <a name="textexpansion">Text Expansion</a> **neutriNote** supports text
-expansion: simply highlight any shortcut word and tap the **Text Expansion**
-icon to expand the word.  All shortcuts are saved in a file called
-**~neutrinote_shortcuts**, with one definition per line in the format of
-`shortcut label|expanded text` (if you do not see the file, enable hidden
-files under **Settings**).  Below are some examples:
+### <a name="textexpansion">Text Expansion</a>
+**neutriNote**はテキスト展開(text expansion)をサポートします:
+ショートカットの単語を単にハイライトして、単語を展開するために**Text
+Expansion**アイコンをタップしてください。すべてのショートカットは**~neutrinote_shortcuts**というファイルに保存されます。ショートカットのは1行ごとに`ショートカットラベル|展開されるテキスト`というフォーマットで定義されます(ファイルを確認できない場合は、**Settings**で非表示ファイル(hidden
+files)の表示を有効にしてください)。以下はショートカットの例です:
 
-``` cell|123-456-7890 email|john.smith@test.com
+``` cell|123-456-7890
+email|john.smith@test.com
 
-# Usage: select "highlight your_text" and expand, return
-"<mark>your_text</mark>".  highlight|<mark>???</mark> ```
+# 使い方: "highlight your_text"を選択して展開すると"<mark>your_text</mark>"をリターンする。
+highlight|<mark>???</mark>
+```
 
-Shortcuts can be defined for frequently used patterns for string
-replacements.  For example:
+ショートカットは、文字列置換で頻繁に使用するパターンにたいして定義できます。たとえば:
 
-``` # Usage: select "encode some_text_string" and expand, some_text_string
-will be returned with all blank spaces encoded.  encode|neutriNote#replace
-\s %20 ```
+```
+# 使い方: "encode
+some_text_string"を選択して展開すると、some_text_stringをすべてスペースに置き換えてリターンする。
+encode|neutriNote#replace \s %20
+```
 
 An example to trim leading and trailing spaces from a body of text:
 

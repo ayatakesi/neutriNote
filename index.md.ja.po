@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: neutriNote v2.3.5\n"
 "POT-Creation-Date: 2017-08-07 06:54+0000\n"
-"PO-Revision-Date: 2017-08-09 18:58+0900\n"
+"PO-Revision-Date: 2017-08-10 05:55+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -149,7 +149,9 @@ msgid ""
 "**IMPORTANT**: Do NOT use stale repositories since they could be out of "
 "sync.  Always use the method described in the [Getting Started](#started) "
 "section from above to initialize and assign repositories."
-msgstr "#### <a name=\"backup\">Backup and Restore</a> すでに**Local Repository**をアクティブにしていれば、ノートはリポジトリーにたいしてシームレスに同期されるでしょう。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティー製アプリでフォルダーを共有することにより、ノートをリモートに複製できます。**重要** 同期できない可能性があるので、古いリポジトリーは使用しないでください。常に[Getting Started](#started)セクションの、上記の箇所からリポジトリーの初期化と割り当てで説明している方法を使用してください。"
+msgstr ""
+"#### <a name=\"backup\">Backup and Restore</a>\n"
+"すでに**Local Repository**をアクティブにしていれば、ノートはリポジトリーにたいしてシームレスに同期されるでしょう。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティー製アプリでフォルダーを共有することにより、ノートをリモートに複製できます。**重要** 同期できない可能性があるので、古いリポジトリーは使用しないでください。常に[Getting Started](#started)セクションの、上記の箇所からリポジトリーの初期化と割り当てで説明している方法を使用してください。"
 
 #. type: Plain text
 #: index.md:53
@@ -285,7 +287,10 @@ msgid ""
 "example of an inline equation.  ```"
 msgstr ""
 "### <a name=\"md\">Markdown</a>\n"
-"**neutriNote**は[PHP Markdown Extra]( http://michelf.ca/projects/php-markdown/extra/)と、Latexスタイルの数式表現をサポートします。数式表現を入力する一番簡単な方法は、数式を`$$`で囲むことです。インラインで数式を記述するには、次の例のように`\\\\(...\\\\)`を使用します: ``` This expression \\\\(\\sqrt{3x-1}+(1+x)^2\\\\) is an example of an inline equation.  ```"
+"**neutriNote**は[PHP Markdown Extra]( http://michelf.ca/projects/php-markdown/extra/)と、Latexスタイルの数式表現をサポートします。数式表現を入力する一番簡単な方法は、数式を`$$`で囲むことです。インラインで数式を記述するには、次の例のように`\\\\(...\\\\)`を使用します:\n"
+"```\n"
+"This expression \\\\(\\sqrt{3x-1}+(1+x)^2\\\\) is an example of an inline equation.\n"
+"```"
 
 #. type: Plain text
 #: index.md:90
@@ -396,7 +401,9 @@ msgstr "ノート間のリンクを作成するには、単に以下の構文の
 #. type: Plain text
 #: index.md:128
 msgid "``` [My File](file:///sdcard/neutriNote/my_file.txt)"
-msgstr "``` [My File](file:///sdcard/neutriNote/my_file.txt)"
+msgstr ""
+"```\n"
+"[My File](file:///sdcard/neutriNote/my_file.txt)"
 
 #. type: Plain text
 #: index.md:130
@@ -411,7 +418,9 @@ msgstr "[My File](my_file.txt)"
 #. type: Plain text
 #: index.md:135
 msgid "[GTD](get%20things%20done.txt)  ```"
-msgstr "[GTD](get%20things%20done.txt)  ```"
+msgstr ""
+"[GTD](get%20things%20done.txt)\n"
+"```"
 
 #. type: Plain text
 #: index.md:137
@@ -421,7 +430,10 @@ msgstr "ローカルリポジトリー配下のイメージにリンクするに
 #. type: Plain text
 #: index.md:141
 msgid "``` ![My Image](my_image.jpg)  ```"
-msgstr "``` ![My Image](my_image.jpg)  ```"
+msgstr ""
+"```\n"
+"![My Image](my_image.jpg)\n"
+"```"
 
 #. type: Plain text
 #: index.md:143
@@ -433,7 +445,9 @@ msgstr "単にノート名にプレフィクスを`http://neutriNote.io`をつ�
 #. type: Plain text
 #: index.md:146
 msgid "``` http://neutriNote.io/my_diary"
-msgstr "``` http://neutriNote.io/my_diary"
+msgstr ""
+"```\n"
+"http://neutriNote.io/my_diary"
 
 #. type: Plain text
 #: index.md:148
@@ -451,10 +465,7 @@ msgid ""
 "There is a conflict between Markdown italic symbol and LaTeX subscript "
 "symbol.  To workaround this problem, either escape the subscript symbols or "
 "wrap the expression in script block.  For example, instead of doing this:"
-msgstr ""
-"マークダウンのイタリックシンボルと、Latexの下付きシンボルは、表記が競合します。\n"
-"There is a conflict between Markdown italic symbol and LaTeX subscript symbol.\n"
-"この問題を回避するには、下付きシンボルをエスケープするか、式をスクリプトブロックで囲みます。たとえば、"
+msgstr "マークダウンのイタリックシンボルと、Latexの下付きシンボルは、表記が競合します。この問題を回避するには、下付きシンボルをエスケープするか、式をスクリプトブロックで囲みます。たとえば、"
 
 #. type: Plain text
 #: index.md:154
@@ -483,7 +494,10 @@ msgstr "のように記述するか、以下のように希望するタイプの
 #. type: Plain text
 #: index.md:164
 msgid "``` <script type=\"math/tex\">k_{n+1} = n^2 + k_n^2 - k_{n-1}</script> ```"
-msgstr "``` <script type=\"math/tex\">k_{n+1} = n^2 + k_n^2 - k_{n-1}</script> ```"
+msgstr ""
+"```\n"
+"<script type=\"math/tex\">k_{n+1} = n^2 + k_n^2 - k_{n-1}</script>\n"
+"```"
 
 #. type: Plain text
 #: index.md:166
@@ -504,7 +518,10 @@ msgid ""
 "rel=\"stylesheet\"></link> <script "
 "src=\"https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js\"></script> "
 "```"
-msgstr "``` <link href=\"http://thomasf.github.io/solarized-css/solarized-light.min.css\" rel=\"stylesheet\"></link> <script src=\"https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js\"></script> ```"
+msgstr ""
+"```\n"
+"<link href=\"http://thomasf.github.io/solarized-css/solarized-light.min.css\" rel=\"stylesheet\"></link> <script src=\"https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js\"></script>\n"
+"```"
 
 #. type: Plain text
 #: index.md:174
@@ -551,11 +568,12 @@ msgstr ""
 #. type: Plain text
 #: index.md:190
 msgid "``` <canvas id=\"example\" width=\"200\" height=\"200\"> </canvas>"
-msgstr "``` <canvas id=\"example\" width=\"200\" height=\"200\"> </canvas>"
+msgstr ""
+"```\n"
+"<canvas id=\"example\" width=\"200\" height=\"200\"> </canvas>"
 
 #. type: Plain text
 #: index.md:201
-#, fuzzy
 msgid ""
 "<head> <script> var example = document.getElementById('example'); var "
 "context = example.getContext('2d'); context.fillStyle = 'red'; "
@@ -566,14 +584,16 @@ msgid ""
 msgstr ""
 "<head> <script> var example = document.getElementById('example'); var context = example.getContext('2d'); context.fillStyle = 'red'; context.fillRect(30, 30, 50, 50); </script> </head>\n"
 "```\n"
-"[yUML](http://yuml.me/diagram/scruffy/class/samples)を使えば、プレーンテキストでシンプルなダイアグラムを描画するのは簡単です。以下を試してみてください(note the single ticks):"
+"[yUML](http://yuml.me/diagram/scruffy/class/samples)を使えば、プレーンテキストでシンプルなダイアグラムを描画するのは簡単です。以下を試してみてください(バッククォートで括られていることに注意してください):"
 
 #. type: Plain text
 #: index.md:204
 msgid ""
 "``` <img src=\"http://yuml.me/diagram/scruffy/usecase/[Cms Admin]^[User], "
 "[Customer]^[User], [Agent]^[User]\" >"
-msgstr "``` <img src=\"http://yuml.me/diagram/scruffy/usecase/[Cms Admin]^[User], [Customer]^[User], [Agent]^[User]\" >"
+msgstr ""
+"```\n"
+"<img src=\"http://yuml.me/diagram/scruffy/usecase/[Cms Admin]^[User], [Customer]^[User], [Agent]^[User]\" >"
 
 #. type: Plain text
 #: index.md:207
@@ -662,11 +682,15 @@ msgid ""
 "of `shortcut label|expanded text` (if you do not see the file, enable hidden "
 "files under **Settings**).  Below are some examples:"
 msgstr ""
+"### <a name=\"textexpansion\">Text Expansion</a>\n"
+"**neutriNote**はテキスト展開(text expansion)をサポートします: ショートカットの単語を単にハイライトして、単語を展開するために**Text Expansion**アイコンをタップしてください。すべてのショートカットは**~neutrinote_shortcuts**というファイルに保存されます。ショートカットのは1行ごとに`ショートカットラベル|展開されるテキスト`というフォーマットで定義されます(ファイルを確認できない場合は、**Settings**で非表示ファイル(hidden files)の表示を有効にしてください)。以下はショートカットの例です:"
 
 #. type: Plain text
 #: index.md:234
 msgid "``` cell|123-456-7890 email|john.smith@test.com"
 msgstr ""
+"``` cell|123-456-7890\n"
+"email|john.smith@test.com"
 
 #. type: Plain text
 #: index.md:238
@@ -674,13 +698,16 @@ msgid ""
 "# Usage: select \"highlight your_text\" and expand, return "
 "\"<mark>your_text</mark>\".  highlight|<mark>???</mark> ```"
 msgstr ""
+"# 使い方: \"highlight your_text\"を選択して展開すると\"<mark>your_text</mark>\"をリターンする。\n"
+"highlight|<mark>???</mark>\n"
+"```"
 
 #. type: Plain text
 #: index.md:240
 msgid ""
 "Shortcuts can be defined for frequently used patterns for string "
 "replacements.  For example:"
-msgstr ""
+msgstr "ショートカットは、文字列置換で頻繁に使用するパターンにたいして定義できます。たとえば:"
 
 #. type: Plain text
 #: index.md:245
@@ -689,6 +716,10 @@ msgid ""
 "will be returned with all blank spaces encoded.  encode|neutriNote#replace "
 "\\s %20 ```"
 msgstr ""
+"```\n"
+"# 使い方: \"encode some_text_string\"を選択して展開すると、some_text_stringをすべてスペースに置き換えてリターンする。\n"
+"encode|neutriNote#replace \\s %20\n"
+"```"
 
 #. type: Plain text
 #: index.md:247
