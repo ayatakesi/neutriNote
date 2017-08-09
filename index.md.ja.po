@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: neutriNote v2.3.5\n"
 "POT-Creation-Date: 2017-08-07 06:54+0000\n"
-"PO-Revision-Date: 2017-08-09 18:48+0900\n"
+"PO-Revision-Date: 2017-08-09 18:54+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -564,7 +564,8 @@ msgid ""
 "[yUML](http://yuml.me/diagram/scruffy/class/samples).  Try this (note the "
 "single ticks):"
 msgstr ""
-"<head> <script> var example = document.getElementById('example'); var context = example.getContext('2d'); context.fillStyle = 'red'; context.fillRect(30, 30, 50, 50); </script> </head> ```\n"
+"<head> <script> var example = document.getElementById('example'); var context = example.getContext('2d'); context.fillStyle = 'red'; context.fillRect(30, 30, 50, 50); </script> </head>\n"
+"```\n"
 "[yUML](http://yuml.me/diagram/scruffy/class/samples)を使えば、プレーンテキストでシンプルなダイアグラムを描画するのは簡単です。以下を試してみてください(note the single ticks):"
 
 #. type: Plain text
@@ -579,7 +580,9 @@ msgstr "``` <img src=\"http://yuml.me/diagram/scruffy/usecase/[Cms Admin]^[User]
 msgid ""
 "<img src=\"http://yuml.me/diagram/nofunky/class/`[Customer]->[Billing "
 "Address]`\"> ```"
-msgstr "<img src=\"http://yuml.me/diagram/nofunky/class/`[Customer]->[Billing Address]`\"> ```"
+msgstr ""
+"<img src=\"http://yuml.me/diagram/nofunky/class/`[Customer]->[Billing Address]`\">\n"
+"```"
 
 #. type: Plain text
 #: index.md:209
@@ -645,7 +648,7 @@ msgid ""
 "File [ File:neutriNote/clipboard_events.txt Text:## %DATE %TIME %NEWLINE "
 "%CLIP %NEWLINE Append:On Add Newline:On ] If [ %clip neq %clip_prev ] A3: "
 "Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ] ```"
-msgstr ""
+msgstr "``` A1: Variable Set [ Name:%NEWLINE To:Do Maths:Off Append:Off ] A2: Write File [ File:neutriNote/clipboard_events.txt Text:## %DATE %TIME %NEWLINE %CLIP %NEWLINE Append:On Add Newline:On ] If [ %clip neq %clip_prev ] A3: Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ] ```"
 
 #. type: Plain text
 #: index.md:230

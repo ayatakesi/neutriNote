@@ -203,7 +203,8 @@ single ticks):
 [Customer]^[User], [Agent]^[User]" >
 
 <img src="http://yuml.me/diagram/nofunky/class/`[Customer]->[Billing
-Address]`"> ```
+Address]`">
+```
 
 ### <a name="automation">Automation</a>
 
