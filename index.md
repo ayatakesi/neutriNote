@@ -28,103 +28,69 @@
 1. [TODO](#todo)
 1. [About](#about)
 
-### <a name="started">Getting Started</a>**neutriNote**を選んでいただき、ありがとうございます。
+### <a name="started">Getting Started</a>
+**neutriNote**を選んでいただき、ありがとうございます。
 
-Right after installation, be sure to follow the onscreen instruction and
-choose a location for **Local Repository**.
+インストールが終わったら、画面上の指示にしたがって、**Local Repository**の場所を選択してください。
 
-If your repository is empty, you may add notes right away.
+リポジトリーが空なら、すぐにノートを追加できます。
 
-If you have installed **neutriNote** previously, you may pick the repository
-already on your device.
+以前に**neutriNote**をインストールしていた場合には、すでにデバイス上にあるリポジトリーを選択すればよいでしょう。
 
-If you have settings backed up from your previous installation, you may also
-choose [Restore App
+以前のインストールで設定をバックアップしていた場合には、[Restore App
 Data](https://www.dropbox.com/s/nveejx2dn1pdbqi/navigation_drawer.png?dl=0,
-"Backup/Restore App Data") to restore settings.
+"Backup/Restore App Data")を選択して設定をリストアすればよいでしょう。
 
-To enable sync is easy, either install a third party app like
-[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)
-and register your repository with it or get [neutriNote
-Connector](https://play.google.com/store/apps/details?id=com.appmindlab.connector)
--- a Dropbox adapter designed just for **neutriNote**.
+同期(sync)を有効にするのは簡単です。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティーアプリをインストールして、それにリポジトリーを登録するか、**neutriNote**専用にデザインされたDropbox用アダプターの[neutriNote
+Connector](https://play.google.com/store/apps/details?id=com.appmindlab.connector)を入手してください。
 
-Even without add-ons, **neutriNote** is ready for use.  Explore around to
-discover many features that would make **neutriNote** a highly integrated
-part of your note taking experience (for example, long tap metadata label to
-retrieve notes sharing
-[similar](https://www.dropbox.com/s/tqa3h774xrn49zd/metadata_long_click.png?dl=0)
-label and tap the local find icon in the edit screen to jump to the next
-match).  To extend it into a tool for personal information management,
-please do take a moment to go over the following sections.  New users may
-also want to check out [Backup and Restore](#backup) for ways to preserve
-note data beyond the sync mechanism.
+アドオンなしでも、**neutriNote**をすぐに使うことができます。多くの機能を発見するために、あちこち触ってみてください。それが**neutriNote**をあなたのノート体験の高度に統合された一部とするでしょう(たとえばメタデータラベルをロングタップすれば[同じような](https://www.dropbox.com/s/tqa3h774xrn49zd/metadata_long_click.png?dl=0)ラベルをもつノートを取得できるし、編集画面でローカル検索アイコンをタップすれば次のマッチにジャンプすることができます)。これを個人情報管理ツールに拡張するのは、以降のセクションまで待ってください。新しいユーザーはデータを守るための、同期メカニズム以上の手段として[Backup
+and Restore](#backup)も調べてみるとよいでしょう。
 
-**IMPORTANT**: from v1.3.1, **neutriNote** supports **Runtime Permissions** in Android Marshmallow devices.  Be sure to grant **neutriNote** permission to access external storage for its **Local Repository** to work properly.  To enable previously denied permissions, go to **neutriNote**'s **App Info** under Android, renable the permissions and restart the app.
-
-#### <a name="backup">Backup and Restore</a> If you have already activated
-**Local Repository**, your notes will be sync seamlessly to the repository.
-You can replicate your notes remotely by sharing the folder with third party
-apps such as
-[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en).
-**IMPORTANT**: Do NOT use stale repositories since they could be out of
-sync.  Always use the method described in the [Getting Started](#started)
-section from above to initialize and assign repositories.
+**重要** v1.3.1より、**neutriNote**はAndroid Marshmallowデバイスの**実行時権限**をサポートしています。外部ストレージの**Local Repository**が正しく機能するために、**neutriNote**に外部ストレージへのアクセス権限を付与するのを忘れないでください。以前に拒否された権限を有効にするには、Androidの**アプリ情報**から権限を有効にしてからアプリを再起動してください。
+#### <a name="backup">Backup and Restore</a> すでに**Local
+Repository**をアクティブにしていれば、ノートはリポジトリーにたいしてシームレスに同期されるでしょう。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティー製アプリでフォルダーを共有することにより、ノートをリモートに複製できます。**重要**
+同期できない可能性があるので、古いリポジトリーは使用しないでください。常に[Getting
+Started](#started)セクションの、上記の箇所からリポジトリーの初期化と割り当てで説明している方法を使用してください。
     
-**Incremental Backup** is another way to copy your notes in non-intrusive fashion. To enable, simply do so from Settings.  Then your notes and app settings will be backed up incrementally at least once daily to a internal storage folder called _neutrinote_export_.  Note: exported app settings data are stored in regular notes with prefix _.neutrinote_ so that they can be sync no differently from other notes.
+**Incremental Backup**とは、煩わしくないやり方でノートをコピーする別の方法です。有効にするには、Settingでそれを単に有効にするだけです。そうすれば、あなたのノートとアプリのセッティングは、少なくとも1日1回は内部ストレージの_neutrinote_export_というフォルダーにインクリメンタルにバックアップされます。注意: エクスポートされたアプリのセッティングデータは、通常のノートにプレフィクス_.neutrinote_をつけて保存されるので、他のノートと同じように同期させることができます。
+より複雑なシナリオについては、[neutriNote
+Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus)を調べてみてください。
 
-For more demanding scenarios, check out [neutriNote
-Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus).
+#### <a name="search">Search Tools</a>
+修正日時、アクセス日時、ユーザーインターフェースにより提供されるロケーション(location:
+場所)にもとづくノート検索に加えて、**neutriNote**は高精度のテキストベース検索と正規表現([regular
+expression](http://en.m.wikipedia.org/wiki/Glob_(programming)))をサポートします。以下の構文も、(セッティングなる)事前定義されたフィルターの一部に含めると、再利用性が高くなります。
 
-#### <a name="search">Search Tools</a> While notes can be retrieved based on
-modified time, accessed time, and location as providied by the user
-interface, **neutriNote** supports high precision text based search and
-[regular expression](http://en.m.wikipedia.org/wiki/Glob_(programming)).
-The syntax below are also highly reusable when they are included as part of
-the preset filters (under Settings).
+**Search by Fields(フィールド検索)**により、指定したフィールドに検索を限定できます。たとえば、ノート一覧の上にあるメイン検索バーでは、プレフィクスに`title:`を使用することにより、検索をタイトルに限定できます。`title:log`のような検索文字列の場合は、タイトルの一部に`log`という文字列が含まれるすべてのノートがリターンされます。
+検索文字列内でプレフィクスに_meta:_を使用することにより、検索をメタデータに限定することもできます。_meta:personal_のような検索文字列では、メタデータ内の一部に_personal_という文字列を含むすべてのノートがリターンされます(同様に、_meta:_という検索文字列ではメタデータのないすべてのノートがリターンされます)。検索文字列内で単にプレフィクス_metareg:_を使うことにより、正規表現[regular
+expression](http://en.m.wikipedia.org/wiki/Glob_(programming))も使用可能です。
 
-**Search by Fields** It is possible to restrict search to a specified field.  For example, at the main search bar over the note list, search can be limited to titles by using the prefix `title:` in the search string.  A search string like`title:log` will return all notes with the substring `log` in the titles.
+複数単語の検索でメタデータのマッチを確実にするためには、メイン検索バーで以下の構文を使用するとよいでしょう。
+`join:term1,term2,term3`,...:
+これは検索がヒットしたメタデータ内で、少なくとも1つの単語がマッチしたことを意味します。このような構文は、metadata/tags内で検索をシミュレートするのに使用できます。
 
-Search can also be limited to metadata by using the prefix _meta:_ in the
-search string.  A search string such as _meta:personal_ will return all
-notes with the substring _personal_ in the metadata (likewise _meta:_ will
-return notes without metadata). It is also possible to use [regular
-expression](http://en.m.wikipedia.org/wiki/Glob_(programming)) in metadata
-search, simply use the prefix _metareg:_ in the search string.
+複数単語検索を行う一番簡単なのは、**Advanced
+Search**を使う方法です。ブーリアン検索を指定することもできます。`and:term1,term2,term3,...,termN`のような構文は、すべての単語を含むノートを検索し、`or:term1,term2,term3,..,termN`は、これらのうち1つを含む単語を検索します。
 
-To ensure metadata match when conducting multi-term search, one may use the
-following syntax at the main search bar: `join:term1,term2,term3` and so
-on.  Doing so will ensure at least one of the terms can be found in the
-metadata for each search hit. Such syntax can be used to simulate search
-within metadata/tags.
-
-To search for multiple terms, the easiest way is to use **Advanced
-Search**.  You can also specify boolean search queries with syntax like
-`and:term1,term2,term3,...,termN` to find notes containing all the terms
-(`or:term1,term2,term3,..,termN` to find notes containing one of the terms).
-
-**Custom Filters** The power of the above syntax lies in that it can also be included in preset search filters so that users can easily deploy.  Custom filters can be specified in [Settings](https://www.dropbox.com/s/cfve8rfp4yysro8/custom_filters.png?dl=0) delimited by semi-colons.  They are defaulted to be:
+**Custom Filters** 上記構文の威力は、それを事前定義された検索フィルターに含めることにより、ユーザーが簡単に抽出できることです。カスタムフィルターは、[Settings](https://www.dropbox.com/s/cfve8rfp4yysro8/custom_filters.png?dl=0)でセミコロンで区切って指定することができます。カスタムフィルターのデフォルトは:
 
 ``` all;starred;A;B;C;D;E;F;G;H;I;J;K;L;M;N;O;P;Q;R;S;T;U;V;W;X;Y;Z ```
 
-**all** is reserved for retrieving all notes, and **starred** reserved for retrieving starred notes. Single character filters are reserved for retrieving notes with titles beginning with said alphabets.
+**all**はすべてのノートを取得するために予約されており、**starred**はスター付きのノートを取得するために予約されています。アルファベット1文字は、タイトルがそのアルファベットで始まるノートを取得するために予約されています。
 
-For searching within notes, **neutriNote** recognizes basic
-[Perl](http://www.erudil.com/preqr.pdf) style patterns: `\d` for digits,
-`\s` for whitespace, etc.
+ノート検索では、**neutriNote**は[Perl](http://www.erudil.com/preqr.pdf)スタイルの基本的なパターン(`\d`は数字、`\s`は空白文字、など)を認識します。
  
 
 ### <a name="advanced">Advanced Features</a>
 
-### <a name="metadata">Metadata</a> Metadata are general purpose text
-strings that exist outside note data.  They are searchable and can be used
-as tags.
+### <a name="metadata">Metadata</a>
+メタデータとは、ノートの外部に存在する、一般的な用途のためのテキスト文字列です。メタデータは検索することができ、タグとして使用できます。
         
-### <a name="md">Markdown</a> **neutriNote** supports [PHP Markdown Extra](
-http://michelf.ca/projects/php-markdown/extra/) and LaTeX style mathematical
-expressions.  The easiest way to enter mathematical expressions is to wrap
-them in `$$`.  For inline math, use `\\(...\\)` as in the example below: ```
-This expression \\(\sqrt{3x-1}+(1+x)^2\\) is an example of an inline
+### <a name="md">Markdown</a>
+**neutriNote**は[PHP Markdown Extra](
+http://michelf.ca/projects/php-markdown/extra/)と、Latexスタイルの数式表現をサポートします。数式表現を入力する一番簡単な方法は、数式を`$$`で囲むことです。インラインで数式を記述するには、次の例のように`\\(...\\)`を使用します:
+``` This expression \\(\sqrt{3x-1}+(1+x)^2\\) is an example of an inline
 equation.  ```
 
 To create in-document anchors/footnotes in PHP Markdown, use link syntax as
