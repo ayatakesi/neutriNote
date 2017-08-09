@@ -224,7 +224,8 @@ Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus
 ``` A1: Variable Set [ Name:%NEWLINE To:Do Maths:Off Append:Off ] A2: Write
 File [ File:neutriNote/clipboard_events.txt Text:## %DATE %TIME %NEWLINE
 %CLIP %NEWLINE Append:On Add Newline:On ] If [ %clip neq %clip_prev ] A3:
-Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ] ```
+Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ]
+```
 
 ### <a name="textexpansion">Text Expansion</a> **neutriNote** supports text
 expansion: simply highlight any shortcut word and tap the **Text Expansion**
