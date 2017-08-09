@@ -93,8 +93,7 @@ http://michelf.ca/projects/php-markdown/extra/)と、Latexスタイルの数式�
 ``` This expression \\(\sqrt{3x-1}+(1+x)^2\\) is an example of an inline
 equation.  ```
 
-To create in-document anchors/footnotes in PHP Markdown, use link syntax as
-in the following example:
+インドキュメントのアンカーやフットノートを作成するには、以下の例のようにPHPマークダウンのリンク構文を使用します:
 
 ``` # heading 1 {#header1}
 
@@ -110,10 +109,8 @@ in the following example:
     + [Link back to header 1](#header1)
 ```
 
-To allow table of contents to be generated automatically, add a placeholder
-`<span id='toc' />`, tag each paragraph header with a unique ID by following
-the convention of PHP Markdown special attributes such as`{#id}`.  Try the
-example below:
+自動的に目次を作成するには、プレースホルダーとして`<span id='toc'
+/>`を追加し、`{#id}`のようなPHPマークダウンの特殊属性の規約にしたがった一意なIDで各パラグラフのヘッダーをタグとして付けします。以下の例を試してみてください:
 
 ```
 Table of Contents
@@ -131,8 +128,7 @@ Table of Contents
     * Your paragraph here...
 ```
 
-To create link between notes, simply use one of the following syntax (`%20`
-denotes space):
+ノート間のリンクを作成するには、単に以下の構文の1つを使用します(`%20`はスペースを表します):
 
 ``` [My File](file:///sdcard/neutriNote/my_file.txt)
 
@@ -142,12 +138,11 @@ denotes space):
 
 [GTD](get%20things%20done.txt)  ```
 
-Linking to an image under local repository, simply do:
+ローカルリポジトリー配下のイメージにリンクするには、以下のようにします:
 
 ``` ![My Image](my_image.jpg)  ```
 
-Linking to notes from other apps that support hyperlinks, simply prefix note
-names with `http://neutriNote.io`.  For example:
+単にノート名にプレフィクスを`http://neutriNote.io`をつけるだけで、ハイパーリンクをサポートする他のアプリからノートにリンクすることができます。たとえば:
 
 ``` http://neutriNote.io/my_diary
 
@@ -155,27 +150,24 @@ http://neutriNote.io/my_diary?search=first%20headquarter%20visit
 
 ```
 
-* There is a conflict between Markdown italic symbol and LaTeX subscript
-  symbol.  To workaround this problem, either escape the subscript symbols
-  or wrap the expression in script block.  For example, instead of doing
-  this:
+* マークダウンのイタリックシンボルと、Latexの下付きシンボルは、表記が競合します。
+  There is a conflict between Markdown italic symbol and LaTeX subscript
+  symbol.
+  この問題を回避するには、下付きシンボルをエスケープするか、式をスクリプトブロックで囲みます。たとえば、
 
     `$$k_{n+1} = n^2 + k_n^2 - k_{n-1}$$`
 
-    do this:
+のかわりに
     
     `$$k\_{n+1} = n^2 + k\_n^2 - k\_{n-1}$$`
 
-    Or use script block with the desired type like this:
+のように記述するか、以下のように希望するタイプのスクリプトブロックを使用します:
     
 ``` <script type="math/tex">k_{n+1} = n^2 + k_n^2 - k_{n-1}</script> ```
 
-It's easy to customize the style of Markdown with popular inline CSS.  For
-more extensive styling needs, you can "swap out" built-in styling by
-declaring your CSS in `~neutrinote_styles.txt`.  If your style is based off
-an existing Markdown theme, this process is pretty much effortless.  For
-example, to **solarize** your Markdown, simply copy and paste the following
-two lines into `~neutrinote_styles.txt`.
+ポピュラーなインラインCSSで、マークダウンのスタイルを簡単にカスタマイズできます。より高度なスタイルが必要な場合は、`~neutrinote_styles.txt`にあなたのCSSを定義して、ビルトインのスタイルを、"swap
+out"
+することができます。あなたのスタイルが既存のマークダウンテーマにもとづいたものである場合、このプロセスはとても容易でしょう。たとえば、あなたのマークダウンを**solarize**するには、以下の2行をコピーして、`~neutrinote_styles.txt`に貼り付けてください。
 
 ``` <link
 href="http://thomasf.github.io/solarized-css/solarized-light.min.css"
@@ -183,9 +175,8 @@ rel="stylesheet"></link> <script
 src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 ```
     
-### <a name="examples">Examples</a> An example of how **neutriNote**'s
-rendering component could be used to plot a graph using
-[JSXGraph](http://jsxgraph.uni-bayreuth.de/wp/examples/):
+### <a name="examples">Examples</a>
+以下は[JSXGraph](http://jsxgraph.uni-bayreuth.de/wp/examples/)を使用してグラフをプロットするために、**neutriNote**のレンダリングコンポーネントをどのように使用するかの例です:
 
 ```
 <div id="box" class="box" style="width:500px; height:500px;"></div>
@@ -197,7 +188,7 @@ b.create('functiongraph', [function(x){return Math.sin(x);},-Math.PI,2*Math.PI])
 </script>
 </head>
 ```
-An example of how **neutriNote**'s rendering component could be used to draw a simple shape:
+以下はシンプルな四角形を描画するために、**neutriNote**のレンダリングコンポーネントをどのように使用するかの例です:
     
 ``` <canvas id="example" width="200" height="200"> </canvas>
 
@@ -216,25 +207,18 @@ Address]`"> ```
 
 ### <a name="automation">Automation</a>
 
-**neutriNote** can be easily automated using Tasker.  For example, **neutriNote**'s theme can be set according to light level with the use of ([neutriNote Auto Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)) with these steps:
+Taskerを使うことにより、**neutriNote**を簡単に自動化できます。たとえば、([neutriNote Auto Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme))を使って以下のステップを行うことにより、照明レベルに合わせて**neutriNote**のテーマをセットすることができます:
 
-1. Create a _new_ task in Tasker.
-1. Add a _new_ action, choose **App** from **Select Action Category**.
-1. Choose the extension just downloaded from the app selection screen.
-1. Now the task is created and ready for use in any of your profiles.  For
-   example, create a new profile that will be triggered when the display is
-   on (add a new profile, then choose **State** -> pick **Display**) to
-   launch the task.  Now each time the screen is turned on, **neutriNote**
-   will automatically select a theme based on the current light level.
+1. Taskerで_新しい_タスクを作成します。
+1. **Select Action Category**から**App**を選択して、_新しい_アクションを追加します。
+1. アプリ選択画面からダウンロードされた拡張を選択します。
+1. タスクが作成されて、これであなたの任意のプロファイルでタスクを使用する準備ができました。たとえばタスクを開始するために、ディスプレイがオンになったことによりトリガーされる新しいプロファイルを作成します(新しいプロファイルを追加して、**State**から**Display**を選択します)。これでスクリーンがオンになるたびに、**neutriNote**は自動的に現在の照明レベルにもとづいたテーマを選択します。
 
-Steps above apply to [neutriNote
-Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus)
-as well.
+上記のステップは同様に、[neutriNote
+Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus)にも適用できます。
 
 
-For users who are interested in keeping clipboard history, simply create a
-profile to monitor the setting of Tasker's `%CLIP` variable, then add the
-following task (replace the path with that of your **Local Repository**):
+クリップボードの履歴の維持に関心のあるユーザーは、Taskerの`%CLIP`変数をモニターするプロファイルを作成してから、以下のタスクを追加します(パスはあなたの**ローカルリポジトリー**で置き換えてください):
     
 ``` A1: Variable Set [ Name:%NEWLINE To:Do Maths:Off Append:Off ] A2: Write
 File [ File:neutriNote/clipboard_events.txt Text:## %DATE %TIME %NEWLINE
