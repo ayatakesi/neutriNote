@@ -256,48 +256,62 @@ some_text_string"を選択して展開すると、some_text_stringをすべて�
 encode|neutriNote#replace \s %20
 ```
 
-An example to trim leading and trailing spaces from a body of text:
+以下はテキストの本体から先頭と末尾のスペースを取り除く例です:
 
-``` # Usage: select "trim some_text_string" and expand, leading and trailing
-spaces of some_text_string will be removed.  trim|neutriNote#trim ```
-
-Shortcuts to obfuscate / defuscate a chunk of text:
-
-``` # Usage: select "obfuscate some_text_string" and expand,
-some_text_string will be obfuscated.  obfuscate|neutriNote#encode
-
-# Usage: select "defuscate some_text_string" and expand, some_text_string
-will be defuscated.  defuscate|neutriNote#decode ```
-
-You can also use basic C style format specifiers to "morph" text snippets.
-
-``` # Usage: select "addcomma some_numeric_string" and expand,
-some_numeric_string will be comma separated.  addcomma|neutriNote#morph ℅,d
+```
+# 使い方: "trim some_text_string"を選択して展開すると、
+some_text_stringの先頭と末尾のスペースが削除されます。
+trim|neutriNote#trim
 ```
 
-These simple shortcuts make it easy to sort lines:
+以下は一群のテキストの難読化/復号化(obfuscate/defuscate)を行います:
 
-``` # Usage: select "sort some_lines" and expand, some_lines will be
-sorted.  sort|neutriNote#sort
+```
+# 使い方: "obfuscate some_text_string"を選択して展開すると、some_text_stringを難読化する。
+obfuscate|neutriNote#encode
 
-# Usage: select "rsort some_lines" and expand, some_lines will be sorted in
-reverse order.  rsort|neutriNote#rsort ```
+# 使い方: "defuscate some_text_string"を選択して展開すると、some_text_stringを復号化する。
+defuscate|neutriNote#encode
+```
 
-There is even a way to remove HTML tags from strings:
 
-``` # Usage: select "notag some_text_string" and expand to remove HTML tags
-from some_text_string.  notag|neutriNote#removeHTML ```
+"morph"テキストスニペット(text snippets)にたいして、基本的なCスタイルフォーマットを使用することもできます。
 
-You can create shortcuts for simple shell commands as well.  Give it a try
-by adding the prefix `neutriNote$` to the commands just like below:
+```
+# 使い方: "addcomma
+some_numeric_string"を選択して展開すると、some_numeric_stringはカンマで桁区切りされる。
+addcomma|neutriNote#morph ℅,d
+```
 
-``` date|neutriNote$ date ps|neutriNote$ ps ```
+以下は行のソートを簡単にするシンプルなショートカットの例です:
 
-To emulate the behavior of to-do list, shortcuts can be defined to mimic
-checkbox toggling.
+```
+# 使い方: "sort some_lines"を選択して展開すると、some_linesがソートされる。
+sort|neutriNote#sort
 
-``` # Usage: place cursor next to any asterisk and expand.  To toggle
-checkboxes, tap expand again.
+# 使い方: "rsort some_lines"を選択して展開すると、some_linesが逆順にソートされる。
+rsort|neutriNote#rsort
+```
+
+
+文字列からHTMLを削除することさえできます:
+
+```
+# 使い方: "notag some_text_string"を選択して展開すると、some_text_stringからHTMLタグが削除される。
+notag|neutriNote#removeHTML
+```
+
+同様に、シンプルなシェルコマンドのショートカットを作成することができます。以下のようにコマンドの前にプレフィクス`neutriNote$`を追加してみてください:
+
+```
+date|neutriNote$ date
+ps|neutriNote$ ps
+```
+
+TODOリストの動作をエミュレートするために、チェックボックスのオン/オフのトグルを模倣するショートカットを作成できます。
+
+```
+# 使い方: アスタリスクの横にカーソルを配し展開する。チェックボックスをトグルするには、再度展開する。
 
 *|[▪]
 [▪]|[✔]
@@ -305,20 +319,16 @@ checkboxes, tap expand again.
 [✔]|[✖]
 ```
 
-Multitasking especially with floating apps is easier with shortcut like
-this:
+特にフローティングアプリでは、以下のようなショートカットでマルチタスク化が簡単になります:
 
-``` # Usage: launch a terminal without leaving neutriNote by expanding the
-shortcut.
+```
+# 使い方: ショートカットを展開することにより、neutriNoteを離れずに、端末を起動する。
 
-termfloat|neutriNote#launch com.termux.window ```
+termfloat|neutriNote#launch com.termux.window
+```
 
-You can include basic parameters with the commands, just write them after
-the command shortcut and separate each parameter with space+commas like
-this: `shortcut_label param1 , param2 , param3`.  Select the whole string
-and tap the expand icon to paste the output.  Users of cURL can also
-simplify the definitons of their expansions with `neutriNote?` instead of
-`neutriNote$` and trail that directly by a URL.
+`shortcut_label param1 , param2 ,
+param3`のように、コマンドとなるショートカットの後にスペースとカンマで区切られたパラメーターを続けることにより、コマンドに基本的なパラメーターを含めることができます。出力を貼り付けるには、文字列全体を選択してから、expand(展開)アイコンをタップします。cURLのユーザーは`neutriNote$`のかわりに、`neutriNote?`の後に直接URLを続けることにより、展開定義を簡単にできます。
 
 
 ### <a name="batchselect">Batch Select</a> Special selection commands are

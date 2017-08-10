@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: neutriNote v2.3.5\n"
 "POT-Creation-Date: 2017-08-07 06:54+0000\n"
-"PO-Revision-Date: 2017-08-10 05:55+0900\n"
+"PO-Revision-Date: 2017-08-11 00:07+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -724,7 +724,7 @@ msgstr ""
 #. type: Plain text
 #: index.md:247
 msgid "An example to trim leading and trailing spaces from a body of text:"
-msgstr ""
+msgstr "以下はテキストの本体から先頭と末尾のスペースを取り除く例です:"
 
 #. type: Plain text
 #: index.md:252
@@ -733,11 +733,15 @@ msgid ""
 "trailing spaces of some_text_string will be removed.  trim|neutriNote#trim "
 "```"
 msgstr ""
+"```\n"
+"# 使い方: \"trim some_text_string\"を選択して展開すると、 some_text_stringの先頭と末尾のスペースが削除されます。\n"
+"trim|neutriNote#trim\n"
+"```"
 
 #. type: Plain text
 #: index.md:254
 msgid "Shortcuts to obfuscate / defuscate a chunk of text:"
-msgstr ""
+msgstr "以下は一群のテキストの難読化/復号化(obfuscate/defuscate)を行います:"
 
 #. type: Plain text
 #: index.md:258
@@ -745,6 +749,9 @@ msgid ""
 "``` # Usage: select \"obfuscate some_text_string\" and expand, "
 "some_text_string will be obfuscated.  obfuscate|neutriNote#encode"
 msgstr ""
+"```\n"
+"# 使い方: \"obfuscate some_text_string\"を選択して展開すると、some_text_stringを難読化する。\n"
+"obfuscate|neutriNote#encode"
 
 #. type: Plain text
 #: index.md:262
@@ -752,11 +759,14 @@ msgid ""
 "# Usage: select \"defuscate some_text_string\" and expand, some_text_string "
 "will be defuscated.  defuscate|neutriNote#decode ```"
 msgstr ""
+"# 使い方: \"defuscate some_text_string\"を選択して展開すると、some_text_stringを復号化する。\n"
+"defuscate|neutriNote#encode\n"
+"```\n"
 
 #. type: Plain text
 #: index.md:264
 msgid "You can also use basic C style format specifiers to \"morph\" text snippets."
-msgstr ""
+msgstr "\"morph\"テキストスニペット(text snippets)にたいして、基本的なCスタイルフォーマットを使用することもできます。"
 
 #. type: Plain text
 #: index.md:269
@@ -765,11 +775,15 @@ msgid ""
 "some_numeric_string will be comma separated.  addcomma|neutriNote#morph ℅,d "
 "```"
 msgstr ""
+"```\n"
+"# 使い方: \"addcomma some_numeric_string\"を選択して展開すると、some_numeric_stringはカンマで桁区切りされる。\n"
+"addcomma|neutriNote#morph ℅,d\n"
+"```"
 
 #. type: Plain text
 #: index.md:271
 msgid "These simple shortcuts make it easy to sort lines:"
-msgstr ""
+msgstr "以下は行のソートを簡単にするシンプルなショートカットの例です:"
 
 #. type: Plain text
 #: index.md:275
@@ -777,6 +791,9 @@ msgid ""
 "``` # Usage: select \"sort some_lines\" and expand, some_lines will be "
 "sorted.  sort|neutriNote#sort"
 msgstr ""
+"```\n"
+"# 使い方: \"sort some_lines\"を選択して展開すると、some_linesがソートされる。\n"
+"sort|neutriNote#sort"
 
 #. type: Plain text
 #: index.md:279
@@ -784,11 +801,14 @@ msgid ""
 "# Usage: select \"rsort some_lines\" and expand, some_lines will be sorted "
 "in reverse order.  rsort|neutriNote#rsort ```"
 msgstr ""
+"# 使い方: \"rsort some_lines\"を選択して展開すると、some_linesが逆順にソートされる。\n"
+"rsort|neutriNote#rsort\n"
+"```\n"
 
 #. type: Plain text
 #: index.md:281
 msgid "There is even a way to remove HTML tags from strings:"
-msgstr ""
+msgstr "文字列からHTMLを削除することさえできます:"
 
 #. type: Plain text
 #: index.md:286
@@ -796,25 +816,33 @@ msgid ""
 "``` # Usage: select \"notag some_text_string\" and expand to remove HTML "
 "tags from some_text_string.  notag|neutriNote#removeHTML ```"
 msgstr ""
+"```\n"
+"# 使い方: \"notag some_text_string\"を選択して展開すると、some_text_stringからHTMLタグが削除される。\n"
+"notag|neutriNote#removeHTML\n"
+"```"
 
 #. type: Plain text
 #: index.md:288
 msgid ""
 "You can create shortcuts for simple shell commands as well.  Give it a try "
 "by adding the prefix `neutriNote$` to the commands just like below:"
-msgstr ""
+msgstr "同様に、シンプルなシェルコマンドのショートカットを作成することができます。以下のようにコマンドの前にプレフィクス`neutriNote$`を追加してみてください:"
 
 #. type: Plain text
 #: index.md:293
 msgid "``` date|neutriNote$ date ps|neutriNote$ ps ```"
 msgstr ""
+"```\n"
+"date|neutriNote$ date\n"
+"ps|neutriNote$ ps\n"
+"```"
 
 #. type: Plain text
 #: index.md:295
 msgid ""
 "To emulate the behavior of to-do list, shortcuts can be defined to mimic "
 "checkbox toggling."
-msgstr ""
+msgstr "TODOリストの動作をエミュレートするために、チェックボックスのオン/オフのトグルを模倣するショートカットを作成できます。"
 
 #. type: Plain text
 #: index.md:298
@@ -822,6 +850,8 @@ msgid ""
 "``` # Usage: place cursor next to any asterisk and expand.  To toggle "
 "checkboxes, tap expand again."
 msgstr ""
+"```\n"
+"# 使い方: アスタリスクの横にカーソルを配し展開する。チェックボックスをトグルするには、再度展開する。"
 
 #. type: Plain text
 #: index.md:304
@@ -833,13 +863,18 @@ msgid ""
 "[✔]|[✖]\n"
 "```\n"
 msgstr ""
+"*|[▪]\n"
+"[▪]|[✔]\n"
+"[✖]|[▪]\n"
+"[✔]|[✖]\n"
+"```\n"
 
 #. type: Plain text
 #: index.md:306
 msgid ""
 "Multitasking especially with floating apps is easier with shortcut like "
 "this:"
-msgstr ""
+msgstr "特にフローティングアプリでは、以下のようなショートカットでマルチタスク化が簡単になります:"
 
 #. type: Plain text
 #: index.md:309
@@ -847,11 +882,15 @@ msgid ""
 "``` # Usage: launch a terminal without leaving neutriNote by expanding the "
 "shortcut."
 msgstr ""
+"```\n"
+"# 使い方: ショートカットを展開することにより、neutriNoteを離れずに、端末を起動する。"
 
 #. type: Plain text
 #: index.md:312
 msgid "termfloat|neutriNote#launch com.termux.window ```"
 msgstr ""
+"termfloat|neutriNote#launch com.termux.window\n"
+"```"
 
 #. type: Plain text
 #: index.md:314
@@ -862,7 +901,7 @@ msgid ""
 "and tap the expand icon to paste the output.  Users of cURL can also "
 "simplify the definitons of their expansions with `neutriNote?` instead of "
 "`neutriNote$` and trail that directly by a URL."
-msgstr ""
+msgstr "`shortcut_label param1 , param2 , param3`のように、コマンドとなるショートカットの後にスペースとカンマで区切られたパラメーターを続けることにより、コマンドに基本的なパラメーターを含めることができます。出力を貼り付けるには、文字列全体を選択してから、expand(展開)アイコンをタップします。cURLのユーザーは`neutriNote$`のかわりに、`neutriNote?`の後に直接URLを続けることにより、展開定義を簡単にできます。"
 
 #. type: Plain text
 #: index.md:318
