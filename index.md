@@ -426,51 +426,45 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
 Hidden**を有効にしてください)内の変数をいろいろ変更することができます。変更を保存したら、その変更を有効にするために、**Restore App
 Data**を行ってください。注意: 設定ファイルの変更により、**neutriNote**が不安定になるかもしれません。
     
-| Variable Names                                    |  Values                                                                                                          |
+| 変数名                                            |  値                                                                                                              |
 | ------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------:|
-| com.appmindlab.nano.pref_open_in_markdown         | `true`: 常にマークダウンビューでノートをオープンする。 |
-| com.appmindlab.nano.pref_markdown_trigger         | デフォルトでマークダウンでオープンするノートの、メタデータの部分文字列パターンを指定する。 |
-| com.appmindlab.nano.pref_safe_mode_tag            | 内部マークダウンパーサーを無効にする、メタデータの部分文字列パターンを指定する。 |
-| com.appmindlab.nano.pref_linkify_trigger          | デフォルトでlinkifyされたノートをオープンするための、メタデータの部分文字列パターンを指定する 。|
-| com.appmindlab.nano.pref_latex_single_dollar      | `true`: 数式を表すために、1つの$記号を使用する。 |
-| com.appmindlab.nano.pref_indent_char              | インデントに使用する文字を指定する。デフォルトは4つのスペース。 |
+| com.appmindlab.nano.pref_open_in_markdown         | `true`: 常にマークダウンビューでノートをオープンする。                                                           |
+| com.appmindlab.nano.pref_markdown_trigger         | デフォルトでマークダウンでオープンするノートの、メタデータの部分文字列パターンを指定する。                       |
+| com.appmindlab.nano.pref_safe_mode_tag            | 内部マークダウンパーサーを無効にする、メタデータの部分文字列パターンを指定する。                                 |
+| com.appmindlab.nano.pref_linkify_trigger          | デフォルトでlinkifyされたノートをオープンするための、メタデータの部分文字列パターンを指定する 。                |
+| com.appmindlab.nano.pref_latex_single_dollar      | `true`: 数式を表すために、1つの$記号を使用する。                                                                |
+| com.appmindlab.nano.pref_indent_char              | インデントに使用する文字を指定する。デフォルトは4つのスペース。                                                  |
 | com.appmindlab.nano.pref_append_custom_style      | `true`: ビルトインスタイルを`~neutrinote_styles.txt`で**拡張**する。 `false`: ビルトインスタイルを`~neutrinote_styles.txt`で**置き換え**る。 |
-| com.appmindlab.nano.pref_show_toolbar             | `true`: 常に編集ツールバーを表示する。 |
-| com.appmindlab.nano.pref_canvas_strokes           | スケッチツールでサポートされる固定長シンボルをセミコロンで区切って指定する(垂直バーとセミコロンは不可)。 | 
-| com.appmindlab.nano.pref_font_size_list           | カスタムフォントサイズのオプションをセミコロンで区切って指定する。デフォルトは`8;10;12;14;16;18;24;32;48` |
-| com.appmindlab.nano.pref_margin_list              | カスタムマージンのオプションをセミコロンで区切って指定する。デフォルトは`8;16;24` |
+| com.appmindlab.nano.pref_show_toolbar             | `true`: 常に編集ツールバーを表示する。                                                                      .    |
+| com.appmindlab.nano.pref_canvas_strokes           | スケッチツールでサポートされる固定長シンボルをセミコロンで区切って指定する(垂直バーとセミコロンは不可)。         | 
+| com.appmindlab.nano.pref_font_size_list           | カスタムフォントサイズのオプションをセミコロンで区切って指定する。デフォルトは`8;10;12;14;16;18;24;32;48`        |
+| com.appmindlab.nano.pref_margin_list              | カスタムマージンのオプションをセミコロンで区切って指定する。デフォルトは`8;16;24`                                |
 | com.appmindlab.nano.pref_excluded_buttons         | セミコロンで区切られた文字列により、ツールバーのボタンを選択的に非表示にする。たとえば、`location;draw;replace`は、ツールバー上のlocation、draw、replaceボタン。非表示にできるボタンは`markdown`、`time`、`date`、`location`、`expand`、`draw`、`top`、`bottom`、`find`、`replace`、`barcode`、`image`、`ocr`、`define`、`calculate`、`search` |
 |com.appmindlab.nano.pref_custom_date_format        | システムの日付スタンプをカスタムの[日付フォーマット](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html)でオーバーライドする。 |
 |com.appmindlab.nano.pref_custom_time_format        | システムの時刻スタンプをカスタムの[時刻フォーマット](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html)でオーバーライドする。 |
-| com.appmindlab.nano.pref_preview_mode             | `start`: プレビューでノートの先頭を表示。 `end`: 最後を表示。 `off`: プレビューを無効にする。 |
-| com.appmindlab.nano.pref_icon_behavior            | 0: アニメーションはオフ。 1: アニメーションはオン。 2: アニメーションを[スヌーズ](#snooze)。 |
-| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: 削除されたファイルを`trash_bin`フォルダーに保持する。 |
+| com.appmindlab.nano.pref_preview_mode             | `start`: プレビューでノートの先頭を表示。 `end`: 最後を表示。 `off`: プレビューを無効にする。                   |
+| com.appmindlab.nano.pref_icon_behavior            | 0: アニメーションはオフ。 1: アニメーションはオン。 2: アニメーションを[スヌーズ](#snooze)。                     |
+| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: 削除されたファイルを`trash_bin`フォルダーに保持する。                                                    |
 | com.appmindlab.nano.pref_local_priority_tag       | ローカルコピーがリモートからの変更で上書きされることを防ぐ。ノートが複数デバイスから編集される場合は競合が発生するかもしれないことに注意。 |
-| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: 検索およびショートカット定義で[ビルトイン変数](#variables)を評価する。 |
-| com.appmindlab.nano.pref_low_space_mode           | `true`: [storage space saver](#storage)をオンにする。 |   
+| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: 検索およびショートカット定義で[ビルトイン変数](#variables)を評価する。                                   |
+| com.appmindlab.nano.pref_low_space_mode           | `true`: [storage space saver](#storage)をオンにする。                                                            |   
              
-Advanced users may enable multiple text file types for **neutriNote**.  To
-setup, please carefully follow all the steps below:
+上級ユーザーは、**neutriNote**で複数のテキストファイルタイプを有効にすると良いかもしれません。これをセットアップする場合は、以下のすべてのステップを慎重に行ってください。
 
-1. Backup ALL app settings and notes.
-1. Add a blank file called `~neutrinote_multitype.txt` to your **Local
-   Repository**.
-1. Un-install **neutriNote** (or clear the app's data under Android's system
-   settings).
-1. Re-install **neutriNote**.
-1. Once rescan finishes, file extensions will appear in note titles.
-1. Restore app data.
+1. アプリのセッティングとノートをすべてバックアップします。
+1. **Local Repository**に`~neutrinote_multitype.txt`という名前の空ファイルを追加します。
+1. **neutriNote**をアンインストールします(Androidのシステムセッティングのアプリデータをクリアーします)。
+1. **neutriNote**を再インストールします。
+1. 再スキャンが終了すれば、ファイルの拡張子がノートのタイトルに表示されます。
+1. アプリのデータをリストアします。
 
-(To reverse the support of multiple file types, you would need to remove the
-file `~neutrinote_multitype.txt`, then un-install/re-install
-**neutriNote**.)
+(複数ファイルタイプのサポートを取り消す場合は、ファイル`~neutrinote_multitype.txt`を削除した後に、**neutriNote**のアンインストールと再インストールが必要になります。)
 
-Note that **neutriNote Connector** will not handle files without `.txt`
-extension.  To sync files without `.txt` extension with Dropbox you would
-have to install a third party app or install [**neutriNote
-Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus).
-(If you have **neutriNote Connector** installed, you would need to remove it
-prior to launching **neutriNote Connector+**.)
+**neutriNote
+Connector**は、拡張子が`.txt`でないファイルを処理しないことに注意してください。拡張子が`.txt`でないファイルをDropboxと同期するには、サードパーティーアプリか[**neutriNote
+Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus)をインストールする必要があるでしょう(**neutriNote
+Connector**をインストールしていた場合には、 **neutriNote
+Connector+**の起動の前にそれを削除する必要があるでしょう)。
 
 ### <a name="variables">Built-in Variables (v2.3.4) </a> Built-in variables
 may be used in search or shortcut definitions.  For example, to find notes
