@@ -331,53 +331,41 @@ termfloat|neutriNote#launch com.termux.window
 param3`のように、コマンドとなるショートカットの後にスペースとカンマで区切られたパラメーターを続けることにより、コマンドに基本的なパラメーターを含めることができます。出力を貼り付けるには、文字列全体を選択してから、expand(展開)アイコンをタップします。cURLのユーザーは`neutriNote$`のかわりに、`neutriNote?`の後に直接URLを続けることにより、展開定義を簡単にできます。
 
 
-### <a name="batchselect">Batch Select</a> Special selection commands are
-available for better productivity.
+### <a name="batchselect">Batch Select</a>
+生産性向上のために、特別な選択コマンドが利用できます。
 
-* Tap `Top` icon in *Toolbox* when a section of text has been selected to
-  extend selection all the way to the top, or if an anchor has been
-  positioned above current cursor, extend selection up to the anchor.
-* Tap `Bottom` icon in *Toolbox* when a section of text has been selected to
-  extend selection all the way to the bottom, or if an anchor has been
-  positioned below current cursor, extend selection down to the anchor.
-* Tap **editor status** next to note title to gather statistics for current
-  note when nothing is selected, or just the selected text when a section of
-  text has been selected (experimental).
-* To edit an ASCII drawing, select it and tap the **Sketch** icon.
-* To encode/decode a portion of the note, select the portion and choose
-  **Encode/Decode** from menu.
-* Tap `(` or `)` from *Symbol Bar* when text selection is active to enclose
-  the selected text in brackets.  Hint: also try out other symbol pairs.
-* Edit multiple paragraphs: select multiple paragraphs and tap a symbol /
-  action from **Markdown Symbol Toolbar**.  For example, you can indent
-  selected paragraphs by tapping `➡`, or turn selected paragraphs into a
-  bulleted list simply by tapping `*`.
+* テキストの一部が選択された状態で*Toolbox*内の`Top`アイコンをタップすると、選択はノートの先頭まで拡張されます。またカーソル位置にアンカーがある場合には、アンカーの先頭まで選択が拡張されます。
+* テキストの一部が選択された状態で*Toolbox*内の`Bottom`アイコンをタップすると、選択はノートの終端まで拡張されます。またカーソル位置にアンカーがある場合には、アンカーの終端まで選択が拡張されます。
+* ノートタイトルの隣の**editor
+  status**(エディター状態)をタップすると、何も選択されていない場合は現在のノートの統計情報、何か選択されている場合には選択されたテキストの情報を収集します(試験的機能)。
+* ASCIIアートを編集する場合は、それを選択して**Sketch**アイコンをタップします。
+* ノートの一部にたいして暗号化/復号化を行うには、メニューから**Encode/Decode**を選択します。
+* テキスト選択がアクティブなときに*Symbol
+  Bar*の`(`か`)`をタップすると、選択されたテキストがカッコで括られます。ヒント:他のシンボルペアーも試してみてください。
+* 複数パラグラフの編集: 複数のパラグラフを選択して**Markdown Symbol
+  Toolbar**のシンボルかアクションを選択します。たとえば、`➡`をタップすると選択されたパラグラフがインデントされ、`*`をタップすると選択されたパラグラフが箇条書きリストになります。
 
     
-### <a name="voicememo">Voice Memo</a> **neutriNote** is compatible with
-Google Now dictation.  Simply say _Ok Google note to self_ and pick
-**neutriNote** to capture what you say.
+### <a name="voicememo">Voice Memo</a>
+**neutriNote**はGoogle Now音声検索と互換性があります。_Ok Google note to
+self_と話し、それをキャプチャーするために**neutriNote**を選択してください。
  
 
-### <a name="externalfonts">External Fonts</a> It's easy to use external
-fonts such as those featured by Google Fonts in **neutriNote** (IMPORTANT:
-be sure to read their terms of use carefully):
+### <a name="externalfonts">External Fonts</a>
+**neutriNote**でGoogle Fontsなどにより提供される外部フォントを使用するのは簡単です。(重要:
+フォントの使用に際しては、使用条件を慎重に確認してください):
 
-1. Create a folder called `fonts` under your Local Repository, download and
-   save the font file (.ttf) in that folder.  Note that external fonts will
-   not be backup by **neutriNote**.
-1. Enable hidden files under **Settings**.  Create a new note called
-   `~neutrinote_fonts` if one does not exist yet.
-1. Add a section in the note for the font (if there are multiple fonts, separate each section by a blank line) with a line dedicated to each of the following: 
-    * Font name (any meaningful name)
-    * Font file name (.ttf)
-    * Link information (see instructions from Google Fonts)
-    * CSS style (see instructions from Google Fonts)
-1. The font is now ready for use in **neutriNote**.
+1. ローカルリポジトリー配下に`fonts`というフォルダーを作成しからて、フォントファイル(.ttf)をダウンロードしてそのフォルダーに保存します。外部フォントは**neutriNote**によりバックアップされないことに注意してください。
 
-For example, to use this
-[font](https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Goudy+Bookletter+1911),
-just add this section to `~neutrinote_fonts`:
+1. **Settings**で非表示ファイル(hidden
+   files)の標準的なを有効にし、まだ作成されていない場合は`~neutrinote_fonts`というノートを新たに作成します。
+1. こｎノートにフォントのためのセクションを追加(フォントが複数ある場合は、各セクションを空行で分割)します。セクションの各行には以下を記述します:       * フォント名(意味のある名前)
+    * フォントファイル名(.ttf)
+    * リンク情報(Google Fontsの手順参照)
+    * CSSスタイル(Google Fontsの手順参照)
+1. これで**neutriNote**でそのフォントを使う準備ができました。
+
+たとえばこの[フォント](https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Goudy+Bookletter+1911)を使用する場合は、以下のセクションを`~neutrinote_fonts`に追加します:
         
 ```
 Goudy Bookletter 1911
