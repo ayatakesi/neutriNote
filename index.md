@@ -466,105 +466,115 @@ Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.conne
 Connector**をインストールしていた場合には、 **neutriNote
 Connector+**の起動の前にそれを削除する必要があるでしょう)。
 
-### <a name="variables">Built-in Variables (v2.3.4) </a> Built-in variables
-may be used in search or shortcut definitions.  For example, to find notes
-with tomorrow's time stamp, simply type `@tomorrow` in the search box.  You
-can even include built-in variables in **Custom Filters**, say, for listing
-notes containing tomorrow's time stamp, or include them in shortcut
-definitions to generate text expansion snippets on the fly.
+### <a name="variables">Built-in Variables (v2.3.4) </a>
+ビルトイン変数は検索やショートカット定義に使用されることがあります。たとえば明日のタイムスタンプをもつノートを探す場合には、検索ボックスに`@tomorrow`とタイプします。**Custom
+Filters**にビルトイン変数を含めることさえできます。たとえば明日のタイムスタンプを含むノートを一覧したり、ビルトイン変数をショートカット定義に含めてオンザフライでテキスト展開の一部を生成できます。
 
-| Variables            | Descriptions                            |                              
+| 変数                 | 説明                                    |                
 | ---------------------|-----------------------------------------|
-| @title               | Title of the current note.              |
-| @created             | Created time of the current note.       |                     
-| @modified            | Last modified time of the current note. |
-| @accessed            | Last accessed time of the current note. |
-| @clipboard           | Clipboard content.                      |
-| @yesterday           | Yesterday's date stamp.                 |
-| @today               | Today's date stamp.                     |
-| @tomorrow            | Tomorrow's date stamp.                  |
-| @now                 | Current time stamp.                     |
+| @title               | 現在のノートのタイトル                  |
+| @created             | 現在のノートの作成日時                  |                
+| @modified            | 現在のノートの最終修正日時              |
+| @accessed            | 現在のノートの最終アクセス日時          |
+| @clipboard           | クリップボードの内容                    |
+| @yesterday           | 昨日のタイムスタンプ                    |
+| @today               | 今日のタイムスタンプ                    |
+| @tomorrow            | 明日のタイムスタンプ                    |
+| @now                 | 現在のタイムスタンプ                    |
 
-See [Hacks](#hacks) for information on how to enable the use of built-in
-variables.
+ビルトイン変数の使用を有効にする方法については、[Hacks](#hacks)を参照してください。
 
-### <a name="storage">Storage Saver</a> For devices equipped with SD cards,
-it is possible to store backups on SD cards to save space in internal
-storage.
+### <a name="storage">Storage Saver</a>
+SDカードをもつデバイスでは、内部ストレージの容量を抑えるために、SDカードにバックアップを保存することが可能です。
 
-1. Tap **Backup App Data**.
-1. Add `com.appmindlab.nano.pref_low_space_mode|true` to
-   **~neutrinote_settings_data**.
-1. Tap **Restore App Data**.
-1. Future backups will be stored at
-   `/Android/data/com.appmindlab.nano/files/neutrinote_export` under the SD
-   card.
+1. **Backup App Data**をタップする。
+1. **~neutrinote_settings_data**に`com.appmindlab.nano.pref_low_space_mode|true`を追加する。
+1. **Restore App Data**をタップする。
+1. 以降、バックアップはSDカードの`/Android/data/com.appmindlab.nano/files/neutrinote_export`に保存される。
 
-Notice that the backups will be automatically removed to reclaim storage
-space if neutriNote is uninstalled.
+ストレージ容量を回収するために、neutriNoteをアンインストールした場合、バックアップは自動的に削除されることに注目してください。
 
-### <a name="api">API (v2.0.8) </a> neutriNote's Markdown engine is fully
-modular and swappable.  If you are familar with compiler scripting and would
-like to integrate your own parser, you would need to use the following entry
-points in your code:
+### <a name="api">API (v2.0.8) </a>
+neutriNoteのマークダウンエンジンは完全にモジュラー化されていて交換可能です。あなたがコンパイラースクリプティングに精通していて、自分のパーサーを統合したい場合は、あなたのコードで以下のエントリーポイントを使う必要があるでしょう。
 
-| Methods              | Descriptions           |                              
-| ---------------------|----------------------|
-| init(document)       | Initialize the framework. |
-| getData()            | Get raw content from a note.  |                     
-| prepare()            | Prepare for the rendering process. |
-| setContent(html)     | Set view to rendering outcome.   |
+| メソッド             | 説明                                   |
+| ---------------------|----------------------------------------|
+| init(document)       | フレームワークを初期化                 |
+| getData()            | ノートからrawコンテンツを取得          |
+| prepare()            | レンダリング処理を準備                 |
+| setContent(html)     | レンダリング結果のためにビューをセット |
 
-Adopt this pattern of invoking neurtiNote in your script:
+あなたのスクリプトで、このneutriNote呼び出しのパターンを使用してください:
 
-``` (function (){   ////////////   // Set up //   ////////////  
-neutriNote.init(document);
+```
+(function (){
+  ////////////
+  // Set up //
+  ////////////
+  neutriNote.init(document);
 
-  //////////////////   // Get raw data //   //////////////////   var str =
-neutriNote.getData();
+  //////////////////
+  // Get raw data //
+  //////////////////
+  var str = neutriNote.getData();
 
-  ///////////////////////////   // Prepare for rendering //  
-///////////////////////////   neutriNote.prepare();
+  ///////////////////////////
+  // Prepare for rendering //
+  ///////////////////////////
+  neutriNote.prepare();
 
-  ///////////   // Parse //   ///////////
+  ///////////
+  // Parse //
+  ///////////
   
   ... <- Custom conversion logic goes here!
 
-  /////////////////   // Set content //   /////////////////  
-neutriNote.setContent(str)
+  /////////////////
+  // Set content //
+  /////////////////
+  neutriNote.setContent(str)
 
-})(window, document); ```
+})(window, document);
+```
 
 
-To illustrate, suppose you simply want to render everything in italics, all
-you need is to create `~neutrinote_script.txt` and paste in the following
-code:
+説明のために、すべてを斜体で描画したいとします。必要なのは`~neutrinote_script.txt`を作成して、以下のコードを貼り付けることです:
 
-``` (function (){   ////////////   // Set up //   ////////////  
-neutriNote.init(document);
+```
+(function (){
+  ////////////
+  // Set up //
+  ////////////
+  neutriNote.init(document);
 
-  //////////////////   // Get raw data //   //////////////////   var str =
-neutriNote.getData();
+  //////////////////
+  // Get raw data //
+  //////////////////
+  var str = neutriNote.getData();
 
-  ///////////////////////////   // Prepare for rendering //  
-///////////////////////////   neutriNote.prepare();
+  ///////////////////////////
+  // Prepare for rendering //
+  ///////////////////////////
+  neutriNote.prepare();
 
-  ///////////   // Parse //   ///////////   str = '<i>' + str + '</i>';
+  ///////////
+  // Parse //
+  ///////////
+  str = '<i>' + str + '</i>';
 
-  /////////////////   // Set content //   /////////////////  
-neutriNote.setContent(str)
+  /////////////////
+  // Set content //
+  /////////////////
+  neutriNote.setContent(str)
 
-})(window, document); ```
+})(window, document);
+```
 
-Now go to your note and tap render to view the output of your custom parser.
+それではノートを開いてrender(描画)をタップし、あなたのカスタムパーサーで出力を閲覧してみてください。
 
-More useful parsing can be achieved by following the same pattern.  Take a
-look at this example of integrating
-[org-mode](https://raw.githubusercontent.com/appml/nano/master/samples/%7Eneutrinote_script.txt)
-into neutriNote.
+同じパターンにしたがうことで、より有用なパースを達成できます。neutriNoteに[org-mode](https://raw.githubusercontent.com/appml/nano/master/samples/%7Eneutrinote_script.txt)を統合する例を参照してください。
 
-To restore default PHP Markdown syntax, just remove
-`~neutrinote_script.txt`.
+デフォルトのPHP Markdown構文をリストアするには、`~neutrinote_script.txt`を削除してください。
 
 
 ### <a name="snooze">Snooze (Experimental)</a> With **neutriNote**'s

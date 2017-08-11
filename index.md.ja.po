@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: neutriNote v2.3.5\n"
 "POT-Creation-Date: 2017-08-07 06:54+0000\n"
-"PO-Revision-Date: 2017-08-11 20:33+0900\n"
+"PO-Revision-Date: 2017-08-11 23:51+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -1345,6 +1345,8 @@ msgid ""
 "for listing notes containing tomorrow's time stamp, or include them in "
 "shortcut definitions to generate text expansion snippets on the fly."
 msgstr ""
+"### <a name=\"variables\">Built-in Variables (v2.3.4) </a>\n"
+"ビルトイン変数は検索やショートカット定義に使用されることがあります。たとえば明日のタイムスタンプをもつノートを探す場合には、検索ボックスに`@tomorrow`とタイプします。**Custom Filters**にビルトイン変数を含めることさえできます。たとえば明日のタイムスタンプを含むノートを一覧したり、ビルトイン変数をショートカット定義に含めてオンザフライでテキスト展開の一部を生成できます。"
 
 #. type: Plain text
 #: index.md:446
@@ -1364,13 +1366,24 @@ msgid ""
 "| @tomorrow            | Tomorrow's date stamp.                  |\n"
 "| @now                 | Current time stamp.                     |\n"
 msgstr ""
+"| 変数                 | 説明                                    |                \n"
+"| ---------------------|-----------------------------------------|\n"
+"| @title               | 現在のノートのタイトル                  |\n"
+"| @created             | 現在のノートの作成日時                  |                \n"
+"| @modified            | 現在のノートの最終修正日時              |\n"
+"| @accessed            | 現在のノートの最終アクセス日時          |\n"
+"| @clipboard           | クリップボードの内容                    |\n"
+"| @yesterday           | 昨日のタイムスタンプ                    |\n"
+"| @today               | 今日のタイムスタンプ                    |\n"
+"| @tomorrow            | 明日のタイムスタンプ                    |\n"
+"| @now                 | 現在のタイムスタンプ                    |\n"
 
 #. type: Plain text
 #: index.md:448
 msgid ""
 "See [Hacks](#hacks) for information on how to enable the use of built-in "
 "variables."
-msgstr ""
+msgstr "ビルトイン変数の使用を有効にする方法については、[Hacks](#hacks)を参照してください。"
 
 #. type: Plain text
 #: index.md:451
@@ -1379,23 +1392,25 @@ msgid ""
 "cards, it is possible to store backups on SD cards to save space in internal "
 "storage."
 msgstr ""
+"### <a name=\"storage\">Storage Saver</a>\n"
+"SDカードをもつデバイスでは、内部ストレージの容量を抑えるために、SDカードにバックアップを保存することが可能です。"
 
 #. type: Bullet: '1. '
 #: index.md:456
 msgid "Tap **Backup App Data**."
-msgstr ""
+msgstr "**Backup App Data**をタップする。"
 
 #. type: Bullet: '1. '
 #: index.md:456
 msgid ""
 "Add `com.appmindlab.nano.pref_low_space_mode|true` to "
 "**~neutrinote_settings_data**."
-msgstr ""
+msgstr "**~neutrinote_settings_data**に`com.appmindlab.nano.pref_low_space_mode|true`を追加する。"
 
 #. type: Bullet: '1. '
 #: index.md:456
 msgid "Tap **Restore App Data**."
-msgstr ""
+msgstr "**Restore App Data**をタップする。"
 
 #. type: Bullet: '1. '
 #: index.md:456
@@ -1403,14 +1418,14 @@ msgid ""
 "Future backups will be stored at "
 "`/Android/data/com.appmindlab.nano/files/neutrinote_export` under the SD "
 "card."
-msgstr ""
+msgstr "以降、バックアップはSDカードの`/Android/data/com.appmindlab.nano/files/neutrinote_export`に保存される。"
 
 #. type: Plain text
 #: index.md:458
 msgid ""
 "Notice that the backups will be automatically removed to reclaim storage "
 "space if neutriNote is uninstalled."
-msgstr ""
+msgstr "ストレージ容量を回収するために、neutriNoteをアンインストールした場合、バックアップは自動的に削除されることに注目してください。"
 
 #. type: Plain text
 #: index.md:461
@@ -1420,6 +1435,8 @@ msgid ""
 "like to integrate your own parser, you would need to use the following entry "
 "points in your code:"
 msgstr ""
+"### <a name=\"api\">API (v2.0.8) </a>\n"
+"neutriNoteのマークダウンエンジンは完全にモジュラー化されていて交換可能です。あなたがコンパイラースクリプティングに精通していて、自分のパーサーを統合したい場合は、あなたのコードで以下のエントリーポイントを使う必要があるでしょう。"
 
 #. type: Plain text
 #: index.md:468
@@ -1434,11 +1451,17 @@ msgid ""
 "| prepare()            | Prepare for the rendering process. |\n"
 "| setContent(html)     | Set view to rendering outcome.   |\n"
 msgstr ""
+"| メソッド             | 説明                                   |\n"
+"| ---------------------|----------------------------------------|\n"
+"| init(document)       | フレームワークを初期化                 |\n"
+"| getData()            | ノートからrawコンテンツを取得          |\n"
+"| prepare()            | レンダリング処理を準備                 |\n"
+"| setContent(html)     | レンダリング結果のためにビューをセット |\n"
 
 #. type: Plain text
 #: index.md:470
 msgid "Adopt this pattern of invoking neurtiNote in your script:"
-msgstr ""
+msgstr "あなたのスクリプトで、このneutriNote呼び出しのパターンを使用してください:"
 
 #. type: Plain text
 #: index.md:477 index.md:511
@@ -1446,6 +1469,12 @@ msgid ""
 "``` (function (){   ////////////   // Set up //   ////////////   "
 "neutriNote.init(document);"
 msgstr ""
+"```\n"
+"(function (){\n"
+"  ////////////\n"
+"  // Set up //\n"
+"  ////////////\n"
+"  neutriNote.init(document);"
 
 #. type: Plain text
 #: index.md:482 index.md:516
@@ -1453,6 +1482,10 @@ msgid ""
 "  //////////////////   // Get raw data //   //////////////////   var str = "
 "neutriNote.getData();"
 msgstr ""
+"  //////////////////\n"
+"  // Get raw data //\n"
+"  //////////////////\n"
+"  var str = neutriNote.getData();"
 
 #. type: Plain text
 #: index.md:487 index.md:521
@@ -1460,17 +1493,24 @@ msgid ""
 "  ///////////////////////////   // Prepare for rendering //   "
 "///////////////////////////   neutriNote.prepare();"
 msgstr ""
+"  ///////////////////////////\n"
+"  // Prepare for rendering //\n"
+"  ///////////////////////////\n"
+"  neutriNote.prepare();"
 
 #. type: Plain text
 #: index.md:491
 msgid "  ///////////   // Parse //   ///////////"
 msgstr ""
+"  ///////////\n"
+"  // Parse //\n"
+"  ///////////"
 
 #. type: Plain text
 #: index.md:493
 #, no-wrap
 msgid "  ... <- Custom conversion logic goes here!\n"
-msgstr ""
+msgstr "  ... <- Custom conversion logic goes here!\n"
 
 #. type: Plain text
 #: index.md:498 index.md:531
@@ -1478,11 +1518,17 @@ msgid ""
 "  /////////////////   // Set content //   /////////////////   "
 "neutriNote.setContent(str)"
 msgstr ""
+"  /////////////////\n"
+"  // Set content //\n"
+"  /////////////////\n"
+"  neutriNote.setContent(str)"
 
 #. type: Plain text
 #: index.md:501 index.md:534
 msgid "})(window, document); ```"
 msgstr ""
+"})(window, document);\n"
+"```"
 
 #. type: Plain text
 #: index.md:504
@@ -1490,17 +1536,21 @@ msgid ""
 "To illustrate, suppose you simply want to render everything in italics, all "
 "you need is to create `~neutrinote_script.txt` and paste in the following "
 "code:"
-msgstr ""
+msgstr "説明のために、すべてを斜体で描画したいとします。必要なのは`~neutrinote_script.txt`を作成して、以下のコードを貼り付けることです:"
 
 #. type: Plain text
 #: index.md:526
 msgid "  ///////////   // Parse //   ///////////   str = '<i>' + str + '</i>';"
 msgstr ""
+"  ///////////\n"
+"  // Parse //\n"
+"  ///////////\n"
+"  str = '<i>' + str + '</i>';"
 
 #. type: Plain text
 #: index.md:536
 msgid "Now go to your note and tap render to view the output of your custom parser."
-msgstr ""
+msgstr "それではノートを開いてrender(描画)をタップし、あなたのカスタムパーサーで出力を閲覧してみてください。"
 
 #. type: Plain text
 #: index.md:538
@@ -1509,14 +1559,14 @@ msgid ""
 "look at this example of integrating "
 "[org-mode](https://raw.githubusercontent.com/appml/nano/master/samples/%7Eneutrinote_script.txt) "
 "into neutriNote."
-msgstr ""
+msgstr "同じパターンにしたがうことで、より有用なパースを達成できます。neutriNoteに[org-mode](https://raw.githubusercontent.com/appml/nano/master/samples/%7Eneutrinote_script.txt)を統合する例を参照してください。"
 
 #. type: Plain text
 #: index.md:540
 msgid ""
 "To restore default PHP Markdown syntax, just remove "
 "`~neutrinote_script.txt`."
-msgstr ""
+msgstr "デフォルトのPHP Markdown構文をリストアするには、`~neutrinote_script.txt`を削除してください。"
 
 #. type: Plain text
 #: index.md:544
