@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: neutriNote v2.3.5\n"
 "POT-Creation-Date: 2017-08-07 06:54+0000\n"
-"PO-Revision-Date: 2017-08-11 10:43+0900\n"
+"PO-Revision-Date: 2017-08-11 16:25+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -1012,7 +1012,8 @@ msgid ""
 "    * CSS style (see instructions from Google Fonts)\n"
 "1. The font is now ready for use in **neutriNote**.\n"
 msgstr ""
-"1. こｎノートにフォントのためのセクションを追加(フォントが複数ある場合は、各セクションを空行で分割)します。セクションの各行には以下を記述します:       * フォント名(意味のある名前)\n"
+"1. こｎノートにフォントのためのセクションを追加(フォントが複数ある場合は、各セクションを空行で分割)します。セクションの各行には以下を記述します:\n"
+"    * フォント名(意味のある名前)\n"
 "    * フォントファイル名(.ttf)\n"
 "    * リンク情報(Google Fontsの手順参照)\n"
 "    * CSSスタイル(Google Fontsの手順参照)\n"
@@ -1061,6 +1062,9 @@ msgid ""
 "will not be applied to Markdown and for users of blue light filters it is "
 "recommended that this function be disabled."
 msgstr ""
+"### <a name=\"ambientglow\">Ambient Glow</a>\n"
+"**Ambient Glow**とは、**neutriNote**の色温度を現在の環境レベルに[近似](https://en.wikipedia.org/wiki/Color_temperature#Categorizing_different_lighting)させて調節することで、より _雰囲気_ に即した編集体験を提供するための、試験的機能です。これは青色光フィルターアプリとは異なります。青色光フィルターアプリは、(バッテリー節約のために)Taskerからの照明センサーのデータだけが使用されており、位置情報にもとづいたものではありません。[neutriNote Auto Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)が正しく機能するためには、この機能が必要です。\n"
+"注意: **Ambient Glow**はマークダウンには適用されません。また青色光フィルターのユーザーはこの機能を無効にすることを推奨します。"
 
 #. type: Plain text
 #: index.md:359
@@ -1068,6 +1072,8 @@ msgid ""
 "### <a name=\"keyboard\">Keyboard</a> The following editor shortcuts are "
 "supported when connected to a physical keyboard:"
 msgstr ""
+"### <a name=\"keyboard\">Keyboard</a>\n"
+"物理キーボードが接続されている場合は、以下の編集用ショートカットがサポートされます:"
 
 #. type: Plain text
 #: index.md:370
@@ -1084,6 +1090,16 @@ msgid ""
 "| `Ctrl-]`        | Indent     |  \n"
 "| `Ctrl-[`        | Un-indent  |  \n"
 msgstr ""
+"| Shortcuts       | Actions    |\n"
+"| --------------- |:----------:|\n"
+"| `Ctrl-S`        | Save       |\n"
+"| `Ctrl-F`        | Local Find | \n"
+"| `F3`            | Find Next  | \n"
+"| `Ctrl-H`        | Replace    |  \n"
+"| `Ctrl-Z`        | Undo       |  \n"
+"| `Ctrl-Shift-Z`  | Redo       | \n"
+"| `Ctrl-]`        | Indent     |  \n"
+"| `Ctrl-[`        | Un-indent  |  \n"
 
 #. type: Plain text
 #: index.md:373
@@ -1091,6 +1107,8 @@ msgid ""
 "### <a name=\"gestures\">Gestures</a> Various user interface elements "
 "support gestures for better productivity:"
 msgstr ""
+"### <a name=\"gestures\">Gestures</a>\n"
+"より良い生産性のために、さまざまなインターフェース要素がジェスチャーをサポートします:"
 
 #. type: Plain text
 #: index.md:381
@@ -1105,6 +1123,13 @@ msgid ""
 "filters/days.\n"
 "    * Double tap **list status** to resume default filter/day.\n"
 msgstr ""
+"* ノートリスト画面:\n"
+"    * **list status**をタップすると、リストのトップに移動。\n"
+"    * 任意の青い四角形をロングタップすると、関連するメタデータをもつノートを取得。\n"
+"    * 任意のスターをロングタップすると、すべてのスター付きノートを取得。\n"
+"    * 現在のソートメソッドをタップすると、現在のソート順を逆転。\n"
+"    * **list status**バーを左右にスワイプすると、隣接するフィルター/日時に移動。\n"
+"    * **list status**をダブルタップすると、デフォルトのフィルター/日時を回復。\n"
 
 #. type: Plain text
 #: index.md:390
@@ -1126,6 +1151,14 @@ msgid ""
 "    * For Android 6.0 or higher, swipe right on **editor status** will "
 "resume in edit screen the last scroll bar position from Markdown preview.\n"
 msgstr ""
+"* 編集画面:\n"
+"    * **editor status**(ノートタイトルの右)をタップするとノートの統計情報とクリップボードの内容を閲覧、クリップボードの内容をロングタップするとクリップボードの完全な内容の閲覧、update statusをロングタップすると、現在のノートを離れることなく、他のノートの最近の更新を閲覧。\n"
+"    * **Shortcut**アイコンをタップすると、ユーザー定義ショートカットを閲覧。\n"
+"    * 検索した直後に、**Search**アイコンをタップすると次のマッチに進む。\n"
+"    * **editor status**をダブルタップすると、現在のカーソル位置を一時的に保存。\n"
+"    * **editor status**上で左にスワイプすると、保存したカーソル位置に復帰。\n"
+"    * 検索した後、**editor status**をダイアルアップ/ダウン(訳注: マッチ番号を上/下にフリック)すると前/次のマッチに移動。\n"
+"    * Android 6.0以降では、**editor status**上で右にスワイプするとマークダウンプレビューの最後のスクロールバー位置へ編集画面を戻す。\n"
 
 #. type: Plain text
 #: index.md:393

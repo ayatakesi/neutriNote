@@ -359,7 +359,8 @@ self_と話し、それをキャプチャーするために**neutriNote**を選�
 
 1. **Settings**で非表示ファイル(hidden
    files)の標準的なを有効にし、まだ作成されていない場合は`~neutrinote_fonts`というノートを新たに作成します。
-1. こｎノートにフォントのためのセクションを追加(フォントが複数ある場合は、各セクションを空行で分割)します。セクションの各行には以下を記述します:       * フォント名(意味のある名前)
+1. こｎノートにフォントのためのセクションを追加(フォントが複数ある場合は、各セクションを空行で分割)します。セクションの各行には以下を記述します:
+    * フォント名(意味のある名前)
     * フォントファイル名(.ttf)
     * リンク情報(Google Fontsの手順参照)
     * CSSスタイル(Google Fontsの手順参照)
@@ -375,21 +376,17 @@ font-family: 'Goudy Bookletter 1911', serif;
 ```        
 
         
-### <a name="ambientglow">Ambient Glow</a> **Ambient Glow** is an
-experimental function that adjusts the color temperature of **neutriNote**
-to
-[approximate](https://en.wikipedia.org/wiki/Color_temperature#Categorizing_different_lighting)
-the level of your current environment for a more _atmospheric_ editing
-experience.  It differs from blue light filtering apps in that it does not
-demand your location information -- instead only light sensor data from
-Tasker will be used (to conserve battery).  [neutriNote Auto
-Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)
-is required for this function to work properly.  Note that **Ambient Glow**
-will not be applied to Markdown and for users of blue light filters it is
-recommended that this function be disabled.
+### <a name="ambientglow">Ambient Glow</a>
+**Ambient
+Glow**とは、**neutriNote**の色温度を現在の環境レベルに[近似](https://en.wikipedia.org/wiki/Color_temperature#Categorizing_different_lighting)させて調節することで、より
+_雰囲気_
+に即した編集体験を提供するための、試験的機能です。これは青色光フィルターアプリとは異なります。青色光フィルターアプリは、(バッテリー節約のために)Taskerからの照明センサーのデータだけが使用されており、位置情報にもとづいたものではありません。[neutriNote
+Auto
+Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)が正しく機能するためには、この機能が必要です。
+注意: **Ambient Glow**はマークダウンには適用されません。また青色光フィルターのユーザーはこの機能を無効にすることを推奨します。
 
-### <a name="keyboard">Keyboard</a> The following editor shortcuts are
-supported when connected to a physical keyboard:
+### <a name="keyboard">Keyboard</a>
+物理キーボードが接続されている場合は、以下の編集用ショートカットがサポートされます:
     
 | Shortcuts       | Actions    |
 | --------------- |:----------:|
@@ -402,25 +399,25 @@ supported when connected to a physical keyboard:
 | `Ctrl-]`        | Indent     |  
 | `Ctrl-[`        | Un-indent  |  
 
-### <a name="gestures">Gestures</a> Various user interface elements support
-gestures for better productivity:
+### <a name="gestures">Gestures</a>
+より良い生産性のために、さまざまなインターフェース要素がジェスチャーをサポートします:
 
-* Note list screen:
-    * Tap **list status** to navigate to the top of the list.
-    * Long tap any blue rectangle to retrieve notes with related metadata.
-    * Long tap any star to retrieve all starred notes.
-    * Tap current sort method to reverse current sort order.
-    * Swipe left/right on **list status** bar to navigate adjacent filters/days.
-    * Double tap **list status** to resume default filter/day.
+* ノートリスト画面:
+    * **list status**をタップすると、リストのトップに移動。
+    * 任意の青い四角形をロングタップすると、関連するメタデータをもつノートを取得。
+    * 任意のスターをロングタップすると、すべてのスター付きノートを取得。
+    * 現在のソートメソッドをタップすると、現在のソート順を逆転。
+    * **list status**バーを左右にスワイプすると、隣接するフィルター/日時に移動。
+    * **list status**をダブルタップすると、デフォルトのフィルター/日時を回復。
 
-* Edit screen:
-    * Tap **editor status** (to the right of the note title) to view note statistics and clipboard content; long tap clipboard content to view full clipboard content; long tap update status to view recent updates in other notes without leaving the current note.
-    * Tap the **Shortcut** icon to view user defined shortcuts.
-    * Immediately after conducting a search, tap the **Search** icon to advance to the next match.
-    * Double tap **editor status** to temporarily save the current cursor position.  
-    * Swipe left on **editor status** to return to saved cursor position.
-    * After conducting search, dial up/down **editor status** to go to previous/next hits.
-    * For Android 6.0 or higher, swipe right on **editor status** will resume in edit screen the last scroll bar position from Markdown preview.
+* 編集画面:
+    * **editor status**(ノートタイトルの右)をタップするとノートの統計情報とクリップボードの内容を閲覧、クリップボードの内容をロングタップするとクリップボードの完全な内容の閲覧、update statusをロングタップすると、現在のノートを離れることなく、他のノートの最近の更新を閲覧。
+    * **Shortcut**アイコンをタップすると、ユーザー定義ショートカットを閲覧。
+    * 検索した直後に、**Search**アイコンをタップすると次のマッチに進む。
+    * **editor status**をダブルタップすると、現在のカーソル位置を一時的に保存。
+    * **editor status**上で左にスワイプすると、保存したカーソル位置に復帰。
+    * 検索した後、**editor status**をダイアルアップ/ダウン(訳注: マッチ番号を上/下にフリック)すると前/次のマッチに移動。
+    * Android 6.0以降では、**editor status**上で右にスワイプするとマークダウンプレビューの最後のスクロールバー位置へ編集画面を戻す。
 
 ### <a name="hacks">Hacks</a> What follows are features that may conflict
 with the core functions of **neutriNote**.  Use at your own discretion.
