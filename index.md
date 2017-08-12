@@ -280,7 +280,7 @@ defuscate|neutriNote#encode
 ```
 # 使い方: "addcomma
 some_numeric_string"を選択して展開すると、some_numeric_stringはカンマで桁区切りされる。
-addcomma|neutriNote#morph ℅,d
+addcomma|neutriNote#morph %,d
 ```
 
 以下は行のソートを簡単にするシンプルなショートカットの例です:
