@@ -1,5 +1,7 @@
 ## ユーザーガイド
 
+<sup>[[日本語バージョン](https://github.com/ayatakesi/neutriNote/blob/master/index.md)]</sup>
+
 1. [始めましょう](#started)
 1. [バックアップとリストア](#backup)
 1. [検索ツール](#search)
@@ -226,6 +228,21 @@ Taskerを使うことにより、**neutriNote**を簡単に自動化できます
 上記のステップは同様に、[neutriNote
 Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus)にも適用できます。
 
+以下は自動化されたバックアップの期限を、より詳細に制御する方法の例です。180日以上保存されたバックアップ、または30を超えた時系列バックアップはパージされます。
+
+```
+A1: Send Intent
+[Action:com.appmindlab.nano.ACTION_FULL_BACKUP
+Cat:None
+Mime Type:
+Data:
+Extra:com.appmindlab.nano.EXTRA_MAX_BACKUP_COUNT:30
+Extra:com.appmindlab.nano.EXTRA_MAX_BACKUP_AGE:180
+Extra:
+Package:
+Class:
+Target:Broadcast Receiver ]
+```
 
 クリップボードの履歴の維持に関心のあるユーザーは、Taskerの`%CLIP`変数をモニターするプロファイルを作成してから、以下のタスクを追加します(パスはあなたの**ローカルリポジトリー**で置き換えてください):
     
