@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: neutriNote v2.3.5\n"
 "POT-Creation-Date: 2017-08-07 06:54+0000\n"
-"PO-Revision-Date: 2017-08-11 23:51+0900\n"
+"PO-Revision-Date: 2017-08-12 09:21+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -1576,11 +1576,16 @@ msgid ""
 "later, or build a habit of reviewing saved notes.  Simply enable snooze "
 "animation by appending the following to `~neutrinote_settings_data`:"
 msgstr ""
+"### <a name=\"snooze\">Snooze (Experimental)</a>\n"
+"**neutriNote**の非干渉的なビジュアルリマインダーにより、ノートを一時保留にして後で編集したり、保存したノートをレビューする週間を作るのが簡単になります。`~neutrinote_settings_data`に以下を追加することにより、簡単にsnooze animationを有効にできます:"
 
 #. type: Plain text
 #: index.md:548
 msgid "``` com.appmindlab.nano.pref_icon_behavior|2 ```"
 msgstr ""
+"```\n"
+"com.appmindlab.nano.pref_icon_behavior|2\n"
+"```"
 
 #. type: Plain text
 #: index.md:550
@@ -1591,7 +1596,7 @@ msgid ""
 "have not been visited long enough.  The visual reminders would be dismissed "
 "as soon as the notes were opened.  To de-activate the snooze, simply remove "
 "the snooze string from the note's metadata."
-msgstr ""
+msgstr "それからノートを選択してメタデータに特別な**snooze strings**(`+1h`は1時間、`+2d`は2時間のスヌーズです)を追加します。これを行うことにより、そのノートがある期間開かれていなければ、非干渉的なアニメーションが、そのノートの閲覧するよう注意を促します。ビジュアルリマインダーは、ノートがオープンされれば解除されます。スヌーズをオフにするには、そのノートのメタデータからスヌーズ文字列を削除するだけです。"
 
 #. type: Plain text
 #: index.md:560
@@ -1606,6 +1611,14 @@ msgid ""
 "| `M` for months     | `+3M`: snooze for a quarter        |\n"
 "| `y` for years      | `+10y`: snooze for a decade        |\n"
 msgstr ""
+"| 単位               |  例                                |\n"
+"|--------------------|:----------------------------------:|\n"
+"| `m` : 分           | `+30m`: スヌーズ30分               |\n"
+"| `h` : 時間         | `+8h`: スヌーズ8時間               |\n"
+"| `d` : 日           | `+3d`: スヌーズ3日間               |\n"
+"| `w` : 週           | `+2w`: スヌーズ2週間               |\n"
+"| `M` : 月           | `+3M`: スヌーズ4半期               |\n"
+"| `y` : 年           | `+10y`: スヌーズ10年間             |\n"
 
 #. type: Plain text
 #: index.md:562
@@ -1613,7 +1626,7 @@ msgid ""
 "To transfer snooze to another device, be sure to tap **Backup/Restore App "
 "Data**.  Even more useful is that snooze strings are also fully searchable, "
 "they work just like regular metadata!"
-msgstr ""
+msgstr "他のデバイスにスヌーズを転送速度するために、確実に**Backup/Restore App Data**をタップしてください。さらに便利なのは、スヌーズ文字列は標準的なメタデータと同様に機能するので、完全に検索可能であることです!"
 
 #. type: Plain text
 #: index.md:565
@@ -1626,46 +1639,52 @@ msgid ""
 "connection required).  To see how that works, try one of the following "
 "examples in your notes:"
 msgstr ""
+"### <a name=\"misc\">Miscellaneous</a>\n"
+"**neutriNote**には、neutriNoteからスイッチすることなくテキストベースのデータをキャプチャーするために、ビルトインのバーコードスキャナーのような豊富な機能が同梱されとぃます。他には[Math.js](http://mathjs.org/docs/expressions/syntax.html)にもとづいた数式を解くためのハンディな計算機があります(ネットワーク接続が必要)。あなたのノートで以下の例を試して、それがどのように機能するか確認してください:"
 
 #. type: Bullet: '1. '
 #: index.md:569
 msgid "Select the expression."
-msgstr ""
+msgstr "数式を選択する。"
 
 #. type: Bullet: '1. '
 #: index.md:569
 msgid "Tap the calculator button from the toolbar."
-msgstr ""
+msgstr "ツールバーのcalculator(計算機)ボタンをタップする。"
 
 #. type: Bullet: '1. '
 #: index.md:569
 msgid "View the answer with the option to paste it back into your note."
-msgstr ""
+msgstr "解を閲覧する(ノートに解を貼り付けるオプションあり)。"
 
 #. type: Plain text
 #: index.md:573
 msgid "``` sin(45 deg) ^ 2"
 msgstr ""
+"```\n"
+"sin(45 deg) ^ 2"
 
 #. type: Plain text
 #: index.md:575
 msgid "cos(45 deg)"
-msgstr ""
+msgstr "cos(45 deg)"
 
 #. type: Plain text
 #: index.md:577
 msgid "5.08 cm to inch"
-msgstr ""
+msgstr "5.08 cm to inch"
 
 #. type: Plain text
 #: index.md:579
 msgid "det([-1, 2; 3, 1])"
-msgstr ""
+msgstr "det([-1, 2; 3, 1])"
 
 #. type: Plain text
 #: index.md:582
 msgid "log(10000, 10)  ```"
 msgstr ""
+"log(10000, 10)\n"
+"```"
 
 #. type: Plain text
 #: index.md:585
@@ -1673,13 +1692,15 @@ msgid ""
 "### <a name=\"performance\">Performance</a> When editing a long note, hide "
 "the title bar to reduce lags."
 msgstr ""
+"### <a name=\"performance\">Performance</a>\n"
+"大きなノートを編集する場合は、タイムラグを減らすためにタイトルバーを非表示にしてください。"
 
 #. type: Plain text
 #: index.md:587
 msgid ""
 "In general, using default font style can help reduce the time in opening "
 "long notes."
-msgstr ""
+msgstr "一般的に、デフォルトのフォントスタイルを使用すると、大きなノートを開く時間が短縮されます。"
 
 #. type: Plain text
 #: index.md:589
@@ -1687,7 +1708,7 @@ msgid ""
 "For users who do not use mathematics expressions, mathematics rendering can "
 "be disabled by entering a `.` under **Mathematics** in "
 "**Settings**. Markdown rendering should be faster with mathematics disabled."
-msgstr ""
+msgstr "数式を使用しないユーザーは、**Settings**の**Mathematics**に`.`を入力することにより、数式の描画を無効にできます。数式を無効にすれば、マークダウンの描画が高速になるでしょう。"
 
 #. type: Plain text
 #: index.md:592
@@ -1701,6 +1722,8 @@ msgid ""
 "the newly opened note.   It is thus highly recommended that important "
 "changes be saved right away.\n"
 msgstr ""
+"### <a name=\"issues\">Known Issues</a>\n"
+"ノートがウィジェットからアクセスされるとき、ノートがすでに編集中の場合は、もともと編集中だったノートは保存されずに終了します。**neutriNote**は、ノートがウィジェットからオープンされたのか、それともノート一覧からオープンされたか区別しないので、新たにオープンされたノートのために、現在オープンされているノートはクローズされます。したがって、重要な変更はただちに保存することを強く推奨します。\n"
 
 #. type: Plain text
 #: index.md:594
@@ -1710,7 +1733,7 @@ msgid ""
 "those changes and be case insensitive accordingly.  However, **neutriNote** "
 "would not delete notes unless their titles match exactly.  Therefore it is "
 "so crucial that notes be renamed from the end of **neutriNote**."
-msgstr ""
+msgstr "ノートのリネームが必要な場合は、**neutriNote**からリネームしてください。ノートタイトルの大文字小文字を変更するクラウド同期も存在します。**neutriNote**は状況に応じて、これらの変更と大文字小文字の非区別を検知するでしょう。しかし**neutriNote**はノートのタイトルが正確にマッチしなければ、ノートを削除しません。したがって**neutriNote**で最後にノートをリネームするのは危険です。"
 
 #. type: Plain text
 #: index.md:596
@@ -1720,7 +1743,7 @@ msgid ""
 "folder called `import_errors`.  To bring them back into **neutriNote**, you "
 "would need to split the notes into files below 1.5 MB and move them into the "
 "repository folder."
-msgstr ""
+msgstr "よりローエンドのデバイスにたいする安定性向上のため、**neutriNote**はサイズが1.5MBまでのノートをサポートします。このサイズを超えるノートは、自動的に`import_errors`というフォルダーに移動されます。これを再度**neutriNote**に取り込むには、1.5MB以下のサイズにノートを分割してから、リポジトリーフォルダーに移動する必要があります。"
 
 #. type: Plain text
 #: index.md:599
@@ -1735,6 +1758,9 @@ msgid ""
 "used together with custom filters provides more general organization than "
 "folders (a note can match multiple metadata simultaneously)."
 msgstr ""
+"### <a name=\"faq\">FAQs</a>\n"
+"**フォルダーはサポートしないのですか?**\n"
+"**neutriNote**はフラットで階層に束縛されない、[\"low cognitive load\"](http://blog.codinghorror.com/trees-treeviews-and-ui/)(認知的負荷が低)なデザインを提供します。これによりタップの回数は最小化されます。フォルダー操作はネストされたUIと、ルートレベルから遠いノートの取得により多くのタップを要求します。階層構造の最上位でのオフライン検索はフォルダーのレベルを横断する必要があり、そのような場合には体感できるほどの遅延が生じるでしょう。メタデータをカスタムフィルターと併用することにより、フォルダーより一般的な組織化が提供されます(ノートは同時に複数のメタデータにマッチすることができます)。"
 
 #. type: Plain text
 #: index.md:601
@@ -1743,6 +1769,8 @@ msgid ""
 "**Story behind the name?** [This](https://en.wikipedia.org/wiki/Neutrino) "
 "came up when trying to conjure up something that conveys unclutterness. \n"
 msgstr ""
+"**名前の由来は?**\n"
+"乱雑でない何かを伝えようとしたとき、[これ](https://en.wikipedia.org/wiki/Neutrino)が思い浮かびました。\n"
 
 #. type: Plain text
 #: index.md:604
@@ -1751,11 +1779,15 @@ msgid ""
 "information. Location data can always be disabled via Settings.  A menu "
 "option is also provided to clear search history."
 msgstr ""
+"### <a name=\"privacy\">Privacy Policy</a>\n"
+"このアプリは個人情報を収集しません。location data(位置情報)はSettingsからいつでも無効にできます。メニューオプションでは検索履歴のクリアーも提供されています。"
 
 #. type: Plain text
 #: index.md:607
 msgid "### <a name=\"todo\">TODO</a> Keep the app as crash-proof as possible."
 msgstr ""
+"### <a name=\"todo\">TODO</a>\n"
+"このアプリを可能な限り耐クラッシュに維持することです。"
 
 #. type: Plain text
 #: index.md:610
@@ -1766,6 +1798,8 @@ msgid ""
 "[email](mailto:lightandshadowscamera@gmail.com) anytime should such "
 "information be found incomplete or inaccurate."
 msgstr ""
+"### <a name=\"about\">About</a>\n"
+"すべてのサードパーティーアプリが正確に評価されることを確実にするために、すべての努力が行われてきました(**About**ダイアログのライセンス情報を確認してください)。不完全または不正確な情報を見つけたときは、いつでも遠慮なく[email](mailto:lightandshadowscamera@gmail.com)で連絡してください。"
 
 #. type: Plain text
 #: index.md:612
@@ -1773,11 +1807,11 @@ msgid ""
 "You can also visit [Product "
 "Page](https://plus.google.com/u/0/communities/117565395761503074053) for "
 "development updates regarding the app."
-msgstr ""
+msgstr "このアプリの開発版アップデートのために、[プロダクトページ](https://plus.google.com/u/0/communities/117565395761503074053)を訪問することもできます。"
 
 #. type: Plain text
 #: index.md:613
 msgid ""
 "To further support neutriNote's development, please visit developer's "
 "[Ko-fi](https://ko-fi.com/neutriNote) page."
-msgstr ""
+msgstr "さらにneutriNoteの開発をサポートするために、どうか開発者の[Ko-fi](https://ko-fi.com/neutriNote)ページを訪問してください。"

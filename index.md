@@ -577,48 +577,40 @@ neutriNoteのマークダウンエンジンは完全にモジュラー化され�
 デフォルトのPHP Markdown構文をリストアするには、`~neutrinote_script.txt`を削除してください。
 
 
-### <a name="snooze">Snooze (Experimental)</a> With **neutriNote**'s
-non-intrusive visual reminders, it is easy to set aside notes for editing
-later, or build a habit of reviewing saved notes.  Simply enable snooze
-animation by appending the following to `~neutrinote_settings_data`:
+### <a name="snooze">Snooze (Experimental)</a>
+**neutriNote**の非干渉的なビジュアルリマインダーにより、ノートを一時保留にして後で編集したり、保存したノートをレビューする週間を作るのが簡単になります。`~neutrinote_settings_data`に以下を追加することにより、簡単にsnooze
+animationを有効にできます:
 
-``` com.appmindlab.nano.pref_icon_behavior|2 ```
+```
+com.appmindlab.nano.pref_icon_behavior|2
+```
 
-Then add special **snooze strings** such as `+1h` ("snooze for an hour") or
-`+2d` ("snooze for two days") to the metadata of selected notes.  By doing
-so a non-intrusive animation will remind you to view the notes if they have
-not been visited long enough.  The visual reminders would be dismissed as
-soon as the notes were opened.  To de-activate the snooze, simply remove the
-snooze string from the note's metadata.
+それからノートを選択してメタデータに特別な**snooze
+strings**(`+1h`は1時間、`+2d`は2時間のスヌーズです)を追加します。これを行うことにより、そのノートがある期間開かれていなければ、非干渉的なアニメーションが、そのノートの閲覧するよう注意を促します。ビジュアルリマインダーは、ノートがオープンされれば解除されます。スヌーズをオフにするには、そのノートのメタデータからスヌーズ文字列を削除するだけです。
 
 
-| Units              |  Examples                          |
+| 単位               |  例                                |
 |--------------------|:----------------------------------:|
-| `m` for minutes    | `+30m`: snooze for 30 minutes      |
-| `h` for hours      | `+8h`: snooze for 8 hours          |
-| `d` for days       | `+3d`: snooze for 3 days           |
-| `w` for weeks      | `+2w`: snooze for 2 weeks          |
-| `M` for months     | `+3M`: snooze for a quarter        |
-| `y` for years      | `+10y`: snooze for a decade        |
+| `m` : 分           | `+30m`: スヌーズ30分               |
+| `h` : 時間         | `+8h`: スヌーズ8時間               |
+| `d` : 日           | `+3d`: スヌーズ3日間               |
+| `w` : 週           | `+2w`: スヌーズ2週間               |
+| `M` : 月           | `+3M`: スヌーズ4半期               |
+| `y` : 年           | `+10y`: スヌーズ10年間             |
 
-To transfer snooze to another device, be sure to tap **Backup/Restore App
-Data**.  Even more useful is that snooze strings are also fully searchable,
-they work just like regular metadata!
+他のデバイスにスヌーズを転送速度するために、確実に**Backup/Restore App
+Data**をタップしてください。さらに便利なのは、スヌーズ文字列は標準的なメタデータと同様に機能するので、完全に検索可能であることです!
 
-### <a name="misc">Miscellaneous</a> **neutriNote** comes with many goodies
-for capturing text based data without switching away such as the built-in
-barcode scanner.  Another is a handy calculator for solving mathematical
-expressions based on
-[Math.js](http://mathjs.org/docs/expressions/syntax.html) (network
-connection required).  To see how that works, try one of the following
-examples in your notes:
+### <a name="misc">Miscellaneous</a>
+**neutriNote**には、neutriNoteからスイッチすることなくテキストベースのデータをキャプチャーするために、ビルトインのバーコードスキャナーのような豊富な機能が同梱されとぃます。他には[Math.js](http://mathjs.org/docs/expressions/syntax.html)にもとづいた数式を解くためのハンディな計算機があります(ネットワーク接続が必要)。あなたのノートで以下の例を試して、それがどのように機能するか確認してください:
 
-1. Select the expression.
-1. Tap the calculator button from the toolbar.
-1. View the answer with the option to paste it back into your note.
+1. 数式を選択する。
+1. ツールバーのcalculator(計算機)ボタンをタップする。
+1. 解を閲覧する(ノートに解を貼り付けるオプションあり)。
 
     
-``` sin(45 deg) ^ 2
+```
+sin(45 deg) ^ 2
 
 cos(45 deg)
 
@@ -626,60 +618,41 @@ cos(45 deg)
 
 det([-1, 2; 3, 1])
 
-log(10000, 10)  ```
+log(10000, 10)
+```
         
-### <a name="performance">Performance</a> When editing a long note, hide the
-title bar to reduce lags.
+### <a name="performance">Performance</a>
+大きなノートを編集する場合は、タイムラグを減らすためにタイトルバーを非表示にしてください。
 
-In general, using default font style can help reduce the time in opening
-long notes.
+一般的に、デフォルトのフォントスタイルを使用すると、大きなノートを開く時間が短縮されます。
 
-For users who do not use mathematics expressions, mathematics rendering can
-be disabled by entering a `.` under **Mathematics** in
-**Settings**. Markdown rendering should be faster with mathematics disabled.
+数式を使用しないユーザーは、**Settings**の**Mathematics**に`.`を入力することにより、数式の描画を無効にできます。数式を無効にすれば、マークダウンの描画が高速になるでしょう。
 
 ### <a name="issues">Known Issues</a>
-Anytime a note is accessed from widget, if there is a note already being edited, the note originally being edited will exit without saving.  **neutriNote** does not distinguish between opening a note from widget or from the note list, the currently opened note will be closed to make way for the newly opened note.   It is thus highly recommended that important changes be saved right away.
+ノートがウィジェットからアクセスされるとき、ノートがすでに編集中の場合は、もともと編集中だったノートは保存されずに終了します。**neutriNote**は、ノートがウィジェットからオープンされたのか、それともノート一覧からオープンされたか区別しないので、新たにオープンされたノートのために、現在オープンされているノートはクローズされます。したがって、重要な変更はただちに保存することを強く推奨します。
 
-If a note needs to be renamed, do so within **neutriNote**.  Certain cloud
-sync would also change the case of note titles.  **neutriNote** would detect
-those changes and be case insensitive accordingly.  However, **neutriNote**
-would not delete notes unless their titles match exactly.  Therefore it is
-so crucial that notes be renamed from the end of **neutriNote**.
+ノートのリネームが必要な場合は、**neutriNote**からリネームしてください。ノートタイトルの大文字小文字を変更するクラウド同期も存在します。**neutriNote**は状況に応じて、これらの変更と大文字小文字の非区別を検知するでしょう。しかし**neutriNote**はノートのタイトルが正確にマッチしなければ、ノートを削除しません。したがって**neutriNote**で最後にノートをリネームするのは危険です。
 
-To improve app stability in lower-end devices, **neutriNote** supports note
-size up to 1.5 MB.  Notes beyond the size will automatically be moved to a
-folder called `import_errors`.  To bring them back into **neutriNote**, you
-would need to split the notes into files below 1.5 MB and move them into the
-repository folder.
+よりローエンドのデバイスにたいする安定性向上のため、**neutriNote**はサイズが1.5MBまでのノートをサポートします。このサイズを超えるノートは、自動的に`import_errors`というフォルダーに移動されます。これを再度**neutriNote**に取り込むには、1.5MB以下のサイズにノートを分割してから、リポジトリーフォルダーに移動する必要があります。
 
-### <a name="faq">FAQs</a> **No folder support?** **neutriNote** is designed
-to provide a flat, hierarchy-free, ["low cognitive
-load"](http://blog.codinghorror.com/trees-treeviews-and-ui/) note taking
-experience so that the number of taps can be minimized, folder navigation
-would require a nested UI and more taps to get to notes beyond the root
-level.  On top of that, offline search would need to traverse levels of
-folders in such a way that turnaround time could vary perceivably.  Metadata
-used together with custom filters provides more general organization than
-folders (a note can match multiple metadata simultaneously).
+### <a name="faq">FAQs</a>
+**フォルダーはサポートしないのですか?**
+**neutriNote**はフラットで階層に束縛されない、["low cognitive
+load"](http://blog.codinghorror.com/trees-treeviews-and-ui/)(認知的負荷が低)なデザインを提供します。これによりタップの回数は最小化されます。フォルダー操作はネストされたUIと、ルートレベルから遠いノートの取得により多くのタップを要求します。階層構造の最上位でのオフライン検索はフォルダーのレベルを横断する必要があり、そのような場合には体感できるほどの遅延が生じるでしょう。メタデータをカスタムフィルターと併用することにより、フォルダーより一般的な組織化が提供されます(ノートは同時に複数のメタデータにマッチすることができます)。
 
-**Story behind the name?** [This](https://en.wikipedia.org/wiki/Neutrino) came up when trying to conjure up something that conveys unclutterness. 
+**名前の由来は?**
+乱雑でない何かを伝えようとしたとき、[これ](https://en.wikipedia.org/wiki/Neutrino)が思い浮かびました。
 
-### <a name="privacy">Privacy Policy</a> This app does not gather personal
-information. Location data can always be disabled via Settings.  A menu
-option is also provided to clear search history.
+### <a name="privacy">Privacy Policy</a>
+このアプリは個人情報を収集しません。location
+data(位置情報)はSettingsからいつでも無効にできます。メニューオプションでは検索履歴のクリアーも提供されています。
 
-### <a name="todo">TODO</a> Keep the app as crash-proof as possible.
+### <a name="todo">TODO</a>
+このアプリを可能な限り耐クラッシュに維持することです。
 
-### <a name="about">About</a> Every effort has been made to ensure that all
-third-party software used be properly acknowledged (see license information
-in the **About** dialog).  Please feel free to contact by
-[email](mailto:lightandshadowscamera@gmail.com) anytime should such
-information be found incomplete or inaccurate.
+### <a name="about">About</a>
+すべてのサードパーティーアプリが正確に評価されることを確実にするために、すべての努力が行われてきました(**About**ダイアログのライセンス情報を確認してください)。不完全または不正確な情報を見つけたときは、いつでも遠慮なく[email](mailto:lightandshadowscamera@gmail.com)で連絡してください。
 
-You can also visit [Product
-Page](https://plus.google.com/u/0/communities/117565395761503074053) for
-development updates regarding the app.
+このアプリの開発版アップデートのために、[プロダクトページ](https://plus.google.com/u/0/communities/117565395761503074053)を訪問することもできます。
 
-To further support neutriNote's development, please visit developer's
-[Ko-fi](https://ko-fi.com/neutriNote) page.
+さらにneutriNoteの開発をサポートするために、どうか開発者の[Ko-fi](https://ko-fi.com/neutriNote)ページを訪問してください。
