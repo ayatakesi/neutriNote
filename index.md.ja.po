@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: neutriNote v2.3.5\n"
 "POT-Creation-Date: 2017-08-07 06:54+0000\n"
-"PO-Revision-Date: 2017-08-12 14:26+0900\n"
+"PO-Revision-Date: 2017-08-12 14:29+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -187,7 +187,7 @@ msgid ""
 "storage folder called _neutrinote_export_.  Note: exported app settings data "
 "are stored in regular notes with prefix _.neutrinote_ so that they can be "
 "sync no differently from other notes.\n"
-msgstr "**Incremental Backup**とは、煩わしくないやり方でノートをコピーする別の方法です。有効にするには、Settingでそれを単に有効にするだけです。そうすれば、あなたのノートとアプリのセッティングは、少なくとも1日1回は内部ストレージの_neutrinote_export_というフォルダーにインクリメンタルにバックアップされます。注意: エクスポートされたアプリのセッティングデータは、通常のノートにプレフィクス_.neutrinote_をつけて保存されるので、他のノートと同じように同期させることができます。"
+msgstr "**Incremental Backup**とは、煩わしくないやり方でノートをコピーする別の方法です。有効にするには、Settingでそれを単に有効にするだけです。そうすれば、あなたのノートとアプリのセッティングは、少なくとも1日1回は内部ストレージの _neutrinote_export_ というフォルダーにインクリメンタルにバックアップされます。注意: エクスポートされたアプリのセッティングデータは、通常のノートにプレフィクス _.neutrinote_ をつけて保存されるので、他のノートと同じように同期させることができます。"
 
 #. type: Plain text
 #: index.md:55

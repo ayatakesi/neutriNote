@@ -52,7 +52,7 @@ Connector](https://play.google.com/store/apps/details?id=com.appmindlab.connecto
 Repository**をアクティブにしていれば、ノートはリポジトリーにたいしてシームレスに同期されるでしょう。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティー製アプリでフォルダーを共有することにより、ノートをリモートに複製できます。**重要**
 同期できない可能性があるので、古いリポジトリーは使用しないでください。常に[始めましょう](#started)セクションの、上記の箇所からリポジトリーの初期化と割り当てで説明している方法を使用してください。
     
-**Incremental Backup**とは、煩わしくないやり方でノートをコピーする別の方法です。有効にするには、Settingでそれを単に有効にするだけです。そうすれば、あなたのノートとアプリのセッティングは、少なくとも1日1回は内部ストレージの_neutrinote_export_というフォルダーにインクリメンタルにバックアップされます。注意: エクスポートされたアプリのセッティングデータは、通常のノートにプレフィクス_.neutrinote_をつけて保存されるので、他のノートと同じように同期させることができます。
+**Incremental Backup**とは、煩わしくないやり方でノートをコピーする別の方法です。有効にするには、Settingでそれを単に有効にするだけです。そうすれば、あなたのノートとアプリのセッティングは、少なくとも1日1回は内部ストレージの _neutrinote_export_ というフォルダーにインクリメンタルにバックアップされます。注意: エクスポートされたアプリのセッティングデータは、通常のノートにプレフィクス _.neutrinote_ をつけて保存されるので、他のノートと同じように同期させることができます。
 より複雑なシナリオについては、[neutriNote
 Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus)を調べてみてください。
 
