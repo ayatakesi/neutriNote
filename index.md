@@ -1,34 +1,34 @@
 ## ユーザーガイド
 
-1. [Getting Started](#started)
-1. [Backup and Restore](#backup)
-1. [Search Tools](#search)
-1. [Advanced Features](#advanced)
-    * [Metadata](#metadata)
-    * [Markdown](#md)
-    * [Automation](#automation)
-    * [Text Expansion](#textexpansion)
-    * [Batch Select](#batchselect)
-    * [Voice Memo](#voicememo)
-    * [External Fonts](#externalfonts)
-    * [Ambient Glow](#ambientglow)
-    * [Keyboard](#keyboard)
-    * [Gestures](#gestures)
-    * [Hacks](#hacks)
-    * [Built-in Variables](#variables)
-    * [Storage Saver](#storage)
+1. [始めましょう](#started)
+1. [バックアップとリストア](#backup)
+1. [検索ツール](#search)
+1. [高度な機能](#advanced)
+    * [メタデータ](#metadata)
+    * [マークダウン](#md)
+    * [オートメーション(自動化)](#automation)
+    * [テキスト展開](#textexpansion)
+    * [バッチ選択](#batchselect)
+    * [ボイスメモ](#voicememo)
+    * [外部フォント](#externalfonts)
+    * [アンビエントグロー](#ambientglow)
+    * [キーボード](#keyboard)
+    * [ジェスチャー](#gestures)
+    * [ハック](#hacks)
+    * [ビルトイン変数](#variables)
+    * [ストレージセーバー](#storage)
     * [API](#api)
-    * [Snooze](#snooze)
-    * [Misc.](#misc)
-    * [Examples](#examples) 
-1. [Performance](#performance)
-1. [Known Issues](#issues)
-1. [FAQs](#faq)
-1. [Privacy Policy](#privacy)
+    * [スヌーズ](#snooze)
+    * [その他](#misc)
+    * [例](#examples) 
+1. [パフォーマンス](#performance)
+1. [既知の問題](#issues)
+1. [FAQ](#faq)
+1. [個人情報保護](#privacy)
 1. [TODO](#todo)
 1. [About](#about)
 
-### <a name="started">Getting Started</a>
+### <a name="started">始めましょう</a>
 **neutriNote**を選んでいただき、ありがとうございます。
 
 インストールが終わったら、画面上の指示にしたがって、**Local Repository**の場所を選択してください。
@@ -44,28 +44,28 @@ Data](https://www.dropbox.com/s/nveejx2dn1pdbqi/navigation_drawer.png?dl=0,
 同期(sync)を有効にするのは簡単です。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティーアプリをインストールして、それにリポジトリーを登録するか、**neutriNote**専用にデザインされたDropbox用アダプターの[neutriNote
 Connector](https://play.google.com/store/apps/details?id=com.appmindlab.connector)を入手してください。
 
-アドオンなしでも、**neutriNote**をすぐに使うことができます。多くの機能を発見するために、あちこち触ってみてください。それが**neutriNote**をあなたのノート体験の高度に統合された一部とするでしょう(たとえばメタデータラベルをロングタップすれば[同じような](https://www.dropbox.com/s/tqa3h774xrn49zd/metadata_long_click.png?dl=0)ラベルをもつノートを取得できるし、編集画面でローカル検索アイコンをタップすれば次のマッチにジャンプすることができます)。これを個人情報管理ツールに拡張するのは、以降のセクションまで待ってください。新しいユーザーはデータを守るための、同期メカニズム以上の手段として[Backup
-and Restore](#backup)も調べてみるとよいでしょう。
+アドオンなしでも、**neutriNote**をすぐに使うことができます。多くの機能を発見するために、あちこち触ってみてください。それが**neutriNote**をあなたのノート体験の高度に統合された一部とするでしょう(たとえばメタデータラベルをロングタップすれば[同じような](https://www.dropbox.com/s/tqa3h774xrn49zd/metadata_long_click.png?dl=0)ラベルをもつノートを取得できるし、編集画面でローカル検索アイコンをタップすれば次のマッチにジャンプすることができます)。これを個人情報管理ツールに拡張するのは、以降のセクションまで待ってください。新しいユーザーはデータを守るための、同期メカニズム以上の手段として[バックアップとリストア](#backup)も調べてみるとよいでしょう。
 
 **重要** v1.3.1より、**neutriNote**はAndroid Marshmallowデバイスの**実行時権限**をサポートしています。外部ストレージの**Local Repository**が正しく機能するために、**neutriNote**に外部ストレージへのアクセス権限を付与するのを忘れないでください。以前に拒否された権限を有効にするには、Androidの**アプリ情報**から権限を有効にしてからアプリを再起動してください。
-#### <a name="backup">Backup and Restore</a>
+#### <a name="backup">バックアップとリストア</a>
 すでに**Local
 Repository**をアクティブにしていれば、ノートはリポジトリーにたいしてシームレスに同期されるでしょう。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティー製アプリでフォルダーを共有することにより、ノートをリモートに複製できます。**重要**
-同期できない可能性があるので、古いリポジトリーは使用しないでください。常に[Getting
-Started](#started)セクションの、上記の箇所からリポジトリーの初期化と割り当てで説明している方法を使用してください。
+同期できない可能性があるので、古いリポジトリーは使用しないでください。常に[始めましょう](#started)セクションの、上記の箇所からリポジトリーの初期化と割り当てで説明している方法を使用してください。
     
 **Incremental Backup**とは、煩わしくないやり方でノートをコピーする別の方法です。有効にするには、Settingでそれを単に有効にするだけです。そうすれば、あなたのノートとアプリのセッティングは、少なくとも1日1回は内部ストレージの_neutrinote_export_というフォルダーにインクリメンタルにバックアップされます。注意: エクスポートされたアプリのセッティングデータは、通常のノートにプレフィクス_.neutrinote_をつけて保存されるので、他のノートと同じように同期させることができます。
 より複雑なシナリオについては、[neutriNote
 Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus)を調べてみてください。
 
-#### <a name="search">Search Tools</a>
+#### <a name="search">検索ツール</a>
 修正日時、アクセス日時、ユーザーインターフェースにより提供されるロケーション(location:
 場所)にもとづくノート検索に加えて、**neutriNote**は高精度のテキストベース検索と正規表現([regular
 expression](http://en.m.wikipedia.org/wiki/Glob_(programming)))をサポートします。以下の構文も、(セッティングなる)事前定義されたフィルターの一部に含めると、再利用性が高くなります。
 
-**Search by Fields(フィールド検索)**により、指定したフィールドに検索を限定できます。たとえば、ノート一覧の上にあるメイン検索バーでは、プレフィクスに`title:`を使用することにより、検索をタイトルに限定できます。`title:log`のような検索文字列の場合は、タイトルの一部に`log`という文字列が含まれるすべてのノートがリターンされます。
-検索文字列内でプレフィクスに_meta:_を使用することにより、検索をメタデータに限定することもできます。_meta:personal_のような検索文字列では、メタデータ内の一部に_personal_という文字列を含むすべてのノートがリターンされます(同様に、_meta:_という検索文字列ではメタデータのないすべてのノートがリターンされます)。検索文字列内で単にプレフィクス_metareg:_を使うことにより、正規表現[regular
-expression](http://en.m.wikipedia.org/wiki/Glob_(programming))も使用可能です。
+**Search by Fields** (フィールド検索)により、指定したフィールドに検索を限定できます。たとえば、ノート一覧の上にあるメイン検索バーでは、プレフィクスに`title:`を使用することにより、検索をタイトルに限定できます。`title:log`のような検索文字列の場合は、タイトルの一部に`log`という文字列が含まれるすべてのノートがリターンされます。
+検索文字列内でプレフィクスに _meta:_ を使用することにより、検索をメタデータに限定することもできます。 _meta:personal_
+のような検索文字列では、メタデータ内の一部に _personal_ という文字列を含むすべてのノートがリターンされます(同様に、 _meta:_
+という検索文字列ではメタデータのないすべてのノートがリターンされます)。検索文字列内で単にプレフィクス _metareg:_
+を使うことにより、[正規表現](http://en.m.wikipedia.org/wiki/Glob_(programming))も使用可能です。
 
 複数単語の検索でメタデータのマッチを確実にするためには、メイン検索バーで以下の構文を使用するとよいでしょう。
 `join:term1,term2,term3`,...:
@@ -83,12 +83,12 @@ Search**を使う方法です。ブーリアン検索を指定することもで
 ノート検索では、**neutriNote**は[Perl](http://www.erudil.com/preqr.pdf)スタイルの基本的なパターン(`\d`は数字、`\s`は空白文字、など)を認識します。
  
 
-### <a name="advanced">Advanced Features</a>
+### <a name="advanced">高度な機能</a>
 
-### <a name="metadata">Metadata</a>
+### <a name="metadata">メタデータ</a>
 メタデータとは、ノートの外部に存在する、一般的な用途のためのテキスト文字列です。メタデータは検索することができ、タグとして使用できます。
         
-### <a name="md">Markdown</a>
+### <a name="md">マークダウン</a>
 **neutriNote**は[PHP Markdown Extra](
 http://michelf.ca/projects/php-markdown/extra/)と、Latexスタイルの数式表現をサポートします。数式表現を入力する一番簡単な方法は、数式を`$$`で囲むことです。インラインで数式を記述するには、次の例のように`\\(...\\)`を使用します:
 ```
@@ -182,7 +182,7 @@ rel="stylesheet"></link> <script
 src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 ```
     
-### <a name="examples">Examples</a>
+### <a name="examples">例</a>
 以下は[JSXGraph](http://jsxgraph.uni-bayreuth.de/wp/examples/)を使用してグラフをプロットするために、**neutriNote**のレンダリングコンポーネントをどのように使用するかの例です:
 
 ```
@@ -214,12 +214,12 @@ context.fillRect(30, 30, 50, 50); </script> </head>
 Address]`">
 ```
 
-### <a name="automation">Automation</a>
+### <a name="automation">オートメーション(自動化)</a>
 
 Taskerを使うことにより、**neutriNote**を簡単に自動化できます。たとえば、([neutriNote Auto Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme))を使って以下のステップを行うことにより、照明レベルに合わせて**neutriNote**のテーマをセットすることができます:
 
-1. Taskerで_新しい_タスクを作成します。
-1. **Select Action Category**から**App**を選択して、_新しい_アクションを追加します。
+1. Taskerで _新しい_ タスクを作成します。
+1. **Select Action Category**から**App**を選択して、 _新しい_ アクションを追加します。
 1. アプリ選択画面からダウンロードされた拡張を選択します。
 1. タスクが作成されて、これであなたの任意のプロファイルでタスクを使用する準備ができました。たとえばタスクを開始するために、ディスプレイがオンになったことによりトリガーされる新しいプロファイルを作成します(新しいプロファイルを追加して、**State**から**Display**を選択します)。これでスクリーンがオンになるたびに、**neutriNote**は自動的に現在の照明レベルにもとづいたテーマを選択します。
 
@@ -235,10 +235,11 @@ File [ File:neutriNote/clipboard_events.txt Text:## %DATE %TIME %NEWLINE
 Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ]
 ```
 
-### <a name="textexpansion">Text Expansion</a>
+### <a name="textexpansion">テキスト展開</a>
 **neutriNote**はテキスト展開(text expansion)をサポートします:
-ショートカットの単語を単にハイライトして、単語を展開するために**Text
-Expansion**アイコンをタップしてください。すべてのショートカットは**~neutrinote_shortcuts**というファイルに保存されます。ショートカットのは1行ごとに`ショートカットラベル|展開されるテキスト`というフォーマットで定義されます(ファイルを確認できない場合は、**Settings**で非表示ファイル(hidden
+ショートカットの単語を単にハイライトして、単語を展開するために**Text Expansion**アイコンをタップしてください。すべてのショートカットは
+**~neutrinote_shortcuts**
+というファイルに保存されます。ショートカットのは1行ごとに`ショートカットラベル|展開されるテキスト`というフォーマットで定義されます(ファイルを確認できない場合は、**Settings**で非表示ファイル(hidden
 files)の表示を有効にしてください)。以下はショートカットの例です:
 
 ``` cell|123-456-7890
@@ -259,8 +260,7 @@ encode|neutriNote#replace \s %20
 以下はテキストの本体から先頭と末尾のスペースを取り除く例です:
 
 ```
-# 使い方: "trim some_text_string"を選択して展開すると、
-some_text_stringの先頭と末尾のスペースが削除されます。
+# 使い方: "trim some_text_string"を選択して展開すると、some_text_stringの先頭と末尾のスペースが削除される。
 trim|neutriNote#trim
 ```
 
@@ -331,7 +331,7 @@ termfloat|neutriNote#launch com.termux.window
 param3`のように、コマンドとなるショートカットの後にスペースとカンマで区切られたパラメーターを続けることにより、コマンドに基本的なパラメーターを含めることができます。出力を貼り付けるには、文字列全体を選択してから、expand(展開)アイコンをタップします。cURLのユーザーは`neutriNote$`のかわりに、`neutriNote?`の後に直接URLを続けることにより、展開定義を簡単にできます。
 
 
-### <a name="batchselect">Batch Select</a>
+### <a name="batchselect">バッチ選択</a>
 生産性向上のために、特別な選択コマンドが利用できます。
 
 * テキストの一部が選択された状態で*Toolbox*内の`Top`アイコンをタップすると、選択はノートの先頭まで拡張されます。またカーソル位置にアンカーがある場合には、アンカーの先頭まで選択が拡張されます。
@@ -346,12 +346,12 @@ param3`のように、コマンドとなるショートカットの後にスペ�
   Toolbar**のシンボルかアクションを選択します。たとえば、`➡`をタップすると選択されたパラグラフがインデントされ、`*`をタップすると選択されたパラグラフが箇条書きリストになります。
 
     
-### <a name="voicememo">Voice Memo</a>
-**neutriNote**はGoogle Now音声検索と互換性があります。_Ok Google note to
-self_と話し、それをキャプチャーするために**neutriNote**を選択してください。
+### <a name="voicememo">ボイスメモ</a>
+**neutriNote**はGoogle Now音声検索と互換性があります。 _Ok Google note to self_
+と話し、それをキャプチャーするために**neutriNote**を選択してください。
  
 
-### <a name="externalfonts">External Fonts</a>
+### <a name="externalfonts">外部フォント</a>
 **neutriNote**でGoogle Fontsなどにより提供される外部フォントを使用するのは簡単です。(重要:
 フォントの使用に際しては、使用条件を慎重に確認してください):
 
@@ -376,16 +376,15 @@ font-family: 'Goudy Bookletter 1911', serif;
 ```        
 
         
-### <a name="ambientglow">Ambient Glow</a>
-**Ambient
-Glow**とは、**neutriNote**の色温度を現在の環境レベルに[近似](https://en.wikipedia.org/wiki/Color_temperature#Categorizing_different_lighting)させて調節することで、より
+### <a name="ambientglow">アンビエントグロー</a>
+**アンビエントグロー**とは、**neutriNote**の色温度を現在の環境レベルに[近似](https://en.wikipedia.org/wiki/Color_temperature#Categorizing_different_lighting)させて調節することで、より
 _雰囲気_
 に即した編集体験を提供するための、試験的機能です。これは青色光フィルターアプリとは異なります。青色光フィルターアプリは、(バッテリー節約のために)Taskerからの照明センサーのデータだけが使用されており、位置情報にもとづいたものではありません。[neutriNote
 Auto
 Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)が正しく機能するためには、この機能が必要です。
-注意: **Ambient Glow**はマークダウンには適用されません。また青色光フィルターのユーザーはこの機能を無効にすることを推奨します。
+注意: **アンビエントグロー**はマークダウンには適用されません。また青色光フィルターのユーザーはこの機能を無効にすることを推奨します。
 
-### <a name="keyboard">Keyboard</a>
+### <a name="keyboard">キーボード</a>
 物理キーボードが接続されている場合は、以下の編集用ショートカットがサポートされます:
     
 | Shortcuts       | Actions    |
@@ -399,7 +398,7 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
 | `Ctrl-]`        | Indent     |  
 | `Ctrl-[`        | Un-indent  |  
 
-### <a name="gestures">Gestures</a>
+### <a name="gestures">ジェスチャー</a>
 より良い生産性のために、さまざまなインターフェース要素がジェスチャーをサポートします:
 
 * ノートリスト画面:
@@ -419,7 +418,7 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
     * 検索した後、**editor status**をダイアルアップ/ダウン(訳注: マッチ番号を上/下にフリック)すると前/次のマッチに移動。
     * Android 6.0以降では、**editor status**上で右にスワイプするとマークダウンプレビューの最後のスクロールバー位置へ編集画面を戻す。
 
-### <a name="hacks">Hacks</a>
+### <a name="hacks">ハック</a>
 以降は**neutriNote**の中核機能と競合するかもしれない機能です。使用は自己責任でお願いします。
 
 **~neutrinote_settings_data**(**Settings**の**Show
@@ -463,10 +462,10 @@ Data**を行ってください。注意: 設定ファイルの変更により、
 **neutriNote
 Connector**は、拡張子が`.txt`でないファイルを処理しないことに注意してください。拡張子が`.txt`でないファイルをDropboxと同期するには、サードパーティーアプリか[**neutriNote
 Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus)をインストールする必要があるでしょう(**neutriNote
-Connector**をインストールしていた場合には、 **neutriNote
-Connector+**の起動の前にそれを削除する必要があるでしょう)。
+Connector**をインストールしていた場合には、 **neutriNote Connector+**
+の起動の前にそれを削除する必要があるでしょう)。
 
-### <a name="variables">Built-in Variables (v2.3.4) </a>
+### <a name="variables">ビルトイン変数 (v2.3.4) </a>
 ビルトイン変数は検索やショートカット定義に使用されることがあります。たとえば明日のタイムスタンプをもつノートを探す場合には、検索ボックスに`@tomorrow`とタイプします。**Custom
 Filters**にビルトイン変数を含めることさえできます。たとえば明日のタイムスタンプを含むノートを一覧したり、ビルトイン変数をショートカット定義に含めてオンザフライでテキスト展開の一部を生成できます。
 
@@ -482,9 +481,9 @@ Filters**にビルトイン変数を含めることさえできます。たと�
 | @tomorrow            | 明日のタイムスタンプ                    |
 | @now                 | 現在のタイムスタンプ                    |
 
-ビルトイン変数の使用を有効にする方法については、[Hacks](#hacks)を参照してください。
+ビルトイン変数の使用を有効にする方法については、[ハック](#hacks)を参照してください。
 
-### <a name="storage">Storage Saver</a>
+### <a name="storage">ストレージセーバー</a>
 SDカードをもつデバイスでは、内部ストレージの容量を抑えるために、SDカードにバックアップを保存することが可能です。
 
 1. **Backup App Data**をタップする。
@@ -577,16 +576,14 @@ neutriNoteのマークダウンエンジンは完全にモジュラー化され�
 デフォルトのPHP Markdown構文をリストアするには、`~neutrinote_script.txt`を削除してください。
 
 
-### <a name="snooze">Snooze (Experimental)</a>
-**neutriNote**の非干渉的なビジュアルリマインダーにより、ノートを一時保留にして後で編集したり、保存したノートをレビューする週間を作るのが簡単になります。`~neutrinote_settings_data`に以下を追加することにより、簡単にsnooze
-animationを有効にできます:
+### <a name="snooze">スヌーズ (試験的)</a>
+**neutriNote**の非干渉的なビジュアルリマインダーにより、ノートを一時保留にして後で編集したり、保存したノートをレビューする週間を作るのが簡単になります。`~neutrinote_settings_data`に以下を追加することにより、簡単にスヌーズアニメーションを有効にできます:
 
 ```
 com.appmindlab.nano.pref_icon_behavior|2
 ```
 
-それからノートを選択してメタデータに特別な**snooze
-strings**(`+1h`は1時間、`+2d`は2時間のスヌーズです)を追加します。これを行うことにより、そのノートがある期間開かれていなければ、非干渉的なアニメーションが、そのノートの閲覧するよう注意を促します。ビジュアルリマインダーは、ノートがオープンされれば解除されます。スヌーズをオフにするには、そのノートのメタデータからスヌーズ文字列を削除するだけです。
+それからノートを選択してメタデータに特別な**スヌーズ文字列**(`+1h`は1時間、`+2d`は2時間のスヌーズです)を追加します。これを行うことにより、そのノートがある期間開かれていなければ、非干渉的なアニメーションが、そのノートの閲覧するよう注意を促します。ビジュアルリマインダーは、ノートがオープンされれば解除されます。スヌーズをオフにするには、そのノートのメタデータからスヌーズ文字列を削除するだけです。
 
 
 | 単位               |  例                                |
@@ -601,7 +598,7 @@ strings**(`+1h`は1時間、`+2d`は2時間のスヌーズです)を追加しま
 他のデバイスにスヌーズを転送速度するために、確実に**Backup/Restore App
 Data**をタップしてください。さらに便利なのは、スヌーズ文字列は標準的なメタデータと同様に機能するので、完全に検索可能であることです!
 
-### <a name="misc">Miscellaneous</a>
+### <a name="misc">その他</a>
 **neutriNote**には、neutriNoteからスイッチすることなくテキストベースのデータをキャプチャーするために、ビルトインのバーコードスキャナーのような豊富な機能が同梱されとぃます。他には[Math.js](http://mathjs.org/docs/expressions/syntax.html)にもとづいた数式を解くためのハンディな計算機があります(ネットワーク接続が必要)。あなたのノートで以下の例を試して、それがどのように機能するか確認してください:
 
 1. 数式を選択する。
@@ -621,29 +618,29 @@ det([-1, 2; 3, 1])
 log(10000, 10)
 ```
         
-### <a name="performance">Performance</a>
+### <a name="performance">パフォーマンス</a>
 大きなノートを編集する場合は、タイムラグを減らすためにタイトルバーを非表示にしてください。
 
 一般的に、デフォルトのフォントスタイルを使用すると、大きなノートを開く時間が短縮されます。
 
 数式を使用しないユーザーは、**Settings**の**Mathematics**に`.`を入力することにより、数式の描画を無効にできます。数式を無効にすれば、マークダウンの描画が高速になるでしょう。
 
-### <a name="issues">Known Issues</a>
+### <a name="issues">既知の問題</a>
 ノートがウィジェットからアクセスされるとき、ノートがすでに編集中の場合は、もともと編集中だったノートは保存されずに終了します。**neutriNote**は、ノートがウィジェットからオープンされたのか、それともノート一覧からオープンされたか区別しないので、新たにオープンされたノートのために、現在オープンされているノートはクローズされます。したがって、重要な変更はただちに保存することを強く推奨します。
 
 ノートのリネームが必要な場合は、**neutriNote**からリネームしてください。ノートタイトルの大文字小文字を変更するクラウド同期も存在します。**neutriNote**は状況に応じて、これらの変更と大文字小文字の非区別を検知するでしょう。しかし**neutriNote**はノートのタイトルが正確にマッチしなければ、ノートを削除しません。したがって**neutriNote**で最後にノートをリネームするのは危険です。
 
 よりローエンドのデバイスにたいする安定性向上のため、**neutriNote**はサイズが1.5MBまでのノートをサポートします。このサイズを超えるノートは、自動的に`import_errors`というフォルダーに移動されます。これを再度**neutriNote**に取り込むには、1.5MB以下のサイズにノートを分割してから、リポジトリーフォルダーに移動する必要があります。
 
-### <a name="faq">FAQs</a>
+### <a name="faq">FAQ</a>
 **フォルダーはサポートしないのですか?**
 **neutriNote**はフラットで階層に束縛されない、["low cognitive
-load"](http://blog.codinghorror.com/trees-treeviews-and-ui/)(認知的負荷が低)なデザインを提供します。これによりタップの回数は最小化されます。フォルダー操作はネストされたUIと、ルートレベルから遠いノートの取得により多くのタップを要求します。階層構造の最上位でのオフライン検索はフォルダーのレベルを横断する必要があり、そのような場合には体感できるほどの遅延が生じるでしょう。メタデータをカスタムフィルターと併用することにより、フォルダーより一般的な組織化が提供されます(ノートは同時に複数のメタデータにマッチすることができます)。
+load"](http://blog.codinghorror.com/trees-treeviews-and-ui/)(低認知的負荷)なデザインを提供します。これによりタップの回数は最小化されます。フォルダー操作はネストされたUIと、ルートレベルから遠いノートの取得により多くのタップを要求します。階層構造の最上位でのオフライン検索はフォルダーのレベルを横断する必要があり、そのような場合には体感できるほどの遅延が生じるでしょう。メタデータをカスタムフィルターと併用することにより、フォルダーより一般的な組織化が提供されます(ノートは同時に複数のメタデータにマッチすることができます)。
 
-**名前の由来は?**
+**名前の由来は?** 
 乱雑でない何かを伝えようとしたとき、[これ](https://en.wikipedia.org/wiki/Neutrino)が思い浮かびました。
 
-### <a name="privacy">Privacy Policy</a>
+### <a name="privacy">個人情報保護</a>
 このアプリは個人情報を収集しません。location
 data(位置情報)はSettingsからいつでも無効にできます。メニューオプションでは検索履歴のクリアーも提供されています。
 

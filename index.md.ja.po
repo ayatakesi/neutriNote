@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: neutriNote v2.3.5\n"
 "POT-Creation-Date: 2017-08-07 06:54+0000\n"
-"PO-Revision-Date: 2017-08-12 09:21+0900\n"
+"PO-Revision-Date: 2017-08-12 14:26+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -23,17 +23,17 @@ msgstr "## ユーザーガイド"
 #. type: Bullet: '1. '
 #: index.md:30
 msgid "[Getting Started](#started)"
-msgstr ""
+msgstr "[始めましょう](#started)"
 
 #. type: Bullet: '1. '
 #: index.md:30
 msgid "[Backup and Restore](#backup)"
-msgstr ""
+msgstr "[バックアップとリストア](#backup)"
 
 #. type: Bullet: '1. '
 #: index.md:30
 msgid "[Search Tools](#search)"
-msgstr ""
+msgstr "[検索ツール](#search)"
 
 #. type: Plain text
 #: index.md:30
@@ -64,6 +64,30 @@ msgid ""
 "1. [TODO](#todo)\n"
 "1. [About](#about)\n"
 msgstr ""
+"1. [高度な機能](#advanced)\n"
+"    * [メタデータ](#metadata)\n"
+"    * [マークダウン](#md)\n"
+"    * [オートメーション(自動化)](#automation)\n"
+"    * [テキスト展開](#textexpansion)\n"
+"    * [バッチ選択](#batchselect)\n"
+"    * [ボイスメモ](#voicememo)\n"
+"    * [外部フォント](#externalfonts)\n"
+"    * [アンビエントグロー](#ambientglow)\n"
+"    * [キーボード](#keyboard)\n"
+"    * [ジェスチャー](#gestures)\n"
+"    * [ハック](#hacks)\n"
+"    * [ビルトイン変数](#variables)\n"
+"    * [ストレージセーバー](#storage)\n"
+"    * [API](#api)\n"
+"    * [スヌーズ](#snooze)\n"
+"    * [その他](#misc)\n"
+"    * [例](#examples) \n"
+"1. [パフォーマンス](#performance)\n"
+"1. [既知の問題](#issues)\n"
+"1. [FAQ](#faq)\n"
+"1. [個人情報保護](#privacy)\n"
+"1. [TODO](#todo)\n"
+"1. [About](#about)\n"
 
 #. type: Plain text
 #: index.md:33
@@ -71,7 +95,7 @@ msgid ""
 "### <a name=\"started\">Getting Started</a> Thank you for choosing "
 "**neutriNote**."
 msgstr ""
-"### <a name=\"started\">Getting Started</a>\n"
+"### <a name=\"started\">始めましょう</a>\n"
 "**neutriNote**を選んでいただき、ありがとうございます。"
 
 #. type: Plain text
@@ -125,7 +149,7 @@ msgid ""
 "please do take a moment to go over the following sections.  New users may "
 "also want to check out [Backup and Restore](#backup) for ways to preserve "
 "note data beyond the sync mechanism."
-msgstr "アドオンなしでも、**neutriNote**をすぐに使うことができます。多くの機能を発見するために、あちこち触ってみてください。それが**neutriNote**をあなたのノート体験の高度に統合された一部とするでしょう(たとえばメタデータラベルをロングタップすれば[同じような](https://www.dropbox.com/s/tqa3h774xrn49zd/metadata_long_click.png?dl=0)ラベルをもつノートを取得できるし、編集画面でローカル検索アイコンをタップすれば次のマッチにジャンプすることができます)。これを個人情報管理ツールに拡張するのは、以降のセクションまで待ってください。新しいユーザーはデータを守るための、同期メカニズム以上の手段として[Backup and Restore](#backup)も調べてみるとよいでしょう。"
+msgstr "アドオンなしでも、**neutriNote**をすぐに使うことができます。多くの機能を発見するために、あちこち触ってみてください。それが**neutriNote**をあなたのノート体験の高度に統合された一部とするでしょう(たとえばメタデータラベルをロングタップすれば[同じような](https://www.dropbox.com/s/tqa3h774xrn49zd/metadata_long_click.png?dl=0)ラベルをもつノートを取得できるし、編集画面でローカル検索アイコンをタップすれば次のマッチにジャンプすることができます)。これを個人情報管理ツールに拡張するのは、以降のセクションまで待ってください。新しいユーザーはデータを守るための、同期メカニズム以上の手段として[バックアップとリストア](#backup)も調べてみるとよいでしょう。"
 
 #. type: Plain text
 #: index.md:48
@@ -150,8 +174,8 @@ msgid ""
 "sync.  Always use the method described in the [Getting Started](#started) "
 "section from above to initialize and assign repositories."
 msgstr ""
-"#### <a name=\"backup\">Backup and Restore</a>\n"
-"すでに**Local Repository**をアクティブにしていれば、ノートはリポジトリーにたいしてシームレスに同期されるでしょう。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティー製アプリでフォルダーを共有することにより、ノートをリモートに複製できます。**重要** 同期できない可能性があるので、古いリポジトリーは使用しないでください。常に[Getting Started](#started)セクションの、上記の箇所からリポジトリーの初期化と割り当てで説明している方法を使用してください。"
+"#### <a name=\"backup\">バックアップとリストア</a>\n"
+"すでに**Local Repository**をアクティブにしていれば、ノートはリポジトリーにたいしてシームレスに同期されるでしょう。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティー製アプリでフォルダーを共有することにより、ノートをリモートに複製できます。**重要** 同期できない可能性があるので、古いリポジトリーは使用しないでください。常に[始めましょう](#started)セクションの、上記の箇所からリポジトリーの初期化と割り当てで説明している方法を使用してください。"
 
 #. type: Plain text
 #: index.md:53
@@ -182,7 +206,7 @@ msgid ""
 "The syntax below are also highly reusable when they are included as part of "
 "the preset filters (under Settings)."
 msgstr ""
-"#### <a name=\"search\">Search Tools</a>\n"
+"#### <a name=\"search\">検索ツール</a>\n"
 "修正日時、アクセス日時、ユーザーインターフェースにより提供されるロケーション(location: 場所)にもとづくノート検索に加えて、**neutriNote**は高精度のテキストベース検索と正規表現([regular expression](http://en.m.wikipedia.org/wiki/Glob_(programming)))をサポートします。以下の構文も、(セッティングなる)事前定義されたフィルターの一部に含めると、再利用性が高くなります。"
 
 #. type: Plain text
@@ -194,7 +218,7 @@ msgid ""
 "be limited to titles by using the prefix `title:` in the search string.  A "
 "search string like`title:log` will return all notes with the substring `log` "
 "in the titles.\n"
-msgstr "**Search by Fields(フィールド検索)**により、指定したフィールドに検索を限定できます。たとえば、ノート一覧の上にあるメイン検索バーでは、プレフィクスに`title:`を使用することにより、検索をタイトルに限定できます。`title:log`のような検索文字列の場合は、タイトルの一部に`log`という文字列が含まれるすべてのノートがリターンされます。"
+msgstr "**Search by Fields** (フィールド検索)により、指定したフィールドに検索を限定できます。たとえば、ノート一覧の上にあるメイン検索バーでは、プレフィクスに`title:`を使用することにより、検索をタイトルに限定できます。`title:log`のような検索文字列の場合は、タイトルの一部に`log`という文字列が含まれるすべてのノートがリターンされます。"
 
 #. type: Plain text
 #: index.md:62
@@ -205,7 +229,7 @@ msgid ""
 "return notes without metadata). It is also possible to use [regular "
 "expression](http://en.m.wikipedia.org/wiki/Glob_(programming)) in metadata "
 "search, simply use the prefix _metareg:_ in the search string."
-msgstr "検索文字列内でプレフィクスに_meta:_を使用することにより、検索をメタデータに限定することもできます。_meta:personal_のような検索文字列では、メタデータ内の一部に_personal_という文字列を含むすべてのノートがリターンされます(同様に、_meta:_という検索文字列ではメタデータのないすべてのノートがリターンされます)。検索文字列内で単にプレフィクス_metareg:_を使うことにより、正規表現[regular expression](http://en.m.wikipedia.org/wiki/Glob_(programming))も使用可能です。"
+msgstr "検索文字列内でプレフィクスに _meta:_ を使用することにより、検索をメタデータに限定することもできます。 _meta:personal_ のような検索文字列では、メタデータ内の一部に _personal_ という文字列を含むすべてのノートがリターンされます(同様に、 _meta:_ という検索文字列ではメタデータのないすべてのノートがリターンされます)。検索文字列内で単にプレフィクス _metareg:_ を使うことにより、[正規表現](http://en.m.wikipedia.org/wiki/Glob_(programming))も使用可能です。"
 
 #. type: Plain text
 #: index.md:64
@@ -264,7 +288,7 @@ msgstr "ノート検索では、**neutriNote**は[Perl](http://www.erudil.com/pr
 #. type: Plain text
 #: index.md:79
 msgid "### <a name=\"advanced\">Advanced Features</a>"
-msgstr "### <a name=\"advanced\">Advanced Features</a>"
+msgstr "### <a name=\"advanced\">高度な機能</a>"
 
 #. type: Plain text
 #: index.md:82
@@ -273,7 +297,7 @@ msgid ""
 "strings that exist outside note data.  They are searchable and can be used "
 "as tags."
 msgstr ""
-"### <a name=\"metadata\">Metadata</a>\n"
+"### <a name=\"metadata\">メタデータ</a>\n"
 "メタデータとは、ノートの外部に存在する、一般的な用途のためのテキスト文字列です。メタデータは検索することができ、タグとして使用できます。"
 
 #. type: Plain text
@@ -286,7 +310,7 @@ msgid ""
 "example below: ``` This expression \\\\(\\sqrt{3x-1}+(1+x)^2\\\\) is an "
 "example of an inline equation.  ```"
 msgstr ""
-"### <a name=\"md\">Markdown</a>\n"
+"### <a name=\"md\">マークダウン</a>\n"
 "**neutriNote**は[PHP Markdown Extra]( http://michelf.ca/projects/php-markdown/extra/)と、Latexスタイルの数式表現をサポートします。数式表現を入力する一番簡単な方法は、数式を`$$`で囲むことです。インラインで数式を記述するには、次の例のように`\\\\(...\\\\)`を使用します:\n"
 "```\n"
 "This expression \\\\(\\sqrt{3x-1}+(1+x)^2\\\\) is an example of an inline equation.\n"
@@ -530,7 +554,7 @@ msgid ""
 "rendering component could be used to plot a graph using "
 "[JSXGraph](http://jsxgraph.uni-bayreuth.de/wp/examples/):"
 msgstr ""
-"### <a name=\"examples\">Examples</a>\n"
+"### <a name=\"examples\">例</a>\n"
 "以下は[JSXGraph](http://jsxgraph.uni-bayreuth.de/wp/examples/)を使用してグラフをプロットするために、**neutriNote**のレンダリングコンポーネントをどのように使用するかの例です:"
 
 #. type: Plain text
@@ -607,7 +631,7 @@ msgstr ""
 #. type: Plain text
 #: index.md:209
 msgid "### <a name=\"automation\">Automation</a>"
-msgstr "### <a name=\"automation\">Automation</a>"
+msgstr "### <a name=\"automation\">オートメーション(自動化)</a>"
 
 #. type: Plain text
 #: index.md:211
@@ -623,12 +647,12 @@ msgstr "Taskerを使うことにより、**neutriNote**を簡単に自動化で�
 #. type: Bullet: '1. '
 #: index.md:216
 msgid "Create a _new_ task in Tasker."
-msgstr "Taskerで_新しい_タスクを作成します。"
+msgstr "Taskerで _新しい_ タスクを作成します。"
 
 #. type: Bullet: '1. '
 #: index.md:216
 msgid "Add a _new_ action, choose **App** from **Select Action Category**."
-msgstr "**Select Action Category**から**App**を選択して、_新しい_アクションを追加します。"
+msgstr "**Select Action Category**から**App**を選択して、 _新しい_ アクションを追加します。"
 
 #. type: Bullet: '1. '
 #: index.md:216
@@ -682,8 +706,8 @@ msgid ""
 "of `shortcut label|expanded text` (if you do not see the file, enable hidden "
 "files under **Settings**).  Below are some examples:"
 msgstr ""
-"### <a name=\"textexpansion\">Text Expansion</a>\n"
-"**neutriNote**はテキスト展開(text expansion)をサポートします: ショートカットの単語を単にハイライトして、単語を展開するために**Text Expansion**アイコンをタップしてください。すべてのショートカットは**~neutrinote_shortcuts**というファイルに保存されます。ショートカットのは1行ごとに`ショートカットラベル|展開されるテキスト`というフォーマットで定義されます(ファイルを確認できない場合は、**Settings**で非表示ファイル(hidden files)の表示を有効にしてください)。以下はショートカットの例です:"
+"### <a name=\"textexpansion\">テキスト展開</a>\n"
+"**neutriNote**はテキスト展開(text expansion)をサポートします: ショートカットの単語を単にハイライトして、単語を展開するために**Text Expansion**アイコンをタップしてください。すべてのショートカットは **~neutrinote_shortcuts** というファイルに保存されます。ショートカットのは1行ごとに`ショートカットラベル|展開されるテキスト`というフォーマットで定義されます(ファイルを確認できない場合は、**Settings**で非表示ファイル(hidden files)の表示を有効にしてください)。以下はショートカットの例です:"
 
 #. type: Plain text
 #: index.md:234
@@ -734,7 +758,7 @@ msgid ""
 "```"
 msgstr ""
 "```\n"
-"# 使い方: \"trim some_text_string\"を選択して展開すると、 some_text_stringの先頭と末尾のスペースが削除されます。\n"
+"# 使い方: \"trim some_text_string\"を選択して展開すると、some_text_stringの先頭と末尾のスペースが削除される。\n"
 "trim|neutriNote#trim\n"
 "```"
 
@@ -909,7 +933,7 @@ msgid ""
 "### <a name=\"batchselect\">Batch Select</a> Special selection commands are "
 "available for better productivity."
 msgstr ""
-"### <a name=\"batchselect\">Batch Select</a>\n"
+"### <a name=\"batchselect\">バッチ選択</a>\n"
 "生産性向上のために、特別な選択コマンドが利用できます。"
 
 #. type: Bullet: '* '
@@ -971,8 +995,8 @@ msgid ""
 "Google Now dictation.  Simply say _Ok Google note to self_ and pick "
 "**neutriNote** to capture what you say."
 msgstr ""
-"### <a name=\"voicememo\">Voice Memo</a>\n"
-"**neutriNote**はGoogle Now音声検索と互換性があります。_Ok Google note to self_と話し、それをキャプチャーするために**neutriNote**を選択してください。"
+"### <a name=\"voicememo\">ボイスメモ</a>\n"
+"**neutriNote**はGoogle Now音声検索と互換性があります。 _Ok Google note to self_ と話し、それをキャプチャーするために**neutriNote**を選択してください。"
 
 #. type: Plain text
 #: index.md:334
@@ -981,7 +1005,7 @@ msgid ""
 "fonts such as those featured by Google Fonts in **neutriNote** (IMPORTANT: "
 "be sure to read their terms of use carefully):"
 msgstr ""
-"### <a name=\"externalfonts\">External Fonts</a>\n"
+"### <a name=\"externalfonts\">外部フォント</a>\n"
 "**neutriNote**でGoogle Fontsなどにより提供される外部フォントを使用するのは簡単です。(重要: フォントの使用に際しては、使用条件を慎重に確認してください):"
 
 #. type: Bullet: '1. '
@@ -1062,9 +1086,9 @@ msgid ""
 "will not be applied to Markdown and for users of blue light filters it is "
 "recommended that this function be disabled."
 msgstr ""
-"### <a name=\"ambientglow\">Ambient Glow</a>\n"
-"**Ambient Glow**とは、**neutriNote**の色温度を現在の環境レベルに[近似](https://en.wikipedia.org/wiki/Color_temperature#Categorizing_different_lighting)させて調節することで、より _雰囲気_ に即した編集体験を提供するための、試験的機能です。これは青色光フィルターアプリとは異なります。青色光フィルターアプリは、(バッテリー節約のために)Taskerからの照明センサーのデータだけが使用されており、位置情報にもとづいたものではありません。[neutriNote Auto Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)が正しく機能するためには、この機能が必要です。\n"
-"注意: **Ambient Glow**はマークダウンには適用されません。また青色光フィルターのユーザーはこの機能を無効にすることを推奨します。"
+"### <a name=\"ambientglow\">アンビエントグロー</a>\n"
+"**アンビエントグロー**とは、**neutriNote**の色温度を現在の環境レベルに[近似](https://en.wikipedia.org/wiki/Color_temperature#Categorizing_different_lighting)させて調節することで、より _雰囲気_ に即した編集体験を提供するための、試験的機能です。これは青色光フィルターアプリとは異なります。青色光フィルターアプリは、(バッテリー節約のために)Taskerからの照明センサーのデータだけが使用されており、位置情報にもとづいたものではありません。[neutriNote Auto Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)が正しく機能するためには、この機能が必要です。\n"
+"注意: **アンビエントグロー**はマークダウンには適用されません。また青色光フィルターのユーザーはこの機能を無効にすることを推奨します。"
 
 #. type: Plain text
 #: index.md:359
@@ -1072,7 +1096,7 @@ msgid ""
 "### <a name=\"keyboard\">Keyboard</a> The following editor shortcuts are "
 "supported when connected to a physical keyboard:"
 msgstr ""
-"### <a name=\"keyboard\">Keyboard</a>\n"
+"### <a name=\"keyboard\">キーボード</a>\n"
 "物理キーボードが接続されている場合は、以下の編集用ショートカットがサポートされます:"
 
 #. type: Plain text
@@ -1107,7 +1131,7 @@ msgid ""
 "### <a name=\"gestures\">Gestures</a> Various user interface elements "
 "support gestures for better productivity:"
 msgstr ""
-"### <a name=\"gestures\">Gestures</a>\n"
+"### <a name=\"gestures\">ジェスチャー</a>\n"
 "より良い生産性のために、さまざまなインターフェース要素がジェスチャーをサポートします:"
 
 #. type: Plain text
@@ -1166,7 +1190,7 @@ msgid ""
 "### <a name=\"hacks\">Hacks</a> What follows are features that may conflict "
 "with the core functions of **neutriNote**.  Use at your own discretion."
 msgstr ""
-"### <a name=\"hacks\">Hacks</a>\n"
+"### <a name=\"hacks\">ハック</a>\n"
 "以降は**neutriNote**の中核機能と競合するかもしれない機能です。使用は自己責任でお願いします。"
 
 #. type: Plain text
@@ -1333,7 +1357,7 @@ msgid ""
 "Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus).  "
 "(If you have **neutriNote Connector** installed, you would need to remove it "
 "prior to launching **neutriNote Connector+**.)"
-msgstr "**neutriNote Connector**は、拡張子が`.txt`でないファイルを処理しないことに注意してください。拡張子が`.txt`でないファイルをDropboxと同期するには、サードパーティーアプリか[**neutriNote Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus)をインストールする必要があるでしょう(**neutriNote Connector**をインストールしていた場合には、 **neutriNote Connector+**の起動の前にそれを削除する必要があるでしょう)。"
+msgstr "**neutriNote Connector**は、拡張子が`.txt`でないファイルを処理しないことに注意してください。拡張子が`.txt`でないファイルをDropboxと同期するには、サードパーティーアプリか[**neutriNote Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus)をインストールする必要があるでしょう(**neutriNote Connector**をインストールしていた場合には、 **neutriNote Connector+** の起動の前にそれを削除する必要があるでしょう)。"
 
 #. type: Plain text
 #: index.md:434
@@ -1345,7 +1369,7 @@ msgid ""
 "for listing notes containing tomorrow's time stamp, or include them in "
 "shortcut definitions to generate text expansion snippets on the fly."
 msgstr ""
-"### <a name=\"variables\">Built-in Variables (v2.3.4) </a>\n"
+"### <a name=\"variables\">ビルトイン変数 (v2.3.4) </a>\n"
 "ビルトイン変数は検索やショートカット定義に使用されることがあります。たとえば明日のタイムスタンプをもつノートを探す場合には、検索ボックスに`@tomorrow`とタイプします。**Custom Filters**にビルトイン変数を含めることさえできます。たとえば明日のタイムスタンプを含むノートを一覧したり、ビルトイン変数をショートカット定義に含めてオンザフライでテキスト展開の一部を生成できます。"
 
 #. type: Plain text
@@ -1383,7 +1407,7 @@ msgstr ""
 msgid ""
 "See [Hacks](#hacks) for information on how to enable the use of built-in "
 "variables."
-msgstr "ビルトイン変数の使用を有効にする方法については、[Hacks](#hacks)を参照してください。"
+msgstr "ビルトイン変数の使用を有効にする方法については、[ハック](#hacks)を参照してください。"
 
 #. type: Plain text
 #: index.md:451
@@ -1392,7 +1416,7 @@ msgid ""
 "cards, it is possible to store backups on SD cards to save space in internal "
 "storage."
 msgstr ""
-"### <a name=\"storage\">Storage Saver</a>\n"
+"### <a name=\"storage\">ストレージセーバー</a>\n"
 "SDカードをもつデバイスでは、内部ストレージの容量を抑えるために、SDカードにバックアップを保存することが可能です。"
 
 #. type: Bullet: '1. '
@@ -1576,8 +1600,8 @@ msgid ""
 "later, or build a habit of reviewing saved notes.  Simply enable snooze "
 "animation by appending the following to `~neutrinote_settings_data`:"
 msgstr ""
-"### <a name=\"snooze\">Snooze (Experimental)</a>\n"
-"**neutriNote**の非干渉的なビジュアルリマインダーにより、ノートを一時保留にして後で編集したり、保存したノートをレビューする週間を作るのが簡単になります。`~neutrinote_settings_data`に以下を追加することにより、簡単にsnooze animationを有効にできます:"
+"### <a name=\"snooze\">スヌーズ (試験的)</a>\n"
+"**neutriNote**の非干渉的なビジュアルリマインダーにより、ノートを一時保留にして後で編集したり、保存したノートをレビューする週間を作るのが簡単になります。`~neutrinote_settings_data`に以下を追加することにより、簡単にスヌーズアニメーションを有効にできます:"
 
 #. type: Plain text
 #: index.md:548
@@ -1596,7 +1620,7 @@ msgid ""
 "have not been visited long enough.  The visual reminders would be dismissed "
 "as soon as the notes were opened.  To de-activate the snooze, simply remove "
 "the snooze string from the note's metadata."
-msgstr "それからノートを選択してメタデータに特別な**snooze strings**(`+1h`は1時間、`+2d`は2時間のスヌーズです)を追加します。これを行うことにより、そのノートがある期間開かれていなければ、非干渉的なアニメーションが、そのノートの閲覧するよう注意を促します。ビジュアルリマインダーは、ノートがオープンされれば解除されます。スヌーズをオフにするには、そのノートのメタデータからスヌーズ文字列を削除するだけです。"
+msgstr "それからノートを選択してメタデータに特別な**スヌーズ文字列**(`+1h`は1時間、`+2d`は2時間のスヌーズです)を追加します。これを行うことにより、そのノートがある期間開かれていなければ、非干渉的なアニメーションが、そのノートの閲覧するよう注意を促します。ビジュアルリマインダーは、ノートがオープンされれば解除されます。スヌーズをオフにするには、そのノートのメタデータからスヌーズ文字列を削除するだけです。"
 
 #. type: Plain text
 #: index.md:560
@@ -1639,7 +1663,7 @@ msgid ""
 "connection required).  To see how that works, try one of the following "
 "examples in your notes:"
 msgstr ""
-"### <a name=\"misc\">Miscellaneous</a>\n"
+"### <a name=\"misc\">その他</a>\n"
 "**neutriNote**には、neutriNoteからスイッチすることなくテキストベースのデータをキャプチャーするために、ビルトインのバーコードスキャナーのような豊富な機能が同梱されとぃます。他には[Math.js](http://mathjs.org/docs/expressions/syntax.html)にもとづいた数式を解くためのハンディな計算機があります(ネットワーク接続が必要)。あなたのノートで以下の例を試して、それがどのように機能するか確認してください:"
 
 #. type: Bullet: '1. '
@@ -1692,7 +1716,7 @@ msgid ""
 "### <a name=\"performance\">Performance</a> When editing a long note, hide "
 "the title bar to reduce lags."
 msgstr ""
-"### <a name=\"performance\">Performance</a>\n"
+"### <a name=\"performance\">パフォーマンス</a>\n"
 "大きなノートを編集する場合は、タイムラグを減らすためにタイトルバーを非表示にしてください。"
 
 #. type: Plain text
@@ -1722,7 +1746,7 @@ msgid ""
 "the newly opened note.   It is thus highly recommended that important "
 "changes be saved right away.\n"
 msgstr ""
-"### <a name=\"issues\">Known Issues</a>\n"
+"### <a name=\"issues\">既知の問題</a>\n"
 "ノートがウィジェットからアクセスされるとき、ノートがすでに編集中の場合は、もともと編集中だったノートは保存されずに終了します。**neutriNote**は、ノートがウィジェットからオープンされたのか、それともノート一覧からオープンされたか区別しないので、新たにオープンされたノートのために、現在オープンされているノートはクローズされます。したがって、重要な変更はただちに保存することを強く推奨します。\n"
 
 #. type: Plain text
@@ -1758,9 +1782,9 @@ msgid ""
 "used together with custom filters provides more general organization than "
 "folders (a note can match multiple metadata simultaneously)."
 msgstr ""
-"### <a name=\"faq\">FAQs</a>\n"
-"**フォルダーはサポートしないのですか?**\n"
-"**neutriNote**はフラットで階層に束縛されない、[\"low cognitive load\"](http://blog.codinghorror.com/trees-treeviews-and-ui/)(認知的負荷が低)なデザインを提供します。これによりタップの回数は最小化されます。フォルダー操作はネストされたUIと、ルートレベルから遠いノートの取得により多くのタップを要求します。階層構造の最上位でのオフライン検索はフォルダーのレベルを横断する必要があり、そのような場合には体感できるほどの遅延が生じるでしょう。メタデータをカスタムフィルターと併用することにより、フォルダーより一般的な組織化が提供されます(ノートは同時に複数のメタデータにマッチすることができます)。"
+"### <a name=\"faq\">FAQ</a>\n"
+"**フォルダーはサポートしないのですか?** \n"
+"**neutriNote**はフラットで階層に束縛されない、[\"low cognitive load\"](http://blog.codinghorror.com/trees-treeviews-and-ui/)(低認知的負荷)なデザインを提供します。これによりタップの回数は最小化されます。フォルダー操作はネストされたUIと、ルートレベルから遠いノートの取得により多くのタップを要求します。階層構造の最上位でのオフライン検索はフォルダーのレベルを横断する必要があり、そのような場合には体感できるほどの遅延が生じるでしょう。メタデータをカスタムフィルターと併用することにより、フォルダーより一般的な組織化が提供されます(ノートは同時に複数のメタデータにマッチすることができます)。"
 
 #. type: Plain text
 #: index.md:601
@@ -1769,7 +1793,7 @@ msgid ""
 "**Story behind the name?** [This](https://en.wikipedia.org/wiki/Neutrino) "
 "came up when trying to conjure up something that conveys unclutterness. \n"
 msgstr ""
-"**名前の由来は?**\n"
+"**名前の由来は?** \n"
 "乱雑でない何かを伝えようとしたとき、[これ](https://en.wikipedia.org/wiki/Neutrino)が思い浮かびました。\n"
 
 #. type: Plain text
@@ -1779,7 +1803,7 @@ msgid ""
 "information. Location data can always be disabled via Settings.  A menu "
 "option is also provided to clear search history."
 msgstr ""
-"### <a name=\"privacy\">Privacy Policy</a>\n"
+"### <a name=\"privacy\">個人情報保護</a>\n"
 "このアプリは個人情報を収集しません。location data(位置情報)はSettingsからいつでも無効にできます。メニューオプションでは検索履歴のクリアーも提供されています。"
 
 #. type: Plain text
