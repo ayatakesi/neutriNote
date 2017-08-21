@@ -403,7 +403,7 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
 
 ### <a name="keyboard">キーボード</a>
 物理キーボードが接続されている場合は、以下の編集用ショートカットがサポートされます:
-    
+
 | Shortcuts       | Actions    |
 | --------------- |:----------:|
 | `Ctrl-S`        | Save       |
@@ -414,6 +414,7 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
 | `Ctrl-Shift-Z`  | Redo       | 
 | `Ctrl-]`        | Indent     |  
 | `Ctrl-[`        | Un-indent  |  
+
 
 ### <a name="gestures">ジェスチャー</a>
 より良い生産性のために、さまざまなインターフェース要素がジェスチャーをサポートします:
