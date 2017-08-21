@@ -404,16 +404,17 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
 ### <a name="keyboard">キーボード</a>
 物理キーボードが接続されている場合は、以下の編集用ショートカットがサポートされます:
 
-| Shortcuts       | Actions    |
-| --------------- |:----------:|
-| `Ctrl-S`        | Save       |
-| `Ctrl-F`        | Local Find | 
-| `F3`            | Find Next  | 
-| `Ctrl-H`        | Replace    |  
-| `Ctrl-Z`        | Undo       |  
-| `Ctrl-Shift-Z`  | Redo       | 
-| `Ctrl-]`        | Indent     |  
-| `Ctrl-[`        | Un-indent  |  
+| Shortcuts                  | Actions           |
+| -------------------------- |:-----------------:|
+| `Ctrl-S`                   | Save              |
+| `Ctrl-F`                   | Local Find        | 
+| `F3`                       | Find Next         | 
+| `Ctrl-H`                   | Replace           | 
+| `Ctrl-D`                   | Dictionary Lookup |  
+| `Ctrl-Z`                   | Undo              |  
+| `Ctrl-Shift-Z`             | Redo              | 
+| `Ctrl-]` or `Ctrl-I`       | Indent            |  
+| `Ctrl-[` or `Ctrl-Shift-I` | Un-indent         | 
 
 
 ### <a name="gestures">ジェスチャー</a>
