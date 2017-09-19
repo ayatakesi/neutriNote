@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: neutriNote v2.4.0\n"
 "POT-Creation-Date: 2017-08-21 15:23+0000\n"
-"PO-Revision-Date: 2017-09-17 14:09+0900\n"
+"PO-Revision-Date: 2017-09-18 03:42+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -184,7 +184,7 @@ msgstr ""
 #: index.md.orig:50
 #, no-wrap
 msgid "**IMPORTANT**: from v1.3.1, **neutriNote** supports **Runtime Permissions** in Android Marshmallow devices.  Be sure to grant **neutriNote** permission to access external storage for its **Local Repository** to work properly.  To enable previously denied permissions, go to **neutriNote**'s **App Info** under Android, renable the permissions and restart the app.\n"
-msgstr "**重要** v1.3.1より、**neutriNote**はAndroid Marshmallowデバイスの**実行時権限**をサポートしています。外部ストレージの**Local Repository**が正しく機能するために、**neutriNote**に外部ストレージへのアクセス権限を付与するのを忘れないでください。以前に拒否された権限を有効にするには、Androidの**アプリ情報**から権限を有効にしてからアプリを再起動してください。"
+msgstr "**重要** v1.3.1より、**neutriNote**はAndroid Marshmallowデバイスの**実行時権限**をサポートしています。外部ストレージの**Local Repository**が正しく機能するために、**neutriNote**に外部ストレージへのアクセス権限を付与するのを忘れないでください。以前に拒否された権限を有効にするには、Androidの**アプリ情報**から権限を有効にしてからアプリを再起動してください。\n"
 
 #. type: Plain text
 #: index.md.orig:53
@@ -211,7 +211,7 @@ msgstr ""
 #: index.md.orig:55
 #, no-wrap
 msgid "**Incremental Backup** is another way to copy your notes in non-intrusive fashion. To enable, simply do so from Settings.  Then your notes and app settings will be backed up incrementally at least once daily to a internal storage folder called _neutrinote_export_.  Note: exported app settings data are stored in regular notes with prefix _.neutrinote_ so that they can be sync no differently from other notes.\n"
-msgstr "**Incremental Backup**とは、煩わしくないやり方でノートをコピーする別の方法です。有効にするには、Settingでそれを単に有効にするだけです。そうすれば、あなたのノートとアプリのセッティングは、少なくとも1日1回は内部ストレージの _neutrinote_export_ というフォルダーにインクリメンタルにバックアップされます。注意: エクスポートされたアプリのセッティングデータは、通常のノートにプレフィクス _.neutrinote_ をつけて保存されるので、他のノートと同じように同期させることができます。"
+msgstr "**Incremental Backup**とは、煩わしくないやり方でノートをコピーする別の方法です。有効にするには、Settingでそれを単に有効にするだけです。そうすれば、あなたのノートとアプリのセッティングは、少なくとも1日1回は内部ストレージの _neutrinote_export_ というフォルダーにインクリメンタルにバックアップされます。注意: エクスポートされたアプリのセッティングデータは、通常のノートにプレフィクス _.neutrinote_ をつけて保存されるので、他のノートと同じように同期させることができます。\n"
 
 #. type: Plain text
 #: index.md.orig:57
@@ -243,7 +243,7 @@ msgstr ""
 #: index.md.orig:62
 #, no-wrap
 msgid "**Search by Fields** It is possible to restrict search to a specified field.  For example, at the main search bar over the note list, search can be limited to titles by using the prefix `title:` in the search string.  A search string like`title:log` will return all notes with the substring `log` in the titles.\n"
-msgstr "**Search by Fields** (フィールド検索)により、指定したフィールドに検索を限定できます。たとえば、ノート一覧の上にあるメイン検索バーでは、プレフィクスに`title:`を使用することにより、検索をタイトルに限定できます。`title:log`のような検索文字列の場合は、タイトルの一部に`log`という文字列が含まれるすべてのノートがリターンされます。"
+msgstr "**Search by Fields** (フィールド検索)により、指定したフィールドに検索を限定できます。たとえば、ノート一覧の上にあるメイン検索バーでは、プレフィクスに`title:`を使用することにより、検索をタイトルに限定できます。`title:log`のような検索文字列の場合は、タイトルの一部に`log`という文字列が含まれるすべてのノートがリターンされます。\n"
 
 #. type: Plain text
 #: index.md.orig:64
@@ -897,11 +897,7 @@ msgstr ""
 msgid ""
 "# Usage: select \"defuscate some_text_string\" and expand, some_text_string "
 "will be defuscated.  defuscate|neutriNote#decode ```"
-msgstr ""
-"# 使い方: \"defuscate some_text_string\"を選択して展開すると、"
-"some_text_stringを復号化する。\n"
-"defuscate|neutriNote#encode\n"
-"```\n"
+msgstr "# 使い方: \"defuscate some_text_string\"を選択して展開すると、some_text_stringを復号化する。defuscate|neutriNote#encode ```"
 
 #. type: Plain text
 #: index.md.orig:281
@@ -945,11 +941,7 @@ msgstr ""
 msgid ""
 "# Usage: select \"rsort some_lines\" and expand, some_lines will be sorted "
 "in reverse order.  rsort|neutriNote#rsort ```"
-msgstr ""
-"# 使い方: \"rsort some_lines\"を選択して展開すると、some_linesが逆順にソート"
-"される。\n"
-"rsort|neutriNote#rsort\n"
-"```\n"
+msgstr "# 使い方: \"rsort some_lines\"を選択して展開すると、some_linesが逆順にソートされる。rsort|neutriNote#rsort ```"
 
 #. type: Plain text
 #: index.md.orig:298
@@ -1171,10 +1163,7 @@ msgid ""
 "Create a folder called `fonts` under your Local Repository, download and "
 "save the font file (.ttf) in that folder.  Note that external fonts will not "
 "be backup by **neutriNote**."
-msgstr ""
-"ローカルリポジトリー配下に`fonts`というフォルダーを作成しからて、フォントファ"
-"イル(.ttf)をダウンロードしてそのフォルダーに保存します。外部フォントは"
-"**neutriNote**によりバックアップされないことに注意してください。\n"
+msgstr "ローカルリポジトリー配下に`fonts`というフォルダーを作成しからて、フォントファイル(.ttf)をダウンロードしてそのフォルダーに保存します。外部フォントは**neutriNote**によりバックアップされないことに注意してください。"
 
 #. type: Bullet: '1. '
 #: index.md.orig:360

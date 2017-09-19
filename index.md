@@ -49,12 +49,14 @@ Connector](https://play.google.com/store/apps/details?id=com.appmindlab.connecto
 アドオンなしでも、**neutriNote**をすぐに使うことができます。多くの機能を発見するために、あちこち触ってみてください。それが**neutriNote**をあなたのノート体験の高度に統合された一部とするでしょう(たとえばメタデータラベルをロングタップすれば[同じような](https://www.dropbox.com/s/tqa3h774xrn49zd/metadata_long_click.png?dl=0)ラベルをもつノートを取得できるし、編集画面でローカル検索アイコンをタップすれば次のマッチにジャンプすることができます)。これを個人情報管理ツールに拡張するのは、以降のセクションまで待ってください。新しいユーザーはデータを守るための、同期メカニズム以上の手段として[バックアップとリストア](#backup)も調べてみるとよいでしょう。
 
 **重要** v1.3.1より、**neutriNote**はAndroid Marshmallowデバイスの**実行時権限**をサポートしています。外部ストレージの**Local Repository**が正しく機能するために、**neutriNote**に外部ストレージへのアクセス権限を付与するのを忘れないでください。以前に拒否された権限を有効にするには、Androidの**アプリ情報**から権限を有効にしてからアプリを再起動してください。
+
 #### <a name="backup">バックアップとリストア</a>
 すでに**Local
 Repository**をアクティブにしていれば、ノートはリポジトリーにたいしてシームレスに同期されるでしょう。[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en)のようなサードパーティー製アプリでフォルダーを共有することにより、ノートをリモートに複製できます。**重要**
 同期できない可能性があるので、古いリポジトリーは使用しないでください。常に[始めましょう](#started)セクションの、上記の箇所からリポジトリーの初期化と割り当てで説明している方法を使用してください。
     
 **Incremental Backup**とは、煩わしくないやり方でノートをコピーする別の方法です。有効にするには、Settingでそれを単に有効にするだけです。そうすれば、あなたのノートとアプリのセッティングは、少なくとも1日1回は内部ストレージの _neutrinote_export_ というフォルダーにインクリメンタルにバックアップされます。注意: エクスポートされたアプリのセッティングデータは、通常のノートにプレフィクス _.neutrinote_ をつけて保存されるので、他のノートと同じように同期させることができます。
+
 より複雑なシナリオについては、[neutriNote
 Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus)を調べてみてください。
 
@@ -64,6 +66,7 @@ Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus
 expression](http://en.m.wikipedia.org/wiki/Glob_(programming)))をサポートします。以下の構文も、(セッティングなる)事前定義されたフィルターの一部に含めると、再利用性が高くなります。
 
 **Search by Fields** (フィールド検索)により、指定したフィールドに検索を限定できます。たとえば、ノート一覧の上にあるメイン検索バーでは、プレフィクスに`title:`を使用することにより、検索をタイトルに限定できます。`title:log`のような検索文字列の場合は、タイトルの一部に`log`という文字列が含まれるすべてのノートがリターンされます。
+
 検索文字列内でプレフィクスに _meta:_ を使用することにより、検索をメタデータに限定することもできます。 _meta:personal_
 のような検索文字列では、メタデータ内の一部に _personal_ という文字列を含むすべてのノートがリターンされます(同様に、 _meta:_
 という検索文字列ではメタデータのないすべてのノートがリターンされます)。検索文字列内で単にプレフィクス _metareg:_
@@ -287,10 +290,9 @@ trim|neutriNote#trim
 # 使い方: "obfuscate some_text_string"を選択して展開すると、some_text_stringを難読化する。
 obfuscate|neutriNote#encode
 
-# 使い方: "defuscate some_text_string"を選択して展開すると、some_text_stringを復号化する。
-defuscate|neutriNote#encode
+# 使い方: "defuscate
+some_text_string"を選択して展開すると、some_text_stringを復号化する。defuscate|neutriNote#encode
 ```
-
 
 "morph"テキストスニペット(text snippets)にたいして、基本的なCスタイルフォーマットを使用することもできます。
 
@@ -306,10 +308,8 @@ addcomma|neutriNote#morph %,d
 # 使い方: "sort some_lines"を選択して展開すると、some_linesがソートされる。
 sort|neutriNote#sort
 
-# 使い方: "rsort some_lines"を選択して展開すると、some_linesが逆順にソートされる。
-rsort|neutriNote#rsort
-```
-
+# 使い方: "rsort
+some_lines"を選択して展開すると、some_linesが逆順にソートされる。rsort|neutriNote#rsort ```
 
 文字列からHTMLを削除することさえできます:
 
@@ -361,9 +361,8 @@ param3`のように、コマンドとなるショートカットの後にスペ�
   Bar*の`(`か`)`をタップすると、選択されたテキストがカッコで括られます。ヒント:他のシンボルペアーも試してみてください。
 * 複数パラグラフの編集: 複数のパラグラフを選択して**Markdown Symbol
   Toolbar**のシンボルかアクションを選択します。たとえば、`➡`をタップすると選択されたパラグラフがインデントされ、`*`をタップすると選択されたパラグラフが箇条書きリストになります。
-* Select the path of any linked image, tap **OCR** to extract text from the
-  image.
 
+* イメージからテキストを抽出するには、リンクされたイメージのパスを選択して、**OCR**をタップします。
     
 ### <a name="voicememo">ボイスメモ</a>
 **neutriNote**はGoogle Now音声検索と互換性があります。 _Ok Google note to self_
@@ -375,7 +374,6 @@ param3`のように、コマンドとなるショートカットの後にスペ�
 フォントの使用に際しては、使用条件を慎重に確認してください):
 
 1. ローカルリポジトリー配下に`fonts`というフォルダーを作成しからて、フォントファイル(.ttf)をダウンロードしてそのフォルダーに保存します。外部フォントは**neutriNote**によりバックアップされないことに注意してください。
-
 1. **Settings**で非表示ファイル(hidden
    files)の標準的なを有効にし、まだ作成されていない場合は`~neutrinote_fonts`というノートを新たに作成します。
 1. こｎノートにフォントのためのセクションを追加(フォントが複数ある場合は、各セクションを空行で分割)します。セクションの各行には以下を記述します:
@@ -431,14 +429,14 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
     * **list status**バーを左右にスワイプすると、隣接するフィルター/日時に移動。
     * **list status**をダブルタップすると、デフォルトのフィルター/日時を回復。
 
-* Edit screen:
-    * Tap **editor status** (to the right of the note title) to view note statistics and clipboard content; long tap clipboard content to view full clipboard content; long tap update status to view recent updates in other notes without leaving the current note.
-    * Long tap the **Shortcut** icon to view user defined shortcuts.
-    * Immediately after conducting a search, tap the **Search** icon to advance to the next match.
-    * Double tap **editor status** to temporarily save the current cursor position.  
-    * Swipe left on **editor status** to return to saved cursor position.
-    * After conducting search, dial up/down **editor status** to go to previous/next hits.
-    * For Android 6.0 or higher, swipe right on **editor status** will resume in edit screen the last scroll bar position from Markdown preview.
+* 編集画面:
+    * **editor status**(ノートタイトルの右)をタップするとノートの統計情報とクリップボードの内容を閲覧、クリップボードの内容をロングタップするとクリップボードの完全な内容の閲覧、update statusをロングタップすると、現在のノートを離れることなく、他のノートの最近の更新を閲覧。
+    * **Shortcut**アイコンをタップすると、ユーザー定義ショートカットを閲覧。
+    * 検索した直後に、**Search**アイコンをタップすると次のマッチに進む。
+    * **editor status**をダブルタップすると、現在のカーソル位置を一時的に保存。
+    * **editor status**上で左にスワイプすると、保存したカーソル位置に復帰。
+    * 検索した後、**editor status**をダイアルアップ/ダウン(訳注: マッチ番号を上/下にフリック)すると前/次のマッチに移動。
+    * Android 6.0以降では、**editor status**上で右にスワイプするとマークダウンプレビューの最後のスクロールバー位置へ編集画面を戻す。
 
 ### <a name="hacks">ハック</a>
 以降は**neutriNote**の中核機能と競合するかもしれない機能です。使用は自己責任でお願いします。
@@ -447,29 +445,29 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
 Hidden**を有効にしてください)内の変数をいろいろ変更することができます。変更を保存したら、その変更を有効にするために、**Restore App
 Data**を行ってください。注意: 設定ファイルの変更により、**neutriNote**が不安定になるかもしれません。
     
-| Variable Names                                    |  Values                                                                                                          |
+| 変数名                                            |  値                                                                                                              |
 | ------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------:|
-| com.appmindlab.nano.pref_open_in_markdown         | `true`: always open notes in markdown preview                                                                    |
-| com.appmindlab.nano.pref_markdown_trigger         | Specify a metadata substring pattern to open notes in Markdown by default                                        |
-| com.appmindlab.nano.pref_safe_mode_tag            | Specify a metadata substring pattern to disable internal Markdown parser                                         |
-| com.appmindlab.nano.pref_linkify_trigger          | Specify a metadata substring pattern to open notes linkified by default                                          |
-| com.appmindlab.nano.pref_latex_single_dollar      | `true`: use single dollar signs to signify math expressions                                                      |
-| com.appmindlab.nano.pref_indent_char              | Specify the character(s) to use for indentation.  Default: 4 spaces                                              |  
-| com.appmindlab.nano.pref_append_custom_style    | `true`: **Extend** built-in styles with `~neutrinote_styles.txt`.  `false`: **Replace** built-in styles with `~neutrinote_styles.txt`.                |
-| com.appmindlab.nano.pref_show_toolbar             | `true`: always show edit toolbar                                                                                 |
-| com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `:;\;/;_;-;,;●` (vertical bar and semicolon not allowed) | 
-| com.appmindlab.nano.pref_font_size_list           | Specify custom font size options delimited by semicolons.  Default: `8;10;12;14;16;18;24;32;48` |
-| com.appmindlab.nano.pref_margin_list              | Specify custom margin options delimited by semicolons.  Default: `8;16;24` |
-| com.appmindlab.nano.pref_excluded_buttons         | Selectively hide toolbar buttons via a semicolon delimited string, e.g., `location;draw;replace` will hide the location, draw, and replace buttons on the toolbar.  The following buttons can be hidden: `markdown`, `time`, `date`, `location`, `expand`, `draw`, `top`, `bottom`, `find`, `replace`, `barcode`, `image`, `ocr`, `define`, `calculate`, `search` |
-|com.appmindlab.nano.pref_custom_date_format        | Override system date stamp format with custom [date format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
-|com.appmindlab.nano.pref_custom_time_format        | Override system time stamp format with custom [time format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
-| com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
-| com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |
-| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
-| com.appmindlab.nano.pref_max_deleted_copies_age   | Specify maximum number of days deleted copies will be kept (pruning to occur during next backup).  Default: -1 (unlimited)      |
-| com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
-| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
-| com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   
+| com.appmindlab.nano.pref_open_in_markdown         | `true`: 常にマークダウンビューでノートをオープンする。                                                           |
+| com.appmindlab.nano.pref_markdown_trigger         | デフォルトでマークダウンでオープンするノートの、メタデータの部分文字列パターンを指定する。                       |
+| com.appmindlab.nano.pref_safe_mode_tag            | 内部マークダウンパーサーを無効にする、メタデータの部分文字列パターンを指定する。                                 |
+| com.appmindlab.nano.pref_linkify_trigger          | デフォルトでlinkifyされたノートをオープンするための、メタデータの部分文字列パターンを指定する 。                |
+| com.appmindlab.nano.pref_latex_single_dollar      | `true`: 数式を表すために、1つの$記号を使用する。                                                                |
+| com.appmindlab.nano.pref_indent_char              | インデントに使用する文字を指定する。デフォルトは4つのスペース。                                                  |
+| com.appmindlab.nano.pref_append_custom_style      | `true`: ビルトインスタイルを`~neutrinote_styles.txt`で**拡張**する。 `false`: ビルトインスタイルを`~neutrinote_styles.txt`で**置き換え**る。 |
+| com.appmindlab.nano.pref_show_toolbar             | `true`: 常に編集ツールバーを表示する。                                                                      .    |
+| com.appmindlab.nano.pref_canvas_strokes           | スケッチツールでサポートされる固定長シンボルをセミコロンで区切って指定する(垂直バーとセミコロンは不可)。         | 
+| com.appmindlab.nano.pref_font_size_list           | カスタムフォントサイズのオプションをセミコロンで区切って指定する。デフォルトは`8;10;12;14;16;18;24;32;48`        |
+| com.appmindlab.nano.pref_margin_list              | カスタムマージンのオプションをセミコロンで区切って指定する。デフォルトは`8;16;24`                                |
+| com.appmindlab.nano.pref_excluded_buttons         | セミコロンで区切られた文字列により、ツールバーのボタンを選択的に非表示にする。たとえば、`location;draw;replace`は、ツールバー上のlocation、draw、replaceボタン。非表示にできるボタンは`markdown`、`time`、`date`、`location`、`expand`、`draw`、`top`、`bottom`、`find`、`replace`、`barcode`、`image`、`ocr`、`define`、`calculate`、`search` |
+|com.appmindlab.nano.pref_custom_date_format        | システムの日付スタンプをカスタムの[日付フォーマット](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html)でオーバーライドする。 |
+|com.appmindlab.nano.pref_custom_time_format        | システムの時刻スタンプをカスタムの[時刻フォーマット](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html)でオーバーライドする。 |
+| com.appmindlab.nano.pref_preview_mode             | `start`: プレビューでノートの先頭を表示。 `end`: 最後を表示。 `off`: プレビューを無効にする。                   |
+| com.appmindlab.nano.pref_icon_behavior            | 0: アニメーションはオフ。 1: アニメーションはオン。 2: アニメーションを[スヌーズ](#snooze)。                     |
+| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: 削除されたファイルを`trash_bin`フォルダーに保持する。                                                    |
+| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: `trash_bin`フォルダー配下に削除されたファイルのコピ＝を保持する。                                       |
+| com.appmindlab.nano.pref_local_priority_tag       | ローカルコピーがリモートからの変更で上書きされることを防ぐ。ノートが複数デバイスから編集される場合は競合が発生するかもしれないことに注意。 |
+| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: 検索およびショートカット定義で[ビルトイン変数](#variables)を評価する。                                   |
+| com.appmindlab.nano.pref_low_space_mode           | `true`: [storage space saver](#storage)をオンにする。                                                            |   
              
 上級ユーザーは、**neutriNote**で複数のテキストファイルタイプを有効にすると良いかもしれません。これをセットアップする場合は、以下のすべてのステップを慎重に行ってください。
 
