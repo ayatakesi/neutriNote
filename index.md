@@ -309,7 +309,8 @@ addcomma|neutriNote#morph %,d
 sort|neutriNote#sort
 
 # 使い方: "rsort
-some_lines"を選択して展開すると、some_linesが逆順にソートされる。rsort|neutriNote#rsort ```
+some_lines"を選択して展開すると、some_linesが逆順にソートされる。rsort|neutriNote#rsort
+```
 
 文字列からHTMLを削除することさえできます:
 
