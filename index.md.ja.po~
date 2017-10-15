@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: neutriNote v2.4.3\n"
+"Project-Id-Version: neutriNote v2.4.0\n"
 "POT-Creation-Date: 2017-10-15 15:20+0000\n"
-"PO-Revision-Date: 2017-10-16 03:04+0900\n"
+"PO-Revision-Date: 2017-09-21 01:05+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -1145,7 +1145,7 @@ msgstr ""
 msgid ""
 "Select the path of any linked image, tap **OCR** to extract text from the "
 "image."
-msgstr "イメージからテキストを抽出するには、リンクされたイメージのパスを選択して、**OCR**をタップします。"
+msgstr ""
 
 #. type: Plain text
 #: index.md:348
@@ -1277,7 +1277,19 @@ msgstr ""
 
 #. type: Plain text
 #: index.md:390
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Shortcuts                  | Actions           |\n"
+#| "| -------------------------- |:-----------------:|\n"
+#| "| `Ctrl-S`                   | Save              |\n"
+#| "| `Ctrl-F`                   | Local Find        | \n"
+#| "| `F3`                       | Find Next         | \n"
+#| "| `Ctrl-H`                   | Replace           | \n"
+#| "| `Ctrl-D`                   | Dictionary Lookup |  \n"
+#| "| `Ctrl-Z`                   | Undo              |  \n"
+#| "| `Ctrl-Shift-Z`             | Redo              | \n"
+#| "| `Ctrl-]` or `Ctrl-I`       | Indent            |  \n"
+#| "| `Ctrl-[` or `Ctrl-Shift-I` | Un-indent         | \n"
 msgid ""
 "| Shortcuts                  | Actions           |\n"
 "| -------------------------- |:-----------------:|\n"
@@ -1298,8 +1310,7 @@ msgstr ""
 "| `Ctrl-F`                   | Local Find        | \n"
 "| `F3`                       | Find Next         | \n"
 "| `Ctrl-H`                   | Replace           | \n"
-"| `Ctrl-D`                   | Dictionary Lookup |\n"
-"| `Ctrl-W`                   | Web Search        |  \n"
+"| `Ctrl-D`                   | Dictionary Lookup |  \n"
 "| `Ctrl-Z`                   | Undo              |  \n"
 "| `Ctrl-Shift-Z`             | Redo              | \n"
 "| `Ctrl-]` or `Ctrl-I`       | Indent            |  \n"
@@ -1337,7 +1348,16 @@ msgstr ""
 
 #. type: Plain text
 #: index.md:411
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "* Edit screen:\n"
+#| "    * Tap **editor status** (to the right of the note title) to view note statistics and clipboard content; long tap clipboard content to view full clipboard content; long tap update status to view recent updates in other notes without leaving the current note.\n"
+#| "    * Tap the **Shortcut** icon to view user defined shortcuts.\n"
+#| "    * Immediately after conducting a search, tap the **Search** icon to advance to the next match.\n"
+#| "    * Double tap **editor status** to temporarily save the current cursor position.  \n"
+#| "    * Swipe left on **editor status** to return to saved cursor position.\n"
+#| "    * After conducting search, dial up/down **editor status** to go to previous/next hits.\n"
+#| "    * For Android 6.0 or higher, swipe right on **editor status** will resume in edit screen the last scroll bar position from Markdown preview.\n"
 msgid ""
 "* Edit screen:\n"
 "    * Tap **editor status** (to the right of the note title) to view note statistics and clipboard content; long tap clipboard content to view full clipboard content; long tap update status to view recent updates in other notes without leaving the current note.\n"
@@ -1350,7 +1370,7 @@ msgid ""
 msgstr ""
 "* 編集画面:\n"
 "    * **editor status**(ノートタイトルの右)をタップするとノートの統計情報とクリップボードの内容を閲覧、クリップボードの内容をロングタップするとクリップボードの完全な内容の閲覧、update statusをロングタップすると、現在のノートを離れることなく、他のノートの最近の更新を閲覧。\n"
-"    * **Shortcut**アイコンをロングタップすると、ユーザー定義ショートカットを閲覧。\n"
+"    * **Shortcut**アイコンをタップすると、ユーザー定義ショートカットを閲覧。\n"
 "    * 検索した直後に、**Search**アイコンをタップすると次のマッチに進む。\n"
 "    * **editor status**をダブルタップすると、現在のカーソル位置を一時的に保存。\n"
 "    * **editor status**上で左にスワイプすると、保存したカーソル位置に復帰。\n"
@@ -1383,7 +1403,30 @@ msgstr ""
 
 #. type: Plain text
 #: index.md:441
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Variable Names                                    |  Values                                                                                                          |\n"
+#| "| ------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------:|\n"
+#| "| com.appmindlab.nano.pref_open_in_markdown         | `true`: always open notes in markdown preview                                                                    |\n"
+#| "| com.appmindlab.nano.pref_markdown_trigger         | Specify a metadata substring pattern to open notes in Markdown by default                                        |\n"
+#| "| com.appmindlab.nano.pref_safe_mode_tag            | Specify a metadata substring pattern to disable internal Markdown parser                                         |\n"
+#| "| com.appmindlab.nano.pref_linkify_trigger          | Specify a metadata substring pattern to open notes linkified by default                                          |\n"
+#| "| com.appmindlab.nano.pref_latex_single_dollar      | `true`: use single dollar signs to signify math expressions                                                      |\n"
+#| "| com.appmindlab.nano.pref_indent_char              | Specify the character(s) to use for indentation.  Default: 4 spaces                                              |  \n"
+#| "| com.appmindlab.nano.pref_append_custom_style    | `true`: **Extend** built-in styles with `~neutrinote_styles.txt`.  `false`: **Replace** built-in styles with `~neutrinote_styles.txt`.                |\n"
+#| "| com.appmindlab.nano.pref_show_toolbar             | `true`: always show edit toolbar                                                                                 |\n"
+#| "| com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `:;\\;/;_;-;,;●` (vertical bar and semicolon not allowed) | \n"
+#| "| com.appmindlab.nano.pref_font_size_list           | Specify custom font size options delimited by semicolons.  Default: `8;10;12;14;16;18;24;32;48` |\n"
+#| "| com.appmindlab.nano.pref_margin_list              | Specify custom margin options delimited by semicolons.  Default: `8;16;24` |\n"
+#| "| com.appmindlab.nano.pref_excluded_buttons         | Selectively hide toolbar buttons via a semicolon delimited string, e.g., `location;draw;replace` will hide the location, draw, and replace buttons on the toolbar.  The following buttons can be hidden: `markdown`, `time`, `date`, `location`, `expand`, `draw`, `top`, `bottom`, `find`, `replace`, `barcode`, `image`, `ocr`, `define`, `calculate`, `search` |\n"
+#| "|com.appmindlab.nano.pref_custom_date_format        | Override system date stamp format with custom [date format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |\n"
+#| "|com.appmindlab.nano.pref_custom_time_format        | Override system time stamp format with custom [time format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |\n"
+#| "| com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |\n"
+#| "| com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |\n"
+#| "| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |\n"
+#| "| com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |\n"
+#| "| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  \n"
+#| "| com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   \n"
 msgid ""
 "| Variable Names                                    |  Values                                                                                                          |\n"
 "| ------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------:|\n"
@@ -1410,7 +1453,6 @@ msgid ""
 "| com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   \n"
 "| com.appmindlab.nano.pref_new_note_file_type       | Specify file type for new notes.  Multiple type mode required (see below).  Default: `.txt`  | \n"
 msgstr ""
-"\n"
 "| 変数名                                            |  値                                                                                                              |\n"
 "| ------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------:|\n"
 "| com.appmindlab.nano.pref_open_in_markdown         | `true`: 常にマークダウンビューでノートをオープンする。                                                           |\n"
@@ -1429,12 +1471,11 @@ msgstr ""
 "|com.appmindlab.nano.pref_custom_time_format        | システムの時刻スタンプをカスタムの[時刻フォーマット](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html)でオーバーライドする。 |\n"
 "| com.appmindlab.nano.pref_preview_mode             | `start`: プレビューでノートの先頭を表示。 `end`: 最後を表示。 `off`: プレビューを無効にする。                   |\n"
 "| com.appmindlab.nano.pref_icon_behavior            | 0: アニメーションはオフ。 1: アニメーションはオン。 2: アニメーションを[スヌーズ](#snooze)。                     |\n"
+"| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: 削除されたファイルを`trash_bin`フォルダーに保持する。                                                    |\n"
 "| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: `trash_bin`フォルダー配下に削除されたファイルのコピ＝を保持する。                                       |\n"
-"| com.appmindlab.nano.pref_max_deleted_copies_age    | 削除されたファイルが保持される最大の日数を指定する(次のバックアップが発生するまでの間に整理する)。デフォルト: -1 (無制限)                                            |\n"
 "| com.appmindlab.nano.pref_local_priority_tag       | ローカルコピーがリモートからの変更で上書きされることを防ぐ。ノートが複数デバイスから編集される場合は競合が発生するかもしれないことに注意。 |\n"
 "| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: 検索およびショートカット定義で[ビルトイン変数](#variables)を評価する。                                   |\n"
-"| com.appmindlab.nano.pref_low_space_mode           | `true`: [storage space saver](#storage)をオンにする。                                                            |\n"
-"| com.appmindlab.nano.pref_new_note_file_type       |S 新しいノートにたいするファイルタイプを指定する。複数タイプモードが必要(以下参照)。デフォルト: `.txt` | \n"
+"| com.appmindlab.nano.pref_low_space_mode           | `true`: [storage space saver](#storage)をオンにする。                                                            |   \n"
 
 #. type: Plain text
 #: index.md:443
@@ -1499,7 +1540,7 @@ msgstr ""
 #: index.md:454
 #, no-wrap
 msgid "> To enable search history transfer across devices, simply add a note called `~neutrinote_search_history.txt`.   Search history can then be cloned when app data are restored by tapping **Restore App Data** on your other devices.\n"
-msgstr "検索ヒストリーにたいするデバイス間の転送を有効にするには、単に`~neutrinote_search_history.txt`というノートを追加します。すると、他のデバイス上で**Restore App Data**をタップすることによりアプリのデータがリストアされるときに検索ヒストリーもクローンされるようになります。\n"
+msgstr ""
 
 #. type: Plain text
 #: index.md:456
