@@ -437,6 +437,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
 | com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   
+| com.appmindlab.nano.pref_new_note_file_type       | Specify file type for new notes.  Multiple type mode required (see below).  Default: `.txt`  | 
              
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
@@ -448,6 +449,8 @@ Advanced users may enable multiple text file types for **neutriNote**.  To setup
 1. Restore app data.
 
 (To reverse the support of multiple file types, you would need to remove the file `~neutrinote_multitype.txt`, then un-install/re-install **neutriNote**.)
+
+> To enable search history transfer across devices, simply add a note called `~neutrinote_search_history.txt`.   Search history can then be cloned when app data are restored by tapping **Restore App Data** on your other devices.
 
 Note that **neutriNote Connector** will not handle files without `.txt` extension.  To sync files without `.txt` extension with Dropbox you would have to install a third party app or install [**neutriNote Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus).  (If you have **neutriNote Connector** installed, you would need to remove it prior to launching **neutriNote Connector+**.)
 

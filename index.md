@@ -362,8 +362,8 @@ param3`のように、コマンドとなるショートカットの後にスペ�
   Bar*の`(`か`)`をタップすると、選択されたテキストがカッコで括られます。ヒント:他のシンボルペアーも試してみてください。
 * 複数パラグラフの編集: 複数のパラグラフを選択して**Markdown Symbol
   Toolbar**のシンボルかアクションを選択します。たとえば、`➡`をタップすると選択されたパラグラフがインデントされ、`*`をタップすると選択されたパラグラフが箇条書きリストになります。
-
 * イメージからテキストを抽出するには、リンクされたイメージのパスを選択して、**OCR**をタップします。
+
     
 ### <a name="voicememo">ボイスメモ</a>
 **neutriNote**はGoogle Now音声検索と互換性があります。 _Ok Google note to self_
@@ -412,7 +412,7 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
 | `F3`                       | Find Next         | 
 | `Ctrl-H`                   | Replace           | 
 | `Ctrl-D`                   | Dictionary Lookup |
-| `Ctrl-W`                   | Web Search        |
+| `Ctrl-W`                   | Web Search        |  
 | `Ctrl-Z`                   | Undo              |  
 | `Ctrl-Shift-Z`             | Redo              | 
 | `Ctrl-]` or `Ctrl-I`       | Indent            |  
@@ -432,7 +432,7 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
 
 * 編集画面:
     * **editor status**(ノートタイトルの右)をタップするとノートの統計情報とクリップボードの内容を閲覧、クリップボードの内容をロングタップするとクリップボードの完全な内容の閲覧、update statusをロングタップすると、現在のノートを離れることなく、他のノートの最近の更新を閲覧。
-    * **Shortcut**アイコンをタップすると、ユーザー定義ショートカットを閲覧。
+    * **Shortcut**アイコンをロングタップすると、ユーザー定義ショートカットを閲覧。
     * 検索した直後に、**Search**アイコンをタップすると次のマッチに進む。
     * **editor status**をダブルタップすると、現在のカーソル位置を一時的に保存。
     * **editor status**上で左にスワイプすると、保存したカーソル位置に復帰。
@@ -446,6 +446,7 @@ Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)�
 Hidden**を有効にしてください)内の変数をいろいろ変更することができます。変更を保存したら、その変更を有効にするために、**Restore App
 Data**を行ってください。注意: 設定ファイルの変更により、**neutriNote**が不安定になるかもしれません。
     
+
 | 変数名                                            |  値                                                                                                              |
 | ------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------:|
 | com.appmindlab.nano.pref_open_in_markdown         | `true`: 常にマークダウンビューでノートをオープンする。                                                           |
@@ -464,11 +465,13 @@ Data**を行ってください。注意: 設定ファイルの変更により、
 |com.appmindlab.nano.pref_custom_time_format        | システムの時刻スタンプをカスタムの[時刻フォーマット](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html)でオーバーライドする。 |
 | com.appmindlab.nano.pref_preview_mode             | `start`: プレビューでノートの先頭を表示。 `end`: 最後を表示。 `off`: プレビューを無効にする。                   |
 | com.appmindlab.nano.pref_icon_behavior            | 0: アニメーションはオフ。 1: アニメーションはオン。 2: アニメーションを[スヌーズ](#snooze)。                     |
-| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: 削除されたファイルを`trash_bin`フォルダーに保持する。                                                    |
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: `trash_bin`フォルダー配下に削除されたファイルのコピ＝を保持する。                                       |
+
+| com.appmindlab.nano.pref_max_deleted_copies_age    | 削除されたファイルが保持される最大の日数を指定する(次のバックアップが発生するまでの間に整理する)。デフォルト: -1 (無制限) 
 | com.appmindlab.nano.pref_local_priority_tag       | ローカルコピーがリモートからの変更で上書きされることを防ぐ。ノートが複数デバイスから編集される場合は競合が発生するかもしれないことに注意。 |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: 検索およびショートカット定義で[ビルトイン変数](#variables)を評価する。                                   |
-| com.appmindlab.nano.pref_low_space_mode           | `true`: [storage space saver](#storage)をオンにする。                                                            |   
+| com.appmindlab.nano.pref_low_space_mode           | `true`: [storage space saver](#storage)をオンにする。                                                            |
+| com.appmindlab.nano.pref_new_note_file_type       |S 新しいノートにたいするファイルタイプを指定する。複数タイプモードが必要(以下参照)。デフォルト: `.txt` | 
              
 上級ユーザーは、**neutriNote**で複数のテキストファイルタイプを有効にすると良いかもしれません。これをセットアップする場合は、以下のすべてのステップを慎重に行ってください。
 
@@ -480,6 +483,8 @@ Data**を行ってください。注意: 設定ファイルの変更により、
 1. アプリのデータをリストアします。
 
 (複数ファイルタイプのサポートを取り消す場合は、ファイル`~neutrinote_multitype.txt`を削除した後に、**neutriNote**のアンインストールと再インストールが必要になります。)
+
+検索ヒストリーにたいするデバイス間の転送を有効にするには、単に`~neutrinote_search_history.txt`というノートを追加します。すると、他のデバイス上で**Restore App Data**をタップすることによりアプリのデータがリストアされるときに検索ヒストリーもクローンされるようになります。
 
 **neutriNote
 Connector**は、拡張子が`.txt`でないファイルを処理しないことに注意してください。拡張子が`.txt`でないファイルをDropboxと同期するには、サードパーティーアプリか[**neutriNote

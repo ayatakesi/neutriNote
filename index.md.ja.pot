@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-08-21 15:23+0000\n"
+"POT-Creation-Date: 2017-10-15 15:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: index.md.orig:2
+#: index.md:2
 msgid "## User Guide"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:4
+#: index.md:4
 msgid ""
 "<sup>[[Japanese "
 "Edition](https://github.com/ayatakesi/neutriNote/blob/master/index.md)]</sup>"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:32
+#: index.md:32
 msgid "[Getting Started](#started)"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:32
+#: index.md:32
 msgid "[Backup and Restore](#backup)"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:32
+#: index.md:32
 msgid "[Search Tools](#search)"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:32
+#: index.md:32
 #, no-wrap
 msgid ""
 "1. [Advanced Features](#advanced)\n"
@@ -74,33 +74,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:35
+#: index.md:35
 msgid ""
 "### <a name=\"started\">Getting Started</a> Thank you for choosing "
 "**neutriNote**."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:37
+#: index.md:37
 msgid ""
 "Right after installation, be sure to follow the onscreen instruction and "
 "choose a location for **Local Repository**."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:39
+#: index.md:39
 msgid "If your repository is empty, you may add notes right away."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:41
+#: index.md:41
 msgid ""
 "If you have installed **neutriNote** previously, you may pick the repository "
 "already on your device."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:43
+#: index.md:43
 msgid ""
 "If you have settings backed up from your previous installation, you may also "
 "choose [Restore App "
@@ -109,7 +109,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:46
+#: index.md:46
 msgid ""
 "To enable sync is easy, either install a third party app like "
 "[Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en) "
@@ -119,7 +119,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:48
+#: index.md:48
 msgid ""
 "Even without add-ons, **neutriNote** is ready for use.  Explore around to "
 "discover many features that would make **neutriNote** a highly integrated "
@@ -134,7 +134,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:50
+#: index.md:50
 #, no-wrap
 msgid ""
 "**IMPORTANT**: from v1.3.1, **neutriNote** supports **Runtime Permissions** "
@@ -145,7 +145,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:53
+#: index.md:53
 msgid ""
 "#### <a name=\"backup\">Backup and Restore</a> If you have already activated "
 "**Local Repository**, your notes will be sync seamlessly to the repository.  "
@@ -158,7 +158,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:55
+#: index.md:55
 #, no-wrap
 msgid ""
 "**Incremental Backup** is another way to copy your notes in non-intrusive "
@@ -170,14 +170,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:57
+#: index.md:57
 msgid ""
 "For more demanding scenarios, check out [neutriNote "
 "Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus)."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:60
+#: index.md:60
 msgid ""
 "#### <a name=\"search\">Search Tools</a> While notes can be retrieved based "
 "on modified time, accessed time, and location as providied by the user "
@@ -188,7 +188,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:62
+#: index.md:62
 #, no-wrap
 msgid ""
 "**Search by Fields** It is possible to restrict search to a specified "
@@ -199,7 +199,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:64
+#: index.md:64
 msgid ""
 "Search can also be limited to metadata by using the prefix _meta:_ in the "
 "search string.  A search string such as _meta:personal_ will return all "
@@ -210,7 +210,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:66
+#: index.md:66
 msgid ""
 "To ensure metadata match when conducting multi-term search, one may use the "
 "following syntax at the main search bar: `join:term1,term2,term3` and so "
@@ -220,7 +220,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:68
+#: index.md:68
 msgid ""
 "To search for multiple terms, the easiest way is to use **Advanced "
 "Search**.  You can also specify boolean search queries with syntax like "
@@ -229,7 +229,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:70
+#: index.md:70
 #, no-wrap
 msgid ""
 "**Custom Filters** The power of the above syntax lies in that it can also be "
@@ -240,12 +240,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:74
+#: index.md:74
 msgid "``` all;starred;A;B;C;D;E;F;G;H;I;J;K;L;M;N;O;P;Q;R;S;T;U;V;W;X;Y;Z ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:76
+#: index.md:76
 #, no-wrap
 msgid ""
 "**all** is reserved for retrieving all notes, and **starred** reserved for "
@@ -254,7 +254,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:78
+#: index.md:78
 msgid ""
 "For searching within notes, **neutriNote** recognizes basic "
 "[Perl](http://www.erudil.com/preqr.pdf) style patterns: `\\d` for digits, "
@@ -262,12 +262,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:81
+#: index.md:81
 msgid "### <a name=\"advanced\">Advanced Features</a>"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:84
+#: index.md:84
 msgid ""
 "### <a name=\"metadata\">Metadata</a> Metadata are general purpose text "
 "strings that exist outside note data.  They are searchable and can be used "
@@ -275,7 +275,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:90
+#: index.md:90
 msgid ""
 "### <a name=\"md\">Markdown</a> **neutriNote** supports [PHP Markdown "
 "Extra]( http://michelf.ca/projects/php-markdown/extra/) and LaTeX style "
@@ -286,24 +286,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:92
+#: index.md:92
 msgid ""
 "To create in-document anchors/footnotes in PHP Markdown, use link syntax as "
 "in the following example:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:95
+#: index.md:95
 msgid "``` # heading 1 {#header1}"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:97
+#: index.md:97
 msgid "## heading 2"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:107
+#: index.md:107
 #, no-wrap
 msgid ""
 "* item 1:\n"
@@ -318,7 +318,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:109
+#: index.md:109
 msgid ""
 "To allow table of contents to be generated automatically, add a placeholder "
 "`<span id='toc' />`, tag each paragraph header with a unique ID by following "
@@ -327,7 +327,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:112
+#: index.md:112
 #, no-wrap
 msgid ""
 "```\n"
@@ -336,12 +336,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:115
+#: index.md:115
 msgid "<span id='toc' />"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:118
+#: index.md:118
 #, no-wrap
 msgid ""
 "## Header 1 {#header1}\n"
@@ -349,7 +349,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:121
+#: index.md:121
 #, no-wrap
 msgid ""
 "## Header 2 {#header2}\n"
@@ -357,7 +357,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:125
+#: index.md:125
 #, no-wrap
 msgid ""
 "## Header 3 {#header3}\n"
@@ -366,66 +366,66 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:127
+#: index.md:127
 msgid ""
 "To create link between notes, simply use one of the following syntax (`%20` "
 "denotes space):"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:130
+#: index.md:130
 msgid "``` [My File](file:///sdcard/neutriNote/my_file.txt)"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:132
+#: index.md:132
 msgid "[My File](./my_file.txt)"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:134
+#: index.md:134
 msgid "[My File](my_file.txt)"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:137
+#: index.md:137
 msgid "[GTD](get%20things%20done.txt)  ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:139
+#: index.md:139
 msgid "Linking to an image under local repository, simply do:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:143
+#: index.md:143
 msgid "``` ![My Image](my_image.jpg)  ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:145
+#: index.md:145
 msgid ""
 "Linking to notes from other apps that support hyperlinks, simply prefix note "
 "names with `http://neutriNote.io`.  For example:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:148
+#: index.md:148
 msgid "``` http://neutriNote.io/my_diary"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:150
+#: index.md:150
 msgid "http://neutriNote.io/my_diary?search=first%20headquarter%20visit"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:152
+#: index.md:152
 msgid "```"
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md.orig:154
+#: index.md:154
 msgid ""
 "There is a conflict between Markdown italic symbol and LaTeX subscript "
 "symbol.  To workaround this problem, either escape the subscript symbols or "
@@ -433,36 +433,36 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:156
+#: index.md:156
 #, no-wrap
 msgid "    `$$k_{n+1} = n^2 + k_n^2 - k_{n-1}$$`\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:158
+#: index.md:158
 #, no-wrap
 msgid "    do this:\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:160
+#: index.md:160
 #, no-wrap
 msgid "    `$$k\\_{n+1} = n^2 + k\\_n^2 - k\\_{n-1}$$`\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:162
+#: index.md:162
 #, no-wrap
 msgid "    Or use script block with the desired type like this:\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:166
+#: index.md:166
 msgid "``` <script type=\"math/tex\">k_{n+1} = n^2 + k_n^2 - k_{n-1}</script> ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:168
+#: index.md:168
 msgid ""
 "It's easy to customize the style of Markdown with popular inline CSS.  For "
 "more extensive styling needs, you can \"swap out\" built-in styling by "
@@ -473,7 +473,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:173
+#: index.md:173
 msgid ""
 "``` <link "
 "href=\"http://thomasf.github.io/solarized-css/solarized-light.min.css\" "
@@ -483,7 +483,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:176
+#: index.md:176
 msgid ""
 "### <a name=\"examples\">Examples</a> An example of how **neutriNote**'s "
 "rendering component could be used to plot a graph using "
@@ -491,7 +491,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:188
+#: index.md:188
 #, no-wrap
 msgid ""
 "```\n"
@@ -512,12 +512,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:192
+#: index.md:192
 msgid "``` <canvas id=\"example\" width=\"200\" height=\"200\"> </canvas>"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:203
+#: index.md:203
 msgid ""
 "<head> <script> var example = document.getElementById('example'); var "
 "context = example.getContext('2d'); context.fillStyle = 'red'; "
@@ -528,26 +528,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:206
+#: index.md:206
 msgid ""
 "``` <img src=\"http://yuml.me/diagram/scruffy/usecase/[Cms Admin]^[User], "
 "[Customer]^[User], [Agent]^[User]\" >"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:209
+#: index.md:209
 msgid ""
 "<img src=\"http://yuml.me/diagram/nofunky/class/`[Customer]->[Billing "
 "Address]`\"> ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:211
+#: index.md:211
 msgid "### <a name=\"automation\">Automation</a>"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:213
+#: index.md:213
 #, no-wrap
 msgid ""
 "**neutriNote** can be easily automated using Tasker.  For example, "
@@ -558,22 +558,22 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:218
+#: index.md:218
 msgid "Create a _new_ task in Tasker."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:218
+#: index.md:218
 msgid "Add a _new_ action, choose **App** from **Select Action Category**."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:218
+#: index.md:218
 msgid "Choose the extension just downloaded from the app selection screen."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:218
+#: index.md:218
 msgid ""
 "Now the task is created and ready for use in any of your profiles.  For "
 "example, create a new profile that will be triggered when the display is on "
@@ -583,7 +583,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:220
+#: index.md:220
 msgid ""
 "Steps above apply to [neutriNote "
 "Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus) "
@@ -591,7 +591,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:222
+#: index.md:222
 msgid ""
 "The following illustrates finer control over expiring automated backups.  "
 "Backups kept over 180 days will be purged automatically or chronologically "
@@ -599,7 +599,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:236
+#: index.md:236
 msgid ""
 "``` A1: Send Intent [Action:com.appmindlab.nano.ACTION_FULL_BACKUP Cat:None "
 "Mime Type: Data: Extra:com.appmindlab.nano.EXTRA_MAX_BACKUP_COUNT:30 "
@@ -608,7 +608,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:238
+#: index.md:238
 msgid ""
 "For users who are interested in keeping clipboard history, simply create a "
 "profile to monitor the setting of Tasker's `%CLIP` variable, then add the "
@@ -616,7 +616,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:244
+#: index.md:244
 msgid ""
 "``` A1: Variable Set [ Name:%NEWLINE To:Do Maths:Off Append:Off ] A2: Write "
 "File [ File:neutriNote/clipboard_events.txt Text:## %DATE %TIME %NEWLINE "
@@ -625,7 +625,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:247
+#: index.md:247
 msgid ""
 "### <a name=\"textexpansion\">Text Expansion</a> **neutriNote** supports "
 "text expansion: simply highlight any shortcut word and tap the **Text "
@@ -636,26 +636,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:251
+#: index.md:251
 msgid "``` cell|123-456-7890 email|john.smith@test.com"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:255
+#: index.md:255
 msgid ""
 "# Usage: select \"highlight your_text\" and expand, return "
 "\"<mark>your_text</mark>\".  highlight|<mark>???</mark> ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:257
+#: index.md:257
 msgid ""
 "Shortcuts can be defined for frequently used patterns for string "
 "replacements.  For example:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:262
+#: index.md:262
 msgid ""
 "``` # Usage: select \"encode some_text_string\" and expand, some_text_string "
 "will be returned with all blank spaces encoded.  encode|neutriNote#replace "
@@ -663,12 +663,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:264
+#: index.md:264
 msgid "An example to trim leading and trailing spaces from a body of text:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:269
+#: index.md:269
 msgid ""
 "``` # Usage: select \"trim some_text_string\" and expand, leading and "
 "trailing spaces of some_text_string will be removed.  trim|neutriNote#trim "
@@ -676,31 +676,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:271
+#: index.md:271
 msgid "Shortcuts to obfuscate / defuscate a chunk of text:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:275
+#: index.md:275
 msgid ""
 "``` # Usage: select \"obfuscate some_text_string\" and expand, "
 "some_text_string will be obfuscated.  obfuscate|neutriNote#encode"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:279
+#: index.md:279
 msgid ""
 "# Usage: select \"defuscate some_text_string\" and expand, some_text_string "
 "will be defuscated.  defuscate|neutriNote#decode ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:281
+#: index.md:281
 msgid "You can also use basic C style format specifiers to \"morph\" text snippets."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:286
+#: index.md:286
 msgid ""
 "``` # Usage: select \"addcomma some_numeric_string\" and expand, "
 "some_numeric_string will be comma separated.  addcomma|neutriNote#morph ℅,d "
@@ -708,64 +708,64 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:288
+#: index.md:288
 msgid "These simple shortcuts make it easy to sort lines:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:292
+#: index.md:292
 msgid ""
 "``` # Usage: select \"sort some_lines\" and expand, some_lines will be "
 "sorted.  sort|neutriNote#sort"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:296
+#: index.md:296
 msgid ""
 "# Usage: select \"rsort some_lines\" and expand, some_lines will be sorted "
 "in reverse order.  rsort|neutriNote#rsort ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:298
+#: index.md:298
 msgid "There is even a way to remove HTML tags from strings:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:303
+#: index.md:303
 msgid ""
 "``` # Usage: select \"notag some_text_string\" and expand to remove HTML "
 "tags from some_text_string.  notag|neutriNote#removeHTML ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:305
+#: index.md:305
 msgid ""
 "You can create shortcuts for simple shell commands as well.  Give it a try "
 "by adding the prefix `neutriNote$` to the commands just like below:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:310
+#: index.md:310
 msgid "``` date|neutriNote$ date ps|neutriNote$ ps ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:312
+#: index.md:312
 msgid ""
 "To emulate the behavior of to-do list, shortcuts can be defined to mimic "
 "checkbox toggling."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:315
+#: index.md:315
 msgid ""
 "``` # Usage: place cursor next to any asterisk and expand.  To toggle "
 "checkboxes, tap expand again."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:321
+#: index.md:321
 #, no-wrap
 msgid ""
 "*|[▪]\n"
@@ -776,26 +776,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:323
+#: index.md:323
 msgid ""
 "Multitasking especially with floating apps is easier with shortcut like "
 "this:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:326
+#: index.md:326
 msgid ""
 "``` # Usage: launch a terminal without leaving neutriNote by expanding the "
 "shortcut."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:329
+#: index.md:329
 msgid "termfloat|neutriNote#launch com.termux.window ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:331
+#: index.md:331
 msgid ""
 "You can include basic parameters with the commands, just write them after "
 "the command shortcut and separate each parameter with space+commas like "
@@ -806,14 +806,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:335
+#: index.md:335
 msgid ""
 "### <a name=\"batchselect\">Batch Select</a> Special selection commands are "
 "available for better productivity."
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md.orig:343
+#: index.md:344
 msgid ""
 "Tap `Top` icon in *Toolbox* when a section of text has been selected to "
 "extend selection all the way to the top, or if an anchor has been positioned "
@@ -821,7 +821,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md.orig:343
+#: index.md:344
 msgid ""
 "Tap `Bottom` icon in *Toolbox* when a section of text has been selected to "
 "extend selection all the way to the bottom, or if an anchor has been "
@@ -829,7 +829,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md.orig:343
+#: index.md:344
 msgid ""
 "Tap **editor status** next to note title to gather statistics for current "
 "note when nothing is selected, or just the selected text when a section of "
@@ -837,26 +837,26 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md.orig:343
+#: index.md:344
 msgid "To edit an ASCII drawing, select it and tap the **Sketch** icon."
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md.orig:343
+#: index.md:344
 msgid ""
 "To encode/decode a portion of the note, select the portion and choose "
 "**Encode/Decode** from menu."
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md.orig:343
+#: index.md:344
 msgid ""
 "Tap `(` or `)` from *Symbol Bar* when text selection is active to enclose "
 "the selected text in brackets.  Hint: also try out other symbol pairs."
 msgstr ""
 
 #. type: Bullet: '* '
-#: index.md.orig:343
+#: index.md:344
 msgid ""
 "Edit multiple paragraphs: select multiple paragraphs and tap a symbol / "
 "action from **Markdown Symbol Toolbar**.  For example, you can indent "
@@ -864,8 +864,15 @@ msgid ""
 "bulleted list simply by tapping `*`."
 msgstr ""
 
+#. type: Bullet: '* '
+#: index.md:344
+msgid ""
+"Select the path of any linked image, tap **OCR** to extract text from the "
+"image."
+msgstr ""
+
 #. type: Plain text
-#: index.md.orig:347
+#: index.md:348
 msgid ""
 "### <a name=\"voicememo\">Voice Memo</a> **neutriNote** is compatible with "
 "Google Now dictation.  Simply say _Ok Google note to self_ and pick "
@@ -873,7 +880,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:351
+#: index.md:352
 msgid ""
 "### <a name=\"externalfonts\">External Fonts</a> It's easy to use external "
 "fonts such as those featured by Google Fonts in **neutriNote** (IMPORTANT: "
@@ -881,7 +888,7 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:360
+#: index.md:361
 msgid ""
 "Create a folder called `fonts` under your Local Repository, download and "
 "save the font file (.ttf) in that folder.  Note that external fonts will not "
@@ -889,14 +896,14 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:360
+#: index.md:361
 msgid ""
 "Enable hidden files under **Settings**.  Create a new note called "
 "`~neutrinote_fonts` if one does not exist yet."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:360
+#: index.md:361
 #, no-wrap
 msgid ""
 "1. Add a section in the note for the font (if there are multiple fonts, "
@@ -910,7 +917,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:362
+#: index.md:363
 msgid ""
 "For example, to use this "
 "[font](https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Goudy+Bookletter+1911), "
@@ -918,7 +925,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:369
+#: index.md:370
 #, no-wrap
 msgid ""
 "```\n"
@@ -931,7 +938,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:373
+#: index.md:374
 msgid ""
 "### <a name=\"ambientglow\">Ambient Glow</a> **Ambient Glow** is an "
 "experimental function that adjusts the color temperature of **neutriNote** "
@@ -948,14 +955,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:376
+#: index.md:377
 msgid ""
 "### <a name=\"keyboard\">Keyboard</a> The following editor shortcuts are "
 "supported when connected to a physical keyboard:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:388
+#: index.md:390
 #, no-wrap
 msgid ""
 "| Shortcuts                  | Actions           |\n"
@@ -964,7 +971,8 @@ msgid ""
 "| `Ctrl-F`                   | Local Find        | \n"
 "| `F3`                       | Find Next         | \n"
 "| `Ctrl-H`                   | Replace           | \n"
-"| `Ctrl-D`                   | Dictionary Lookup |  \n"
+"| `Ctrl-D`                   | Dictionary Lookup |\n"
+"| `Ctrl-W`                   | Web Search        |\n"
 "| `Ctrl-Z`                   | Undo              |  \n"
 "| `Ctrl-Shift-Z`             | Redo              | \n"
 "| `Ctrl-]` or `Ctrl-I`       | Indent            |  \n"
@@ -972,14 +980,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:392
+#: index.md:394
 msgid ""
 "### <a name=\"gestures\">Gestures</a> Various user interface elements "
 "support gestures for better productivity:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:400
+#: index.md:402
 #, no-wrap
 msgid ""
 "* Note list screen:\n"
@@ -993,7 +1001,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:409
+#: index.md:411
 #, no-wrap
 msgid ""
 "* Edit screen:\n"
@@ -1001,7 +1009,7 @@ msgid ""
 "statistics and clipboard content; long tap clipboard content to view full "
 "clipboard content; long tap update status to view recent updates in other "
 "notes without leaving the current note.\n"
-"    * Tap the **Shortcut** icon to view user defined shortcuts.\n"
+"    * Long tap the **Shortcut** icon to view user defined shortcuts.\n"
 "    * Immediately after conducting a search, tap the **Search** icon to "
 "advance to the next match.\n"
 "    * Double tap **editor status** to temporarily save the current cursor "
@@ -1014,14 +1022,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:412
+#: index.md:414
 msgid ""
 "### <a name=\"hacks\">Hacks</a> What follows are features that may conflict "
 "with the core functions of **neutriNote**.  Use at your own discretion."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:414
+#: index.md:416
 msgid ""
 "You can tinker with the variables found inside of "
 "**~neutrinote_settings_data** (enabled by **Show Hidden** under "
@@ -1031,7 +1039,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:437
+#: index.md:441
 #, no-wrap
 msgid ""
 "| Variable Names                                    |  Values                                                                                                          "
@@ -1093,6 +1101,9 @@ msgid ""
 "| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of "
 "deleted files under `trash_bin` folder                                                        "
 "|\n"
+"| com.appmindlab.nano.pref_max_deleted_copies_age   | Specify maximum number "
+"of days deleted copies will be kept (pruning to occur during next backup).  "
+"Default: -1 (unlimited)      |\n"
 "| com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata "
 "substring pattern to prevent local copy from being overwritten by remote "
 "changes.  Note that conflicts may occur if a note is being edited on "
@@ -1102,51 +1113,53 @@ msgid ""
 "|  \n"
 "| com.appmindlab.nano.pref_low_space_mode           | `true`: turn on "
 "[storage space saver](#storage) |   \n"
+"| com.appmindlab.nano.pref_new_note_file_type       | Specify file type for "
+"new notes.  Multiple type mode required (see below).  Default: `.txt`  | \n"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:439
+#: index.md:443
 msgid ""
 "Advanced users may enable multiple text file types for **neutriNote**.  To "
 "setup, please carefully follow all the steps below:"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:446
+#: index.md:450
 msgid "Backup ALL app settings and notes."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:446
+#: index.md:450
 msgid ""
 "Add a blank file called `~neutrinote_multitype.txt` to your **Local "
 "Repository**."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:446
+#: index.md:450
 msgid ""
 "Un-install **neutriNote** (or clear the app's data under Android's system "
 "settings)."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:446
+#: index.md:450
 msgid "Re-install **neutriNote**."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:446
+#: index.md:450
 msgid "Once rescan finishes, file extensions will appear in note titles."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:446
+#: index.md:450
 msgid "Restore app data."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:448
+#: index.md:452
 msgid ""
 "(To reverse the support of multiple file types, you would need to remove the "
 "file `~neutrinote_multitype.txt`, then un-install/re-install "
@@ -1154,7 +1167,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:450
+#: index.md:454
+#, no-wrap
+msgid ""
+"> To enable search history transfer across devices, simply add a note called "
+"`~neutrinote_search_history.txt`.   Search history can then be cloned when "
+"app data are restored by tapping **Restore App Data** on your other "
+"devices.\n"
+msgstr ""
+
+#. type: Plain text
+#: index.md:456
 msgid ""
 "Note that **neutriNote Connector** will not handle files without `.txt` "
 "extension.  To sync files without `.txt` extension with Dropbox you would "
@@ -1165,7 +1188,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:453
+#: index.md:459
 msgid ""
 "### <a name=\"variables\">Built-in Variables (v2.3.4) </a> Built-in "
 "variables may be used in search or shortcut definitions.  For example, to "
@@ -1176,7 +1199,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:465
+#: index.md:471
 #, no-wrap
 msgid ""
 "| Variables            | Descriptions                            |                              "
@@ -1195,14 +1218,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:467
+#: index.md:473
 msgid ""
 "See [Hacks](#hacks) for information on how to enable the use of built-in "
 "variables."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:470
+#: index.md:476
 msgid ""
 "### <a name=\"storage\">Storage Saver</a> For devices equipped with SD "
 "cards, it is possible to store backups on SD cards to save space in internal "
@@ -1210,24 +1233,24 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:475
+#: index.md:481
 msgid "Tap **Backup App Data**."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:475
+#: index.md:481
 msgid ""
 "Add `com.appmindlab.nano.pref_low_space_mode|true` to "
 "**~neutrinote_settings_data**."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:475
+#: index.md:481
 msgid "Tap **Restore App Data**."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:475
+#: index.md:481
 msgid ""
 "Future backups will be stored at "
 "`/Android/data/com.appmindlab.nano/files/neutrinote_export` under the SD "
@@ -1235,14 +1258,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:477
+#: index.md:483
 msgid ""
 "Notice that the backups will be automatically removed to reclaim storage "
 "space if neutriNote is uninstalled."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:480
+#: index.md:486
 msgid ""
 "### <a name=\"api\">API (v2.0.8) </a> neutriNote's Markdown engine is fully "
 "modular and swappable.  If you are familar with compiler scripting and would "
@@ -1251,7 +1274,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:487
+#: index.md:493
 #, no-wrap
 msgid ""
 "| Methods              | Descriptions           |                              "
@@ -1265,56 +1288,56 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:489
+#: index.md:495
 msgid "Adopt this pattern of invoking neurtiNote in your script:"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:496 index.md.orig:530
+#: index.md:502 index.md:536
 msgid ""
 "``` (function (){   ////////////   // Set up //   ////////////   "
 "neutriNote.init(document);"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:501 index.md.orig:535
+#: index.md:507 index.md:541
 msgid ""
 "  //////////////////   // Get raw data //   //////////////////   var str = "
 "neutriNote.getData();"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:506 index.md.orig:540
+#: index.md:512 index.md:546
 msgid ""
 "  ///////////////////////////   // Prepare for rendering //   "
 "///////////////////////////   neutriNote.prepare();"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:510
+#: index.md:516
 msgid "  ///////////   // Parse //   ///////////"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:512
+#: index.md:518
 #, no-wrap
 msgid "  ... <- Custom conversion logic goes here!\n"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:517 index.md.orig:550
+#: index.md:523 index.md:556
 msgid ""
 "  /////////////////   // Set content //   /////////////////   "
 "neutriNote.setContent(str)"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:520 index.md.orig:553
+#: index.md:526 index.md:559
 msgid "})(window, document); ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:523
+#: index.md:529
 msgid ""
 "To illustrate, suppose you simply want to render everything in italics, all "
 "you need is to create `~neutrinote_script.txt` and paste in the following "
@@ -1322,17 +1345,17 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:545
+#: index.md:551
 msgid "  ///////////   // Parse //   ///////////   str = '<i>' + str + '</i>';"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:555
+#: index.md:561
 msgid "Now go to your note and tap render to view the output of your custom parser."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:557
+#: index.md:563
 msgid ""
 "More useful parsing can be achieved by following the same pattern.  Take a "
 "look at this example of integrating "
@@ -1341,14 +1364,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:559
+#: index.md:565
 msgid ""
 "To restore default PHP Markdown syntax, just remove "
 "`~neutrinote_script.txt`."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:563
+#: index.md:569
 msgid ""
 "### <a name=\"snooze\">Snooze (Experimental)</a> With **neutriNote**'s "
 "non-intrusive visual reminders, it is easy to set aside notes for editing "
@@ -1357,12 +1380,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:567
+#: index.md:573
 msgid "``` com.appmindlab.nano.pref_icon_behavior|2 ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:569
+#: index.md:575
 msgid ""
 "Then add special **snooze strings** such as `+1h` (\"snooze for an hour\") "
 "or `+2d` (\"snooze for two days\") to the metadata of selected notes.  By "
@@ -1373,7 +1396,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:579
+#: index.md:585
 #, no-wrap
 msgid ""
 "| Units              |  Examples                          |\n"
@@ -1387,7 +1410,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:581
+#: index.md:587
 msgid ""
 "To transfer snooze to another device, be sure to tap **Backup/Restore App "
 "Data**.  Even more useful is that snooze strings are also fully searchable, "
@@ -1395,7 +1418,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:584
+#: index.md:590
 msgid ""
 "### <a name=\"misc\">Miscellaneous</a> **neutriNote** comes with many "
 "goodies for capturing text based data without switching away such as the "
@@ -1407,61 +1430,61 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:588
+#: index.md:594
 msgid "Select the expression."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:588
+#: index.md:594
 msgid "Tap the calculator button from the toolbar."
 msgstr ""
 
 #. type: Bullet: '1. '
-#: index.md.orig:588
+#: index.md:594
 msgid "View the answer with the option to paste it back into your note."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:592
+#: index.md:598
 msgid "``` sin(45 deg) ^ 2"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:594
+#: index.md:600
 msgid "cos(45 deg)"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:596
+#: index.md:602
 msgid "5.08 cm to inch"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:598
+#: index.md:604
 msgid "det([-1, 2; 3, 1])"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:601
+#: index.md:607
 msgid "log(10000, 10)  ```"
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:604
+#: index.md:610
 msgid ""
 "### <a name=\"performance\">Performance</a> When editing a long note, hide "
 "the title bar to reduce lags."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:606
+#: index.md:612
 msgid ""
 "In general, using default font style can help reduce the time in opening "
 "long notes."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:608
+#: index.md:614
 msgid ""
 "For users who do not use mathematics expressions, mathematics rendering can "
 "be disabled by entering a `.` under **Mathematics** in "
@@ -1469,7 +1492,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:611
+#: index.md:617
 #, no-wrap
 msgid ""
 "### <a name=\"issues\">Known Issues</a>\n"
@@ -1482,7 +1505,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:613
+#: index.md:619
 msgid ""
 "If a note needs to be renamed, do so within **neutriNote**.  Certain cloud "
 "sync would also change the case of note titles.  **neutriNote** would detect "
@@ -1492,7 +1515,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:615
+#: index.md:621
 msgid ""
 "To improve app stability in lower-end devices, **neutriNote** supports note "
 "size up to 1.5 MB.  Notes beyond the size will automatically be moved to a "
@@ -1502,7 +1525,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:618
+#: index.md:624
 msgid ""
 "### <a name=\"faq\">FAQs</a> **No folder support?** **neutriNote** is "
 "designed to provide a flat, hierarchy-free, [\"low cognitive "
@@ -1516,7 +1539,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:620
+#: index.md:626
 #, no-wrap
 msgid ""
 "**Story behind the name?** [This](https://en.wikipedia.org/wiki/Neutrino) "
@@ -1524,7 +1547,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:623
+#: index.md:629
 msgid ""
 "### <a name=\"privacy\">Privacy Policy</a> This app does not gather personal "
 "information. Location data can always be disabled via Settings.  A menu "
@@ -1532,12 +1555,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:626
+#: index.md:632
 msgid "### <a name=\"todo\">TODO</a> Keep the app as crash-proof as possible."
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:629
+#: index.md:635
 msgid ""
 "### <a name=\"about\">About</a> Every effort has been made to ensure that "
 "all third-party software used be properly acknowledged (see license "
@@ -1547,7 +1570,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:631
+#: index.md:637
 msgid ""
 "You can also visit [Product "
 "Page](https://plus.google.com/u/0/communities/117565395761503074053) for "
@@ -1555,7 +1578,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: index.md.orig:632
+#: index.md:638
 msgid ""
 "To further support neutriNote's development, please visit developer's "
 "[Ko-fi](https://ko-fi.com/neutriNote) page."
