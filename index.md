@@ -466,8 +466,7 @@ Data**を行ってください。注意: 設定ファイルの変更により、
 | com.appmindlab.nano.pref_preview_mode             | `start`: プレビューでノートの先頭を表示。 `end`: 最後を表示。 `off`: プレビューを無効にする。                   |
 | com.appmindlab.nano.pref_icon_behavior            | 0: アニメーションはオフ。 1: アニメーションはオン。 2: アニメーションを[スヌーズ](#snooze)。                     |
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: `trash_bin`フォルダー配下に削除されたファイルのコピ＝を保持する。                                       |
-
-| com.appmindlab.nano.pref_max_deleted_copies_age    | 削除されたファイルが保持される最大の日数を指定する(次のバックアップが発生するまでの間に整理する)。デフォルト: -1 (無制限) 
+| com.appmindlab.nano.pref_max_deleted_copies_age    | 削除されたファイルが保持される最大の日数を指定する(次のバックアップが発生するまでの間に整理する)。デフォルト: -1 (無制限)                                            |
 | com.appmindlab.nano.pref_local_priority_tag       | ローカルコピーがリモートからの変更で上書きされることを防ぐ。ノートが複数デバイスから編集される場合は競合が発生するかもしれないことに注意。 |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: 検索およびショートカット定義で[ビルトイン変数](#variables)を評価する。                                   |
 | com.appmindlab.nano.pref_low_space_mode           | `true`: [storage space saver](#storage)をオンにする。                                                            |
