@@ -470,7 +470,8 @@ Data**を行ってください。注意: 設定ファイルの変更により、
 | com.appmindlab.nano.pref_local_priority_tag       | ローカルコピーがリモートからの変更で上書きされることを防ぐ。ノートが複数デバイスから編集される場合は競合が発生するかもしれないことに注意。 |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: 検索およびショートカット定義で[ビルトイン変数](#variables)を評価する。                                   |
 | com.appmindlab.nano.pref_low_space_mode           | `true`: [storage space saver](#storage)をオンにする。                                                            |
-| com.appmindlab.nano.pref_new_note_file_type       |S 新しいノートにたいするファイルタイプを指定する。複数タイプモードが必要(以下参照)。デフォルト: `.txt` | 
+| com.appmindlab.nano.pref_new_note_file_type       |S 新しいノートにたいするファイルタイプを指定する。複数タイプモードが必要(以下参照)。デフォルト: `.txt` |
+| com.appmindlab.nano.pref_lab_mode                 | `true`: OCRのような実験的な機能を有効にする。|  \n"
              
 上級ユーザーは、**neutriNote**で複数のテキストファイルタイプを有効にすると良いかもしれません。これをセットアップする場合は、以下のすべてのステップを慎重に行ってください。
 
